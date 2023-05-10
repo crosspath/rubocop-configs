@@ -1,0 +1,25 @@
+# Config for RuboCop Sequel v0.3.4.
+#
+# https://github.com/rubocop/rubocop-sequel
+
+require:
+  - rubocop-sequel
+
+Sequel/ColumnDefault:
+  Enabled: true
+
+Sequel/ConcurrentIndex:
+  Enabled: true
+
+Sequel/JSONColumn:
+  Enabled: true
+# Enable for PostgreSQL only.
+
+Sequel/MigrationName:
+  Enabled: true
+
+Sequel/PartialConstraint:
+  Enabled: true
+
+Sequel/SaveChanges:
+  Enabled: false

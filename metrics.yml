@@ -1,0 +1,110 @@
+# Config for Rubocop, based on Rubocop v1.50.2.
+#
+# https://github.com/rubocop/rubocop/blob/v1.50.2/config/default.yml
+# https://docs.rubocop.org/rubocop/1.50/cops_metrics.html
+
+Metrics:
+  Exclude:
+    - 'db/**/*'
+
+Metrics/AbcSize:
+  Enabled: true
+  AllowedMethods: []
+  AllowedPatterns: []
+  CountRepeatedAttributes: true
+  Max: 17
+  # Default values:
+  # AllowedMethods: []
+  # AllowedPatterns: []
+  # CountRepeatedAttributes: true
+  # Max: 17
+
+Metrics/BlockLength:
+  Enabled: true
+  AllowedMethods: [refine]
+  CountAsOne: [array, hash, heredoc, method_call]
+  CountComments: false
+  Max: 25
+  # Default values:
+  # AllowedMethods: [refine]
+  # CountAsOne: []
+  # CountComments: false
+  # Max: 25
+
+Metrics/BlockNesting:
+  Enabled: true
+  CountBlocks: false
+  Max: 5
+  # Default values:
+  # CountBlocks: false
+  # Max: 3
+
+Metrics/ClassLength:
+  Enabled: true
+  CountAsOne: [array, hash, heredoc, method_call]
+  CountComments: false
+  Max: 100
+  # Default values:
+  # CountAsOne: []
+  # CountComments: false
+  # Max: 100
+
+Metrics/CollectionLiteralLength:
+  Enabled: true
+  LengthThreshold: 250
+  # Default values:
+  # LengthThreshold: 250
+
+Metrics/CyclomaticComplexity:
+  Enabled: true
+  AllowedMethods: []
+  AllowedPatterns: []
+  Max: 10
+  # Default values:
+  # AllowedMethods: []
+  # AllowedPatterns: []
+  # Max: 7
+
+Metrics/MethodLength:
+  Enabled: true
+  AllowedMethods: []
+  AllowedPatterns: []
+  CountAsOne: [array, hash, heredoc, method_call]
+  CountComments: false
+  Max: 10
+  # Default values:
+  # AllowedMethods: []
+  # AllowedPatterns: []
+  # CountAsOne: []
+  # CountComments: false
+  # Max: 10
+
+Metrics/ModuleLength:
+  Enabled: true
+  CountAsOne: [array, hash, heredoc, method_call]
+  CountComments: false
+  Max: 100
+  # Default values:
+  # CountAsOne: []
+  # CountComments: false
+  # Max: 100
+
+Metrics/ParameterLists:
+  Enabled: true
+  CountKeywordArgs: true
+  Max: 7
+  MaxOptionalParameters: 2
+  # Default values:
+  # CountKeywordArgs: true
+  # Max: 5
+  # MaxOptionalParameters: 3
+
+Metrics/PerceivedComplexity:
+  Enabled: true
+  AllowedMethods: []
+  AllowedPatterns: []
+  Max: 10
+  # Default values:
+  # AllowedMethods: []
+  # AllowedPatterns: []
+  # Max: 8

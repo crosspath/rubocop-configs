@@ -1,0 +1,31 @@
+# Config for RuboCop Capybara v2.18.0.
+#
+# https://github.com/rubocop/rubocop-capybara/blob/v2.18.0/config/default.yml
+
+require:
+  - rubocop-capybara
+
+Capybara/CurrentPathExpectation:
+  Enabled: true
+
+Capybara/MatchStyle:
+  Enabled: true
+
+Capybara/NegationMatcher:
+  Enabled: true
+  EnforcedStyle: not_to
+  # Default values:
+  # EnforcedStyle: not_to
+# See also: RSpec/ReceiveNever.
+
+Capybara/SpecificActions:
+  Enabled: true
+
+Capybara/SpecificFinders:
+  Enabled: false
+
+Capybara/SpecificMatcher:
+  Enabled: true
+
+Capybara/VisibilityMatcher:
+  Enabled: true

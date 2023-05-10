@@ -1,0 +1,105 @@
+# Config for RuboCop::GraphQL v1.1.1
+#
+# https://github.com/DmitryTsepelev/rubocop-graphql/blob/v1.1.1/config/default.yml
+
+require:
+  - rubocop-graphql
+
+GraphQL/ArgumentDescription:
+  Enabled: true
+
+GraphQL/ArgumentName:
+  Enabled: true
+
+GraphQL/ArgumentUniqueness:
+  Enabled: true
+
+GraphQL/ExtractInputType:
+  Enabled: true
+  MaxArguments: 2
+  # Default values:
+  # MaxArguments: 2
+
+GraphQL/ExtractType:
+  Enabled: true
+  MaxFields: 2
+  Prefixes: [is, has, with, avg, min, max]
+  # Default values:
+  # MaxFields: 2
+  # Prefixes: [is, has, with, avg, min, max]
+
+GraphQL/FieldDefinitions:
+  Enabled: true
+  EnforcedStyle: group_definitions
+  # Default values:
+  # EnforcedStyle: group_definitions
+
+GraphQL/FieldDescription:
+  Enabled: true
+
+GraphQL/FieldHashKey:
+  Enabled: true
+
+GraphQL/FieldMethod:
+  Enabled: true
+
+GraphQL/FieldName:
+  Enabled: true
+
+GraphQL/FieldUniqueness:
+  Enabled: true
+
+GraphQL/GraphqlName:
+  Enabled: true
+  EnforcedStyle: only_override
+  # Default values:
+  # EnforcedStyle: only_override
+
+GraphQL/LegacyDsl:
+  Enabled: true
+
+GraphQL/MaxComplexitySchema:
+  Enabled: true
+
+GraphQL/MaxDepthSchema:
+  Enabled: true
+
+GraphQL/MultipleFieldDefinitions:
+  Enabled: true
+
+GraphQL/NotAuthorizedNodeType:
+  Enabled: true
+
+GraphQL/ObjectDescription:
+  Enabled: true
+
+GraphQL/OrderedArguments:
+  Enabled: true
+
+GraphQL/OrderedFields:
+  Enabled: true
+  Groups: false
+  # Default values:
+  # Groups: true
+
+GraphQL/ResolverMethodLength:
+  Enabled: true
+  CountComments: false
+  ExcludedMethods: []
+  Max: 10
+  # Default values:
+  # CountComments: false
+  # ExcludedMethods: []
+  # Max: 10
+
+GraphQL/UnusedArgument:
+  Enabled: true
+
+GraphQL/UnnecessaryFieldAlias:
+  Enabled: true
+
+GraphQL/UnnecessaryArgumentCamelize:
+  Enabled: true
+
+GraphQL/UnnecessaryFieldCamelize:
+  Enabled: true

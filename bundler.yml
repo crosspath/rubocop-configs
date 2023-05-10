@@ -1,0 +1,41 @@
+# Config for Rubocop, based on Rubocop v1.50.2.
+#
+# https://github.com/rubocop/rubocop/blob/v1.50.2/config/default.yml
+# https://docs.rubocop.org/rubocop/1.50/cops_bundler.html
+
+Bundler/DuplicatedGem:
+  Enabled: true
+
+Bundler/GemComment:
+  Enabled: false
+  IgnoredGems: []
+  OnlyFor: []
+  # Default values:
+  # IgnoredGems: []
+  # OnlyFor: []
+
+Bundler/GemFilename:
+  Enabled: true
+  EnforcedStyle: Gemfile
+  # Default values:
+  # EnforcedStyle: Gemfile
+
+Bundler/GemVersion:
+  Enabled: false
+  EnforcedStyle: required
+  # Default values:
+  # EnforcedStyle: required
+
+Bundler/InsecureProtocolSource:
+  Enabled: true
+  AllowHttpProtocol: true
+  # Default values:
+  # AllowHttpProtocol: true
+
+Bundler/OrderedGems:
+  Enabled: true
+  ConsiderPunctuation: false
+  TreatCommentsAsGroupSeparators: false
+  # Default values:
+  # ConsiderPunctuation: false
+  # TreatCommentsAsGroupSeparators: true

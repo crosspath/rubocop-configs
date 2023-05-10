@@ -1,0 +1,253 @@
+# Config for Rubocop, based on Rubocop v1.50.2.
+#
+# https://github.com/rubocop/rubocop/blob/v1.50.2/config/default.yml
+# https://docs.rubocop.org/rubocop/1.50/cops_naming.html
+
+Naming/AccessorMethodName:
+  Enabled: true
+
+Naming/AsciiIdentifiers:
+  Enabled: true
+  AsciiConstants: true
+  # Default values:
+  # AsciiConstants: true
+
+Naming/BinaryOperatorParameterName:
+  Enabled: true
+
+Naming/BlockForwarding:
+  Enabled: true
+  BlockForwardingName: block
+  EnforcedStyle: anonymous
+  # Default values:
+  # BlockForwardingName: block
+  # EnforcedStyle: anonymous
+
+Naming/BlockParameterName:
+  Enabled: true
+  AllowedNames: []
+  AllowNamesEndingInNumbers: true
+  ForbiddenNames: []
+  MinNameLength: 1
+  # Default values:
+  # AllowedNames: []
+  # AllowNamesEndingInNumbers: true
+  # ForbiddenNames: []
+  # MinNameLength: 1
+
+Naming/ClassAndModuleCamelCase:
+  Enabled: true
+  AllowedNames: []
+  # Default values:
+  # AllowedNames: [module_parent]
+
+Naming/ConstantName:
+  Enabled: true
+
+Naming/FileName:
+  Enabled: true
+  AllowedAcronyms:
+    - CLI
+    - DSL
+    - ACL
+    - API
+    - ASCII
+    - CPU
+    - CSS
+    - DNS
+    - EOF
+    - GUID
+    - HTML
+    - HTTP
+    - HTTPS
+    - ID
+    - IP
+    - JSON
+    - LHS
+    - QPS
+    - RAM
+    - RHS
+    - RPC
+    - SLA
+    - SMTP
+    - SQL
+    - SSH
+    - TCP
+    - TLS
+    - TTL
+    - UDP
+    - UI
+    - UID
+    - UUID
+    - URI
+    - URL
+    - UTF8
+    - VM
+    - XML
+    - XMPP
+    - XSRF
+    - XSS
+  CheckDefinitionPathHierarchy: true
+  CheckDefinitionPathHierarchyRoots: [lib, spec, test, src]
+  Exclude: []
+  ExpectMatchingDefinition: false
+  IgnoreExecutableScripts: true
+  Regex: ~
+  # Default values:
+  # AllowedAcronyms:
+  #   - CLI
+  #   - DSL
+  #   - ACL
+  #   - API
+  #   - ASCII
+  #   - CPU
+  #   - CSS
+  #   - DNS
+  #   - EOF
+  #   - GUID
+  #   - HTML
+  #   - HTTP
+  #   - HTTPS
+  #   - ID
+  #   - IP
+  #   - JSON
+  #   - LHS
+  #   - QPS
+  #   - RAM
+  #   - RHS
+  #   - RPC
+  #   - SLA
+  #   - SMTP
+  #   - SQL
+  #   - SSH
+  #   - TCP
+  #   - TLS
+  #   - TTL
+  #   - UDP
+  #   - UI
+  #   - UID
+  #   - UUID
+  #   - URI
+  #   - URL
+  #   - UTF8
+  #   - VM
+  #   - XML
+  #   - XMPP
+  #   - XSRF
+  #   - XSS
+  # CheckDefinitionPathHierarchy: true
+  # CheckDefinitionPathHierarchyRoots: [lib, spec, test, src]
+  # Exclude: []
+  # ExpectMatchingDefinition: false
+  # IgnoreExecutableScripts: true
+  # Regex: ~
+
+Naming/HeredocDelimiterCase:
+  Enabled: true
+  EnforcedStyle: uppercase
+  # Default values:
+  # EnforcedStyle: uppercase
+
+Naming/HeredocDelimiterNaming:
+  Enabled: true
+  ForbiddenDelimiters:
+    - !ruby/regexp '/(^|\s)(EO[A-Z]{1}|END)(\s|$)/i'
+  # Default values:
+  # ForbiddenDelimiters:
+  #   - !ruby/regexp '/(^|\s)(EO[A-Z]{1}|END)(\s|$)/i'
+
+Naming/InclusiveLanguage:
+  Enabled: false
+  # Default values:
+  # CheckComments: true
+  # CheckConstants: true
+  # CheckFilepaths: true
+  # CheckIdentifiers: true
+  # CheckStrings: false
+  # CheckSymbols: true
+  # CheckVariables: true
+  # FlaggedTerms:
+  #   blacklist:
+  #     Regex: !ruby/regexp '/black[-_\s]?list/'
+  #     Suggestions: [denylist, block]
+  #   slave:
+  #     WholeWord: true
+  #     Suggestions: [replica, secondary, follower]
+  #   whitelist:
+  #     Regex: !ruby/regexp '/white[-_\s]?list/'
+  #     Suggestions: [allowlist, permit]
+
+Naming/MemoizedInstanceVariableName:
+  Enabled: true
+  EnforcedStyleForLeadingUnderscores: disallowed
+  # Default values:
+  # EnforcedStyleForLeadingUnderscores: disallowed
+
+Naming/MethodName:
+  Enabled: true
+  AllowedPatterns: []
+  EnforcedStyle: snake_case
+  # Default values:
+  # AllowedPatterns: []
+  # EnforcedStyle: snake_case
+
+Naming/MethodParameterName:
+  Enabled: true
+  AllowedNames: []
+  AllowNamesEndingInNumbers: true
+  ForbiddenNames: []
+  MinNameLength: 2
+  # Default values:
+  # AllowedNames: [as, at, by, cc, db, id, if, in, io, ip, of, 'on', os, pp, to]
+  # AllowNamesEndingInNumbers: true
+  # ForbiddenNames: []
+  # MinNameLength: 3
+
+Naming/PredicateName:
+  Enabled: true
+  AllowedMethods: ['is_a?']
+  ForbiddenPrefixes: [is_, has_, have_]
+  MethodDefinitionMacros: [define_method, define_singleton_method]
+  NamePrefix: [is_, has_, have_]
+  # Default values:
+  # AllowedMethods: ['is_a?']
+  # ForbiddenPrefixes: [is_, has_, have_]
+  # MethodDefinitionMacros: [define_method, define_singleton_method]
+  # NamePrefix: [is_, has_, have_]
+
+Naming/RescuedExceptionsVariableName:
+  Enabled: true
+  PreferredName: e
+  # Default values:
+  # PreferredName: e
+
+Naming/VariableName:
+  Enabled: true
+  AllowedIdentifiers: []
+  AllowedPatterns: []
+  EnforcedStyle: snake_case
+  # Default values:
+  # AllowedIdentifiers: []
+  # AllowedPatterns: []
+  # EnforcedStyle: snake_case
+
+Naming/VariableNumber:
+  Enabled: true
+  AllowedIdentifiers: []
+  AllowedPatterns: []
+  CheckMethodNames: true
+  CheckSymbols: true
+  EnforcedStyle: snake_case
+  # Default values:
+  # AllowedIdentifiers:
+  #   - capture3     # Open3.capture3
+  #   - iso8601      # Time#iso8601
+  #   - rfc1123_date # CGI.rfc1123_date
+  #   - rfc822       # Time#rfc822
+  #   - rfc2822      # Time#rfc2822
+  #   - rfc3339      # DateTime.rfc3339
+  #   - x86_64       # Allowed by default as an underscore separated CPU architecture name
+  # AllowedPatterns: []
+  # CheckMethodNames: true
+  # CheckSymbols: true
+  # EnforcedStyle: normalcase

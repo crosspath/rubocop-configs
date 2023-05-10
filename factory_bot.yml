@@ -1,0 +1,33 @@
+# Config for RuboCop factory_bot v2.22.0
+#
+# https://github.com/rubocop/rubocop-factory_bot/blob/v2.22.0/config/default.yml
+
+require:
+  - rubocop-factory_bot
+
+FactoryBot/AttributeDefinedStatically:
+  Enabled: true
+
+FactoryBot/ConsistentParenthesesStyle:
+  Enabled: true
+  EnforcedStyle: require_parentheses
+  # Default values:
+  # EnforcedStyle: require_parentheses
+
+FactoryBot/CreateList:
+  Enabled: true
+  EnforcedStyle: create_list
+  # Default values:
+  # EnforcedStyle: create_list
+
+FactoryBot/FactoryClassName:
+  Enabled: true
+
+FactoryBot/FactoryNameStyle:
+  Enabled: true
+  EnforcedStyle: symbol
+  # Default values:
+  # EnforcedStyle: symbol
+
+FactoryBot/SyntaxMethods:
+  Enabled: true

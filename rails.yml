@@ -1,0 +1,503 @@
+# Config for RuboCop Rails v2.19.1.
+#
+# https://github.com/rubocop/rubocop-rails/blob/v2.19.1/config/default.yml
+
+require:
+  - rubocop-rails
+
+# https://docs.rubocop.org/rubocop-rails/2.19/cops_rails.html
+Rails/ActionControllerFlashBeforeRender:
+  Enabled: true
+
+Rails/ActionControllerTestCase:
+  Enabled: true
+
+Rails/ActionFilter:
+  Enabled: true
+  EnforcedStyle: action
+  # Default values:
+  # EnforcedStyle: action
+
+Rails/ActionOrder:
+  Enabled: true
+  ExpectedOrder: [create, destroy, edit, index, new, show, update]
+  # Default values:
+  # ExpectedOrder: [index, show, new, edit, create, update, destroy]
+# All methods within one scope (public, private) should be sorted alphabetically.
+
+Rails/ActiveRecordAliases:
+  Enabled: true
+
+Rails/ActiveRecordCallbacksOrder:
+  Enabled: true
+
+Rails/ActiveRecordOverride:
+  Enabled: true
+
+Rails/ActiveSupportAliases:
+  Enabled: true
+
+Rails/ActiveSupportOnLoad:
+  Enabled: true
+
+Rails/AddColumnIndex:
+  Enabled: true
+
+Rails/AfterCommitOverride:
+  Enabled: true
+
+Rails/ApplicationController:
+  Enabled: true
+
+Rails/ApplicationJob:
+  Enabled: true
+
+Rails/ApplicationMailer:
+  Enabled: true
+
+Rails/ApplicationRecord:
+  Enabled: true
+
+Rails/ArelStar:
+  Enabled: true
+
+Rails/AssertNot:
+  Enabled: true
+
+Rails/AttributeDefaultBlockValue:
+  Enabled: true
+
+Rails/BelongsTo:
+  Enabled: true
+
+Rails/Blank:
+  Enabled: true
+  NilOrEmpty: true
+  NotPresent: true
+  UnlessPresent: true
+  # Default values:
+  # NilOrEmpty: true
+  # NotPresent: true
+  # UnlessPresent: true
+
+Rails/BulkChangeTable:
+  Enabled: true
+  Database: ~ # Auto-guess: mysql, postgresql.
+  # Default values:
+  # Database: null
+
+Rails/CompactBlank:
+  Enabled: true
+
+Rails/ContentTag:
+  Enabled: true
+
+Rails/CreateTableWithTimestamps:
+  Enabled: false
+
+Rails/Date:
+  Enabled: true
+  AllowToTime: false
+  EnforcedStyle: strict
+  # Default values:
+  # AllowToTime: true
+  # EnforcedStyle: flexible
+
+Rails/DefaultScope:
+  Enabled: true
+
+Rails/Delegate:
+  Enabled: true
+  EnforceForPrefixed: false
+  # Default values:
+  # EnforceForPrefixed: true
+
+Rails/DelegateAllowBlank:
+  Enabled: true
+
+Rails/DeprecatedActiveModelErrorsMethods:
+  Enabled: true
+
+Rails/DotSeparatedKeys:
+  Enabled: false
+
+Rails/DuplicateAssociation:
+  Enabled: true
+
+Rails/DuplicateScope:
+  Enabled: true
+
+Rails/DurationArithmetic:
+  Enabled: true
+
+Rails/DynamicFindBy:
+  Enabled: true
+  AllowedMethods: [find_by_sql, find_by_token_for]
+  AllowedReceivers: [Gem::Specification, page]
+  # Default values:
+  # AllowedMethods: [find_by_sql, find_by_token_for]
+  # AllowedReceivers: [Gem::Specification, page]
+
+Rails/EagerEvaluationLogMessage:
+  Enabled: true
+
+Rails/EnumHash:
+  Enabled: true
+
+Rails/EnumUniqueness:
+  Enabled: true
+
+Rails/EnvironmentComparison:
+  Enabled: true
+
+Rails/EnvironmentVariableAccess:
+  Enabled: true
+  AllowReads: false
+  AllowWrites: false
+  # Default values:
+  # AllowReads: false
+  # AllowWrites: false
+# Preferred way to read ENV variables is to use special objects for storing config values.
+
+Rails/Exit:
+  Enabled: true
+
+Rails/ExpandedDateRange:
+  Enabled: true
+
+Rails/FilePath:
+  Enabled: true
+  EnforcedStyle: slashes
+  # Default values:
+  # EnforcedStyle: slashes
+
+Rails/FindBy:
+  Enabled: true
+  IgnoreWhereFirst: false
+  # Default values:
+  # IgnoreWhereFirst: true
+
+Rails/FindById:
+  Enabled: true
+
+Rails/FindEach:
+  Enabled: true
+  AllowedMethods: [order, limit, select, lock]
+  AllowedPatterns: []
+  # Default values:
+  # AllowedMethods: [order, limit, select, lock]
+  # AllowedPatterns: []
+
+Rails/FreezeTime:
+  Enabled: true
+
+Rails/HasAndBelongsToMany:
+  Enabled: true
+
+Rails/HasManyOrHasOneDependent:
+  Enabled: true
+
+Rails/HelperInstanceVariable:
+  Enabled: true
+
+Rails/HttpPositionalArguments:
+  Enabled: true
+
+Rails/HttpStatus:
+  Enabled: true
+  EnforcedStyle: symbolic
+  # Default values:
+  # EnforcedStyle: symbolic
+
+Rails/I18nLazyLookup:
+  Enabled: false
+
+Rails/I18nLocaleAssignment:
+  Enabled: true
+
+Rails/I18nLocaleTexts:
+  Enabled: false
+
+Rails/IgnoredColumnsAssignment:
+  Enabled: true
+
+Rails/IgnoredSkipActionFilterOption:
+  Enabled: true
+
+Rails/IndexBy:
+  Enabled: false
+
+Rails/IndexWith:
+  Enabled: false
+
+Rails/Inquiry:
+  Enabled: true
+
+Rails/InverseOf:
+  Enabled: true
+  IgnoreScopes: false
+  # Default values:
+  # IgnoreScopes: false
+
+Rails/LexicallyScopedActionFilter:
+  Enabled: true
+
+Rails/LinkToBlank:
+  Enabled: true
+
+Rails/MailerName:
+  Enabled: true
+
+Rails/MatchRoute:
+  Enabled: true
+
+Rails/MigrationClassName:
+  Enabled: true
+
+Rails/NegateInclude:
+  Enabled: true
+
+Rails/NotNullColumn:
+  Enabled: true
+
+Rails/OrderById:
+  Enabled: false
+
+Rails/Output:
+  Enabled: true
+
+Rails/OutputSafety:
+  Enabled: true
+
+Rails/Pick:
+  Enabled: true
+
+Rails/Pluck:
+  Enabled: true
+  Severity: warning
+# This rule is unsafe when we fetch data with column aliases.
+
+Rails/PluckId:
+  Enabled: true
+
+Rails/PluckInWhere:
+  Enabled: true
+  EnforcedStyle: conservative
+  # Default values:
+  # EnforcedStyle: conservative
+
+Rails/PluralizationGrammar:
+  Enabled: true
+
+Rails/Presence:
+  Enabled: true
+
+Rails/Present:
+  Enabled: true
+  NotBlank: true
+  NotNilAndNotEmpty: true
+  UnlessBlank: true
+  # Default values:
+  # NotBlank: true
+  # NotNilAndNotEmpty: true
+  # UnlessBlank: true
+
+Rails/RakeEnvironment:
+  Enabled: false
+
+Rails/ReadWriteAttribute:
+  Enabled: true
+
+Rails/RedundantAllowNil:
+  Enabled: true
+
+Rails/RedundantForeignKey:
+  Enabled: true
+
+Rails/RedundantPresenceValidationOnBelongsTo:
+  Enabled: true
+
+Rails/RedundantReceiverInWithOptions:
+  Enabled: true
+
+Rails/RedundantTravelBack:
+  Enabled: true
+
+Rails/ReflectionClassName:
+  Enabled: true
+
+Rails/RefuteMethods:
+  Enabled: true
+  EnforcedStyle: assert_not
+  # Default values:
+  # EnforcedStyle: assert_not
+
+Rails/RelativeDateConstant:
+  Enabled: true
+
+Rails/RenderInline:
+  Enabled: true
+
+Rails/RenderPlainText:
+  Enabled: true
+  ContentTypeCompatibility: true
+  # Default values:
+  # ContentTypeCompatibility: true
+
+Rails/RequestReferer:
+  Enabled: true
+  EnforcedStyle: referer
+  # Default values:
+  # EnforcedStyle: referer
+
+Rails/RequireDependency:
+  Enabled: true
+
+Rails/ResponseParsedBody:
+  Enabled: true
+
+Rails/ReversibleMigration:
+  Enabled: true
+
+Rails/ReversibleMigrationMethodDefinition:
+  Enabled: true
+
+Rails/RootJoinChain:
+  Enabled: true
+
+Rails/RootPathnameMethods:
+  Enabled: true
+
+Rails/RootPublicPath:
+  Enabled: true
+
+Rails/SafeNavigation:
+  Enabled: true
+  ConvertTry: true
+  # Default values:
+  # ConvertTry: false
+
+Rails/SafeNavigationWithBlank:
+  Enabled: true
+
+Rails/SaveBang:
+  Enabled: true
+  AllowedReceivers: []
+  AllowImplicitReturn: true
+  # Default values:
+  # AllowedReceivers: []
+  # AllowImplicitReturn: true
+
+Rails/SchemaComment:
+  Enabled: false
+
+Rails/ScopeArgs:
+  Enabled: true
+
+Rails/ShortI18n:
+  Enabled: true
+  EnforcedStyle: aggressive
+  # Default values:
+  # EnforcedStyle: conservative
+
+Rails/SkipsModelValidations:
+  Enabled: false
+  # Default values:
+  # AllowedMethods: []
+  # ForbiddenMethods:
+  #   - decrement!
+  #   - decrement_counter
+  #   - increment!
+  #   - increment_counter
+  #   - insert
+  #   - insert!
+  #   - insert_all
+  #   - insert_all!
+  #   - toggle!
+  #   - touch
+  #   - touch_all
+  #   - update_all
+  #   - update_attribute
+  #   - update_column
+  #   - update_columns
+  #   - update_counters
+  #   - upsert
+  #   - upsert_all
+
+Rails/SquishedSQLHeredocs:
+  Enabled: true
+
+Rails/StripHeredoc:
+  Enabled: true
+
+Rails/TableNameAssignment:
+  Enabled: true
+
+Rails/ThreeStateBooleanColumn:
+  Enabled: true
+
+Rails/TimeZone:
+  Enabled: true
+  EnforcedStyle: flexible
+  # Default values:
+  # EnforcedStyle: flexible
+
+Rails/TimeZoneAssignment:
+  Enabled: true
+
+Rails/ToFormattedS:
+  Enabled: true
+  EnforcedStyle: to_fs
+  # Default values:
+  # EnforcedStyle: to_fs
+
+Rails/ToSWithArgument:
+  Enabled: true
+
+Rails/TopLevelHashWithIndifferentAccess:
+  Enabled: true
+
+Rails/TransactionExitStatement:
+  Enabled: true
+
+Rails/UniqBeforePluck:
+  Enabled: true
+  EnforcedStyle: conservative
+  # Default values:
+  # EnforcedStyle: conservative
+
+Rails/UniqueValidationWithoutIndex:
+  Enabled: true
+
+Rails/UnknownEnv:
+  Enabled: true
+  Environments: [development, test, production]
+  # Default values:
+  # Environments: [development, test, production]
+
+Rails/UnusedIgnoredColumns:
+  Enabled: true
+
+Rails/Validation:
+  Enabled: true
+
+Rails/WhereEquals:
+  Enabled: true
+
+Rails/WhereExists:
+  Enabled: true
+  EnforcedStyle: exists
+  # Default values:
+  # EnforcedStyle: exists
+# No significant differences in time taken by both styles:
+# `where(...).exists?` and `exists?(...)`.
+# Style `exists` preferred because this code looks shorter.
+
+Rails/WhereMissing:
+  Enabled: true
+
+Rails/WhereNot:
+  Enabled: true
+
+Rails/WhereNotWithMultipleConditions:
+  Enabled: true

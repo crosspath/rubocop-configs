@@ -1,0 +1,185 @@
+# Config for RuboCop Performance v1.17.1.
+#
+# https://github.com/rubocop/rubocop-performance/blob/v1.17.1/config/default.yml
+
+require:
+  - rubocop-performance
+
+Performance/AncestorsInclude:
+  Enabled: false
+
+Performance/ArraySemiInfiniteRangeSlice:
+  Enabled: false
+
+Performance/BigDecimalWithNumericArgument:
+  Enabled: true
+
+Performance/BindCall:
+  Enabled: true
+
+Performance/BlockGivenWithExplicitBlock:
+  Enabled: true
+
+Performance/Caller:
+  Enabled: false
+
+Performance/CaseWhenSplat:
+  Enabled: false
+
+Performance/Casecmp:
+  Enabled: false
+
+Performance/ChainArrayAllocation:
+  Enabled: false
+
+Performance/CollectionLiteralInLoop:
+  Enabled: true
+  MinSize: 1
+  # Default values:
+  # MinSize: 1
+
+Performance/CompareWithBlock:
+  Enabled: true
+
+Performance/ConcurrentMonotonicTime:
+  Enabled: true
+
+Performance/ConstantRegexp:
+  Enabled: true
+
+Performance/Count:
+  Enabled: true
+
+Performance/DeletePrefix:
+  Enabled: true
+  SafeMultiline: false
+  # Default values:
+  # SafeMultiline: true
+
+Performance/DeleteSuffix:
+  Enabled: true
+  SafeMultiline: false
+  # Default values:
+  # SafeMultiline: true
+
+Performance/Detect:
+  Enabled: true
+
+Performance/DoubleStartEndWith:
+  Enabled: true
+  IncludeActiveSupportAliases: true
+  # Default values:
+  # IncludeActiveSupportAliases: false
+
+Performance/EndWith:
+  Enabled: true
+  SafeMultiline: false
+  # Default values:
+  # SafeMultiline: true
+
+Performance/FixedSize:
+  Enabled: false
+
+Performance/FlatMap:
+  Enabled: true
+  EnabledForFlattenWithoutParams: true
+  # Default values:
+  # EnabledForFlattenWithoutParams: false
+
+Performance/InefficientHashSearch:
+  Enabled: true
+
+Performance/IoReadlines:
+  Enabled: false
+
+Performance/MapCompact:
+  Enabled: true
+
+Performance/MethodObjectAsBlock:
+  Enabled: true
+
+Performance/OpenStruct:
+  Enabled: true
+
+Performance/RangeInclude:
+  Enabled: true
+
+Performance/RedundantBlockCall:
+  Enabled: true
+
+Performance/RedundantEqualityComparisonBlock:
+  Enabled: true
+  AllowRegexpMatch: true
+  # Default values:
+  # AllowRegexpMatch: true
+
+Performance/RedundantMatch:
+  Enabled: true
+
+Performance/RedundantMerge:
+  Enabled: true
+  MaxKeyValuePairs: 1
+  # Default values:
+  # MaxKeyValuePairs: 2
+# Disallow `hash.merge!(key: value)`.
+# Allow `hash.merge!(key1: value1, key2: value2)` and more key-value pairs.
+
+Performance/RedundantSortBlock:
+  Enabled: true
+
+Performance/RedundantSplitRegexpArgument:
+  Enabled: true
+
+Performance/RedundantStringChars:
+  Enabled: true
+
+Performance/RegexpMatch:
+  Enabled: true
+
+Performance/ReverseEach:
+  Enabled: true
+
+Performance/ReverseFirst:
+  Enabled: true
+
+Performance/SelectMap:
+  Enabled: true
+
+Performance/Size:
+  Enabled: true
+
+Performance/SortReverse:
+  Enabled: true
+
+Performance/Squeeze:
+  Enabled: true
+
+Performance/StartWith:
+  Enabled: true
+  SafeMultiline: false
+  # Default values:
+  # SafeMultiline: true
+
+Performance/StringIdentifierArgument:
+  Enabled: true
+
+Performance/StringInclude:
+  Enabled: true
+
+Performance/StringReplacement:
+  Enabled: false
+
+Performance/Sum:
+  Enabled: true
+  OnlySumOrWithInitialValue: false
+  # Default values:
+  # OnlySumOrWithInitialValue: false
+
+Performance/TimesMap:
+  Enabled: true
+
+Performance/UnfreezeString:
+  Enabled: false
+
+Performance/UriDefaultParser:
+  Enabled: true

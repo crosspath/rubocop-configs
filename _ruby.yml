@@ -1,0 +1,12 @@
+# Config for Rubocop, based on Rubocop v1.50.2.
+#
+# https://github.com/rubocop/rubocop/blob/v1.50.2/config/default.yml
+
+inherit_from:
+  - layout.yml
+  - lint.yml
+  - metrics.yml
+  - migration.yml
+  - naming.yml
+  - security.yml
+  - style.yml

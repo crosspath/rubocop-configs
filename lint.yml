@@ -1,0 +1,625 @@
+# Config for Rubocop, based on Rubocop v1.50.2.
+#
+# https://github.com/rubocop/rubocop/blob/v1.50.2/config/default.yml
+# https://docs.rubocop.org/rubocop/1.50/cops_lint.html
+
+Lint/AmbiguousAssignment:
+  Enabled: true
+
+Lint/AmbiguousBlockAssociation:
+  Enabled: true
+  AllowedMethods: []
+  AllowedPatterns: []
+  # Default values:
+  # AllowedMethods: []
+  # AllowedPatterns: []
+
+Lint/AmbiguousOperator:
+  Enabled: true
+
+Lint/AmbiguousOperatorPrecedence:
+  Enabled: false
+
+Lint/AmbiguousRange:
+  Enabled: true
+  RequireParenthesesForMethodChains: true
+  # Default values:
+  # RequireParenthesesForMethodChains: false
+
+Lint/AmbiguousRegexpLiteral:
+  Enabled: true
+
+Lint/AssignmentInCondition:
+  Enabled: true
+  AllowSafeAssignment: false
+  # Default values:
+  # AllowSafeAssignment: true
+
+Lint/BigDecimalNew:
+  Enabled: true
+
+Lint/BinaryOperatorWithIdenticalOperands:
+  Enabled: true
+
+Lint/BooleanSymbol:
+  Enabled: true
+
+Lint/CircularArgumentReference:
+  Enabled: true
+
+Lint/ConstantDefinitionInBlock:
+  Enabled: true
+  AllowedMethods: []
+  # Default values:
+  # AllowedMethods: [enums]
+
+Lint/ConstantOverwrittenInRescue:
+  Enabled: true
+
+Lint/ConstantResolution:
+  Enabled: false
+  Ignore: []
+  Only: []
+  # Default values:
+  # Ignore: []
+  # Only: []
+
+Lint/Debugger:
+  Enabled: true
+  Exclude: ['lib/tasks/**/*.rb']
+  DebuggerMethods:
+    Kernel: [puts, warn, binding.irb, p, Kernel.binding.irb]
+    Byebug: [byebug, remote_byebug, Kernel.byebug, Kernel.remote_byebug]
+    Capybara: [save_and_open_page, save_and_open_screenshot]
+    PP: [PP.pp, pp]
+    debug.rb: [binding.b, binding.break, Kernel.binding.b, Kernel.binding.break]
+    Pry:
+      - binding.pry
+      - binding.remote_pry
+      - binding.pry_remote
+      - Kernel.binding.pry
+      - Kernel.binding.remote_pry
+      - Kernel.binding.pry_remote
+      - Pry.rescue
+      - pry
+    Rails: [debugger, Kernel.debugger]
+    RubyJard: [jard]
+    WebConsole: [binding.console]
+  # Default values:
+  # DebuggerMethods:
+  #   Kernel: [binding.irb, Kernel.binding.irb]
+  #   Byebug: [byebug, remote_byebug, Kernel.byebug, Kernel.remote_byebug]
+  #   Capybara: [save_and_open_page, save_and_open_screenshot]
+  #   debug.rb: [binding.b, binding.break, Kernel.binding.b, Kernel.binding.break]
+  #   Pry:
+  #     - binding.pry
+  #     - binding.remote_pry
+  #     - binding.pry_remote
+  #     - Kernel.binding.pry
+  #     - Kernel.binding.remote_pry
+  #     - Kernel.binding.pry_remote
+  #     - Pry.rescue
+  #     - pry
+  #   Rails: [debugger, Kernel.debugger]
+  #   RubyJard: [jard]
+  #   WebConsole: [binding.console]
+
+Lint/DeprecatedClassMethods:
+  Enabled: true
+
+Lint/DeprecatedConstants:
+  Enabled: true
+  DeprecatedConstants:
+    'NIL':
+      Alternative: 'nil'
+      DeprecatedVersion: '2.4'
+    'TRUE':
+      Alternative: 'true'
+      DeprecatedVersion: '2.4'
+    'FALSE':
+      Alternative: 'false'
+      DeprecatedVersion: '2.4'
+    'Net::HTTPServerException':
+      Alternative: 'Net::HTTPClientException'
+      DeprecatedVersion: '2.6'
+    'Random::DEFAULT':
+      Alternative: 'Random.new'
+      DeprecatedVersion: '3.0'
+    'Struct::Group':
+      Alternative: 'Etc::Group'
+      DeprecatedVersion: '3.0'
+    'Struct::Passwd':
+      Alternative: 'Etc::Passwd'
+      DeprecatedVersion: '3.0'
+  # Default values:
+  # DeprecatedConstants:
+  #   'NIL':
+  #     Alternative: 'nil'
+  #     DeprecatedVersion: '2.4'
+  #   'TRUE':
+  #     Alternative: 'true'
+  #     DeprecatedVersion: '2.4'
+  #   'FALSE':
+  #     Alternative: 'false'
+  #     DeprecatedVersion: '2.4'
+  #   'Net::HTTPServerException':
+  #     Alternative: 'Net::HTTPClientException'
+  #     DeprecatedVersion: '2.6'
+  #   'Random::DEFAULT':
+  #     Alternative: 'Random.new'
+  #     DeprecatedVersion: '3.0'
+  #   'Struct::Group':
+  #     Alternative: 'Etc::Group'
+  #     DeprecatedVersion: '3.0'
+  #   'Struct::Passwd':
+  #     Alternative: 'Etc::Passwd'
+  #     DeprecatedVersion: '3.0'
+
+Lint/DeprecatedOpenSSLConstant:
+  Enabled: true
+
+Lint/DisjunctiveAssignmentInConstructor:
+  Enabled: true
+
+Lint/DuplicateBranch:
+  Enabled: true
+  IgnoreConstantBranches: false
+  IgnoreLiteralBranches: false
+  # Default values:
+  # IgnoreConstantBranches: false
+  # IgnoreLiteralBranches: false
+
+Lint/DuplicateCaseCondition:
+  Enabled: true
+
+Lint/DuplicateElsifCondition:
+  Enabled: true
+
+Lint/DuplicateHashKey:
+  Enabled: true
+
+Lint/DuplicateMagicComment:
+  Enabled: true
+
+Lint/DuplicateMatchPattern:
+  Enabled: true
+
+Lint/DuplicateMethods:
+  Enabled: true
+
+Lint/DuplicateRegexpCharacterClassElement:
+  Enabled: true
+
+Lint/DuplicateRequire:
+  Enabled: true
+
+Lint/DuplicateRescueException:
+  Enabled: true
+
+Lint/EachWithObjectArgument:
+  Enabled: true
+
+Lint/ElseLayout:
+  Enabled: true
+
+Lint/EmptyBlock:
+  Enabled: true
+  Severity: warning
+  AllowComments: false
+  AllowEmptyLambdas: false
+  # Default values:
+  # AllowComments: true
+  # AllowEmptyLambdas: true
+
+Lint/EmptyClass:
+  Enabled: true
+  Severity: warning
+  AllowComments: false
+  # Default values:
+  # AllowComments: true
+
+Lint/EmptyConditionalBody:
+  Enabled: true
+  AllowComments: false
+  # Default values:
+  # AllowComments: true
+
+Lint/EmptyEnsure:
+  Enabled: true
+
+Lint/EmptyExpression:
+  Enabled: true
+
+Lint/EmptyFile:
+  Enabled: true
+  AllowComments: true
+  # Default values:
+  # AllowComments: true
+
+Lint/EmptyInPattern:
+  Enabled: true
+  AllowComments: false
+  # Default values:
+  # AllowComments: true
+
+Lint/EmptyInterpolation:
+  Enabled: true
+
+Lint/EmptyWhen:
+  Enabled: true
+  AllowComments: false
+  # Default values:
+  # AllowComments: true
+
+Lint/EnsureReturn:
+  Enabled: true
+
+Lint/ErbNewArguments:
+  Enabled: true
+
+Lint/FlipFlop:
+  Enabled: true
+
+Lint/FloatComparison:
+  Enabled: true
+  Severity: warning
+
+Lint/FloatOutOfRange:
+  Enabled: true
+
+Lint/FormatParameterMismatch:
+  Enabled: true
+
+Lint/HashCompareByIdentity:
+  Enabled: true
+
+Lint/HeredocMethodCallPosition:
+  Enabled: true
+
+Lint/IdentityComparison:
+  Enabled: true
+
+Lint/ImplicitStringConcatenation:
+  Enabled: true
+
+Lint/IncompatibleIoSelectWithFiberScheduler:
+  Enabled: true
+
+Lint/IneffectiveAccessModifier:
+  Enabled: true
+
+Lint/InheritException:
+  Enabled: true
+  EnforcedStyle: runtime_error
+  # Default values:
+  # EnforcedStyle: standard_error
+
+Lint/InterpolationCheck:
+  Enabled: true
+
+Lint/LambdaWithoutLiteralBlock:
+  Enabled: true
+
+Lint/LiteralAsCondition:
+  Enabled: true
+
+Lint/LiteralInInterpolation:
+  Enabled: true
+
+Lint/Loop:
+  Enabled: true
+
+Lint/MissingCopEnableDirective:
+  Enabled: true
+  MaximumRangeSize: .inf
+  # Default values:
+  # MaximumRangeSize: .inf
+
+Lint/MissingSuper:
+  Enabled: true
+
+Lint/MixedRegexpCaptureTypes:
+  Enabled: true
+
+Lint/MultipleComparison:
+  Enabled: true
+
+Lint/NestedMethodDefinition:
+  Enabled: true
+  AllowedMethods: []
+  AllowedPatterns: []
+  # Default values:
+  # AllowedMethods: []
+  # AllowedPatterns: []
+
+Lint/NestedPercentLiteral:
+  Enabled: true
+
+Lint/NextWithoutAccumulator:
+  Enabled: true
+
+Lint/NoReturnInBeginEndBlocks:
+  Enabled: true
+
+Lint/NonAtomicFileOperation:
+  Enabled: true
+
+Lint/NonDeterministicRequireOrder:
+  Enabled: false
+
+Lint/NonLocalExitFromIterator:
+  Enabled: true
+
+Lint/NumberConversion:
+  Enabled: false
+  # Default values:
+  # AllowedMethods: []
+  # AllowedPatterns: []
+
+Lint/NumberedParameterAssignment:
+  Enabled: true
+
+Lint/OrAssignmentToConstant:
+  Enabled: true
+
+Lint/OrderedMagicComments:
+  Enabled: true
+
+Lint/OutOfRangeRegexpRef:
+  Enabled: true
+
+Lint/ParenthesesAsGroupedExpression:
+  Enabled: true
+
+Lint/PercentStringArray:
+  Enabled: true
+  Severity: warning
+
+Lint/PercentSymbolArray:
+  Enabled: true
+  Severity: warning
+
+Lint/RaiseException:
+  Enabled: true
+  AllowedImplicitNamespaces: []
+  # Default values:
+  # AllowedImplicitNamespaces: [Gem]
+
+Lint/RandOne:
+  Enabled: true
+
+Lint/RedundantCopDisableDirective:
+  Enabled: true
+
+Lint/RedundantCopEnableDirective:
+  Enabled: true
+
+Lint/RedundantDirGlobSort:
+  Enabled: true
+
+Lint/RedundantRequireStatement:
+  Enabled: true
+
+Lint/RedundantSafeNavigation:
+  Enabled: true
+  AllowedMethods: ['instance_of?', 'kind_of?', 'is_a?', 'eql?', 'respond_to?', 'equal?']
+  # Default values:
+  # AllowedMethods: ['instance_of?', 'kind_of?', 'is_a?', 'eql?', 'respond_to?', 'equal?']
+
+Lint/RedundantSplatExpansion:
+  Enabled: true
+  AllowPercentLiteralArrayArgument: false
+  # Default values:
+  # AllowPercentLiteralArrayArgument: true
+
+Lint/RedundantStringCoercion:
+  Enabled: true
+
+Lint/RedundantWithIndex:
+  Enabled: true
+
+Lint/RedundantWithObject:
+  Enabled: true
+
+Lint/RefinementImportMethods:
+  Enabled: true
+
+Lint/RegexpAsCondition:
+  Enabled: true
+
+Lint/RequireParentheses:
+  Enabled: true
+
+Lint/RequireRangeParentheses:
+  Enabled: true
+
+Lint/RequireRelativeSelfPath:
+  Enabled: true
+
+Lint/RescueException:
+  Enabled: true
+
+Lint/RescueType:
+  Enabled: true
+
+Lint/ReturnInVoidContext:
+  Enabled: true
+
+Lint/SafeNavigationChain:
+  Enabled: true
+  AllowedMethods: ['present?', 'blank?', presence, try, try!, 'in?']
+  # Default values:
+  # AllowedMethods: ['present?', 'blank?', presence, try, try!, 'in?']
+
+Lint/SafeNavigationConsistency:
+  Enabled: true
+  AllowedMethods: ['present?', 'blank?', presence, try, try!]
+  # Default values:
+  # AllowedMethods: ['present?', 'blank?', presence, try, try!]
+
+Lint/SafeNavigationWithEmpty:
+  Enabled: true
+
+Lint/ScriptPermission:
+  Enabled: true
+
+Lint/SelfAssignment:
+  Enabled: true
+
+Lint/SendWithMixinArgument:
+  Enabled: true
+
+Lint/ShadowedArgument:
+  Enabled: true
+  IgnoreImplicitReferences: false
+  # Default values:
+  # IgnoreImplicitReferences: false
+
+Lint/ShadowedException:
+  Enabled: true
+
+Lint/ShadowingOuterLocalVariable:
+  Enabled: true
+
+Lint/StructNewOverride:
+  Enabled: true
+
+Lint/SuppressedException:
+  Enabled: true
+  AllowComments: true
+  AllowNil: true
+  # Default values:
+  # AllowComments: true
+  # AllowNil: true
+
+Lint/SymbolConversion:
+  Enabled: true
+  EnforcedStyle: strict
+  # Default values:
+  # EnforcedStyle: strict
+
+Lint/Syntax:
+  Enabled: true
+
+Lint/ToEnumArguments:
+  Enabled: true
+
+Lint/ToJSON:
+  Enabled: true
+
+Lint/TopLevelReturnWithArgument:
+  Enabled: true
+
+Lint/TrailingCommaInAttributeDeclaration:
+  Enabled: true
+
+Lint/TripleQuotes:
+  Enabled: true
+
+Lint/UnderscorePrefixedVariableName:
+  Enabled: true
+  AllowKeywordBlockArguments: false
+  # Default values:
+  # AllowKeywordBlockArguments: false
+
+Lint/UnexpectedBlockArity:
+  Enabled: true
+  Methods:
+    chunk_while: 2
+    each_with_index: 2
+    each_with_object: 2
+    inject: 2
+    max: 2
+    min: 2
+    minmax: 2
+    reduce: 2
+    slice_when: 2
+    sort: 2
+  # Default values:
+  # Methods:
+  #   chunk_while: 2
+  #   each_with_index: 2
+  #   each_with_object: 2
+  #   inject: 2
+  #   max: 2
+  #   min: 2
+  #   minmax: 2
+  #   reduce: 2
+  #   slice_when: 2
+  #   sort: 2
+
+Lint/UnifiedInteger:
+  Enabled: true
+
+Lint/UnmodifiedReduceAccumulator:
+  Enabled: true
+
+Lint/UnreachableCode:
+  Enabled: true
+
+Lint/UnreachableLoop:
+  Enabled: true
+  AllowedPatterns:
+    - !ruby/regexp /(exactly|at_least|at_most)\(\d+\)\.times/
+  # Default values:
+  # AllowedPatterns:
+  #   - !ruby/regexp /(exactly|at_least|at_most)\(\d+\)\.times/
+
+Lint/UnusedBlockArgument:
+  Enabled: true
+  AllowUnusedKeywordArguments: false
+  IgnoreEmptyBlocks: false
+  # Default values:
+  # AllowUnusedKeywordArguments: false
+  # IgnoreEmptyBlocks: true
+
+Lint/UnusedMethodArgument:
+  Enabled: true
+  AllowUnusedKeywordArguments: false
+  IgnoreEmptyMethods: false
+  IgnoreNotImplementedMethods: true
+  # Default values:
+  # AllowUnusedKeywordArguments: false
+  # IgnoreEmptyMethods: true
+  # IgnoreNotImplementedMethods: true
+
+Lint/UriEscapeUnescape:
+  Enabled: true
+
+Lint/UriRegexp:
+  Enabled: true
+
+Lint/UselessAccessModifier:
+  Enabled: true
+  ContextCreatingMethods: []
+  MethodCreatingMethods: []
+  # Default values:
+  # ContextCreatingMethods: []
+  # MethodCreatingMethods: []
+
+Lint/UselessAssignment:
+  Enabled: true
+
+Lint/UselessElseWithoutRescue:
+  Enabled: true
+
+Lint/UselessMethodDefinition:
+  Enabled: true
+
+Lint/UselessRescue:
+  Enabled: true
+
+Lint/UselessRuby2Keywords:
+  Enabled: true
+
+Lint/UselessSetterCall:
+  Enabled: true
+
+Lint/UselessTimes:
+  Enabled: true
+
+Lint/Void:
+  Enabled: true
+  CheckForMethodsWithNoSideEffects: false
+  # Default values:
+  # CheckForMethodsWithNoSideEffects: false

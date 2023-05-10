@@ -1,0 +1,16 @@
+# Config for Rubocop, based on Rubocop v1.50.2.
+#
+# https://github.com/rubocop/rubocop/blob/v1.50.2/config/default.yml
+
+AllCops:
+  ActiveSupportExtensionsEnabled: true
+  EnabledByDefault: false
+  ExtraDetails: true
+  NewCops: disable
+  SuggestExtensions: false
+  # Default values:
+  # ActiveSupportExtensionsEnabled: false
+  # EnabledByDefault: false
+  # ExtraDetails: false
+  # NewCops: pending
+  # SuggestExtensions: {...}

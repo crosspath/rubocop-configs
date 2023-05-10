@@ -1,0 +1,600 @@
+# Config for Rubocop, based on Rubocop v1.50.2.
+#
+# https://github.com/rubocop/rubocop/blob/v1.50.2/config/default.yml
+# https://docs.rubocop.org/rubocop/1.50/cops_layout.html
+
+Layout/AccessModifierIndentation:
+  Enabled: true
+  EnforcedStyle: indent
+  IndentationWidth: ~
+  # Default values:
+  # EnforcedStyle: indent
+  # IndentationWidth: ~
+
+Layout/ArgumentAlignment:
+  Enabled: true
+  EnforcedStyle: with_fixed_indentation
+  IndentationWidth: ~
+  # Default values:
+  # EnforcedStyle: with_first_argument
+  # IndentationWidth: ~
+
+Layout/ArrayAlignment:
+  Enabled: true
+  EnforcedStyle: with_fixed_indentation
+  IndentationWidth: ~
+  # Default values:
+  # EnforcedStyle: with_first_element
+  # IndentationWidth: ~
+
+Layout/AssignmentIndentation:
+  Enabled: true
+  IndentationWidth: ~
+  # Default values:
+  # IndentationWidth: ~
+
+Layout/BeginEndAlignment:
+  Enabled: true
+  EnforcedStyleAlignWith: start_of_line
+  # Default values:
+  # EnforcedStyleAlignWith: start_of_line
+
+Layout/BlockAlignment:
+  Enabled: true
+  EnforcedStyleAlignWith: start_of_block
+  # Default values:
+  # EnforcedStyleAlignWith: either
+
+Layout/BlockEndNewline:
+  Enabled: true
+
+Layout/CaseIndentation:
+  Enabled: true
+  EnforcedStyle: end
+  IndentOneStep: false
+  IndentationWidth: ~
+  # Default values:
+  # EnforcedStyle: case
+  # IndentOneStep: false
+  # IndentationWidth: ~
+
+Layout/ClassStructure:
+  Enabled: true
+  Categories:
+    module_inclusion: [include, prepend, extend]
+  ExpectedOrder:
+    - module_inclusion
+    - constants
+    - public_class_methods
+    - initializer
+    - public_methods
+    - protected_methods
+    - private_methods
+  # Default values:
+  # Categories:
+  #   module_inclusion: [include, prepend, extend]
+  # ExpectedOrder:
+  #   - module_inclusion
+  #   - constants
+  #   - public_class_methods
+  #   - initializer
+  #   - public_methods
+  #   - protected_methods
+  #   - private_methods
+
+Layout/ClosingHeredocIndentation:
+  Enabled: true
+
+Layout/ClosingParenthesisIndentation:
+  Enabled: true
+
+Layout/CommentIndentation:
+  Enabled: true
+  AllowForAlignment: false
+  # Default values:
+  # AllowForAlignment: false
+
+Layout/ConditionPosition:
+  Enabled: true
+
+Layout/DefEndAlignment:
+  Enabled: true
+  EnforcedStyleAlignWith: start_of_line
+  # Default values:
+  # EnforcedStyleAlignWith: start_of_line
+
+Layout/DotPosition:
+  Enabled: true
+  EnforcedStyle: leading
+  # Default values:
+  # EnforcedStyle: leading
+# `leading` is preferred style because it allows to enable/disable/add/delete/change less lines.
+# Compare `trailing` style:
+#   user.
+#     posts.
+#     includes(:comments).
+#     where(published: true)
+# And `leading` style:
+#   user
+#     .posts
+#     .includes(:comments)
+#     .where(published: true)
+# If you want to disable (comment) `includes`, you need to comment only one line. But if you want
+# to disable `where`, you have to comment line with `where` and edit line with `includes` when you
+# use `trailing` style.
+
+Layout/ElseAlignment:
+  Enabled: true
+
+Layout/EmptyComment:
+  Enabled: true
+  AllowBorderComment: false
+  AllowMarginComment: false
+  # Default values:
+  # AllowBorderComment: true
+  # AllowMarginComment: true
+
+Layout/EmptyLineAfterGuardClause:
+  Enabled: true
+
+Layout/EmptyLineAfterMagicComment:
+  Enabled: true
+
+Layout/EmptyLineAfterMultilineCondition:
+  Enabled: false
+
+Layout/EmptyLineBetweenDefs:
+  Enabled: true
+  AllowAdjacentOneLineDefs: false
+  EmptyLineBetweenClassDefs: true
+  EmptyLineBetweenMethodDefs: true
+  EmptyLineBetweenModuleDefs: true
+  NumberOfEmptyLines: 1
+  # Default values:
+  # AllowAdjacentOneLineDefs: true
+  # EmptyLineBetweenClassDefs: true
+  # EmptyLineBetweenMethodDefs: true
+  # EmptyLineBetweenModuleDefs: true
+  # NumberOfEmptyLines: 1
+
+Layout/EmptyLines:
+  Enabled: true
+
+Layout/EmptyLinesAroundAccessModifier:
+  Enabled: true
+  EnforcedStyle: around
+  # Default values:
+  # EnforcedStyle: around
+
+Layout/EmptyLinesAroundArguments:
+  Enabled: true
+
+Layout/EmptyLinesAroundAttributeAccessor:
+  Enabled: true
+  AllowAliasSyntax: false
+  AllowedMethods: false
+  # Default values:
+  # AllowAliasSyntax: true
+  # AllowedMethods: [alias_method, public, protected, private]
+
+Layout/EmptyLinesAroundBeginBody:
+  Enabled: true
+
+Layout/EmptyLinesAroundBlockBody:
+  Enabled: true
+  EnforcedStyle: no_empty_lines
+  # Default values:
+  # EnforcedStyle: no_empty_lines
+
+Layout/EmptyLinesAroundClassBody:
+  Enabled: true
+  EnforcedStyle: no_empty_lines
+  # Default values:
+  # EnforcedStyle: no_empty_lines
+
+Layout/EmptyLinesAroundExceptionHandlingKeywords:
+  Enabled: true
+
+Layout/EmptyLinesAroundMethodBody:
+  Enabled: true
+
+Layout/EmptyLinesAroundModuleBody:
+  Enabled: true
+  EnforcedStyle: no_empty_lines
+  # Default values:
+  # EnforcedStyle: no_empty_lines
+
+Layout/EndAlignment:
+  Enabled: true
+  EnforcedStyleAlignWith: start_of_line
+  # Default values:
+  # EnforcedStyleAlignWith: keyword
+
+Layout/EndOfLine:
+  Enabled: true
+  EnforcedStyle: native
+  # Default values:
+  # EnforcedStyle: native
+
+Layout/ExtraSpacing:
+  Enabled: true
+  AllowBeforeTrailingComments: false
+  AllowForAlignment: false
+  ForceEqualSignAlignment: false
+  # Default values:
+  # AllowBeforeTrailingComments: false
+  # AllowForAlignment: true
+  # ForceEqualSignAlignment: false
+
+Layout/FirstArgumentIndentation:
+  Enabled: false
+  # Default values:
+  # EnforcedStyle: special_for_inner_method_call_in_parentheses
+# The rule is disabled, because we use `with_fixed_indentation` in Layout/ArgumentAlignment.
+
+Layout/FirstArrayElementIndentation:
+  Enabled: true
+  EnforcedStyle: consistent
+  # Default values:
+  # EnforcedStyle: special_inside_parentheses
+  # IndentationWidth: ~
+
+Layout/FirstArrayElementLineBreak:
+  Enabled: true
+  AllowMultilineFinalElement: false
+  # Default values:
+  # AllowMultilineFinalElement: false
+
+Layout/FirstHashElementIndentation:
+  Enabled: true
+  EnforcedStyle: consistent
+  # Default values:
+  # EnforcedStyle: special_inside_parentheses
+  # IndentationWidth: ~
+
+Layout/FirstHashElementLineBreak:
+  Enabled: true
+  AllowMultilineFinalElement: false
+  # Default values:
+  # AllowMultilineFinalElement: false
+
+Layout/FirstMethodArgumentLineBreak:
+  Enabled: true
+  AllowMultilineFinalElement: false
+  # Default values:
+  # AllowMultilineFinalElement: false
+
+Layout/FirstMethodParameterLineBreak:
+  Enabled: true
+  AllowMultilineFinalElement: false
+  # Default values:
+  # AllowMultilineFinalElement: false
+
+Layout/FirstParameterIndentation:
+  Enabled: true
+  EnforcedStyle: consistent
+  # Default values:
+  # EnforcedStyle: consistent
+  # IndentationWidth: ~
+
+Layout/HashAlignment:
+  Enabled: true
+  EnforcedColonStyle: key
+  EnforcedHashRocketStyle: key
+  EnforcedLastArgumentHashStyle: always_inspect
+  # Default values:
+  # EnforcedColonStyle: key
+  # EnforcedHashRocketStyle: key
+  # EnforcedLastArgumentHashStyle: always_inspect
+
+Layout/HeredocArgumentClosingParenthesis:
+  Enabled: true
+
+Layout/HeredocIndentation:
+  Enabled: true
+
+Layout/IndentationConsistency:
+  Enabled: true
+  EnforcedStyle: normal
+  # Default values:
+  # EnforcedStyle: normal
+
+Layout/IndentationStyle:
+  Enabled: true
+  EnforcedStyle: spaces
+  # Default values:
+  # EnforcedStyle: spaces
+  # IndentationWidth: ~
+
+Layout/IndentationWidth:
+  Enabled: true
+  AllowedPatterns: []
+  Width: 2
+  # Default values:
+  # AllowedPatterns: []
+  # Width: 2
+
+Layout/InitialIndentation:
+  Enabled: true
+
+Layout/LeadingCommentSpace:
+  Enabled: true
+  AllowDoxygenCommentStyle: false
+  AllowGemfileRubyComment: false
+  # Default values:
+  # AllowDoxygenCommentStyle: false
+  # AllowGemfileRubyComment: false
+
+Layout/LeadingEmptyLines:
+  Enabled: true
+
+Layout/LineContinuationLeadingSpace:
+  Enabled: false
+  # Default values:
+  # EnforcedStyle: trailing
+
+Layout/LineContinuationSpacing:
+  Enabled: true
+  AutoCorrect: true
+  EnforcedStyle: space
+  # Default values:
+  # AutoCorrect: true
+  # EnforcedStyle: space
+
+Layout/LineEndStringConcatenationIndentation:
+  Enabled: true
+  EnforcedStyle: indented
+  # Default values:
+  # EnforcedStyle: aligned
+  # IndentationWidth: ~
+
+Layout/LineLength:
+  Enabled: true
+  Severity: warning
+  AllowedPatterns: []
+  AllowHeredoc: true
+  AllowURI: true
+  IgnoreCopDirectives: false
+  Max: 100
+  URISchemes: [http, https]
+  # Default values:
+  # AllowedPatterns: []
+  # AllowHeredoc: true
+  # AllowURI: true
+  # IgnoreCopDirectives: true
+  # Max: 120
+  # URISchemes: [http, https]
+
+Layout/MultilineArrayBraceLayout:
+  Enabled: true
+  EnforcedStyle: new_line
+  # Default values:
+  # EnforcedStyle: symmetrical
+
+Layout/MultilineArrayLineBreaks:
+  Enabled: true
+  AllowMultilineFinalElement: false
+  # Default values:
+  # AllowMultilineFinalElement: false
+
+Layout/MultilineAssignmentLayout:
+  Enabled: true
+  EnforcedStyle: new_line
+  SupportedTypes: [block, case, class, if, kwbegin, module]
+  # Default values:
+  # EnforcedStyle: new_line
+  # SupportedTypes: [block, case, class, if, kwbegin, module]
+
+Layout/MultilineBlockLayout:
+  Enabled: true
+
+Layout/MultilineHashBraceLayout:
+  Enabled: true
+  EnforcedStyle: new_line
+  # Default values:
+  # EnforcedStyle: symmetrical
+
+Layout/MultilineHashKeyLineBreaks:
+  Enabled: true
+  AllowMultilineFinalElement: false
+  # Default values:
+  # AllowMultilineFinalElement: false
+
+Layout/MultilineMethodArgumentLineBreaks:
+  Enabled: true
+  AllowMultilineFinalElement: false
+  # Default values:
+  # AllowMultilineFinalElement: false
+
+Layout/MultilineMethodCallBraceLayout:
+  Enabled: true
+  EnforcedStyle: new_line
+  # Default values:
+  # EnforcedStyle: symmetrical
+
+Layout/MultilineMethodCallIndentation:
+  Enabled: true
+  EnforcedStyle: indented
+  # Default values:
+  # EnforcedStyle: aligned
+  # IndentationWidth: ~
+
+Layout/MultilineMethodDefinitionBraceLayout:
+  Enabled: true
+  EnforcedStyle: new_line
+  # Default values:
+  # EnforcedStyle: symmetrical
+
+Layout/MultilineMethodParameterLineBreaks:
+  Enabled: true
+  AllowMultilineFinalElement: false
+  # Default values:
+  # AllowMultilineFinalElement: false
+
+Layout/MultilineOperationIndentation:
+  Enabled: true
+  EnforcedStyle: indented
+  # Default values:
+  # EnforcedStyle: aligned
+  # IndentationWidth: ~
+
+Layout/ParameterAlignment:
+  Enabled: true
+  EnforcedStyle: with_fixed_indentation
+  # Default values:
+  # EnforcedStyle: with_first_parameter
+  # IndentationWidth: ~
+
+Layout/RedundantLineBreak:
+  Enabled: true
+  Severity: warning
+  InspectBlocks: true
+  # Default values:
+  # InspectBlocks: false
+
+Layout/RescueEnsureAlignment:
+  Enabled: true
+
+Layout/SingleLineBlockChain:
+  Enabled: false
+# This rule is disabled because Layout/RedundantLineBreak is enabled. They may conflict.
+
+Layout/SpaceAfterColon:
+  Enabled: true
+
+Layout/SpaceAfterComma:
+  Enabled: true
+
+Layout/SpaceAfterMethodName:
+  Enabled: true
+
+Layout/SpaceAfterNot:
+  Enabled: true
+
+Layout/SpaceAfterSemicolon:
+  Enabled: true
+
+Layout/SpaceAroundBlockParameters:
+  Enabled: true
+  EnforcedStyleInsidePipes: no_space
+  # Default values:
+  # EnforcedStyleInsidePipes: no_space
+
+Layout/SpaceAroundEqualsInParameterDefault:
+  Enabled: true
+  EnforcedStyle: no_space
+  # Default values:
+  # EnforcedStyle: space
+
+Layout/SpaceAroundKeyword:
+  Enabled: true
+
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: true
+
+Layout/SpaceAroundOperators:
+  Enabled: true
+  AllowForAlignment: false
+  EnforcedStyleForExponentOperator: space
+  # Default values:
+  # AllowForAlignment: true
+  # EnforcedStyleForExponentOperator: no_space
+
+Layout/SpaceBeforeBlockBraces:
+  Enabled: true
+  EnforcedStyle: space
+  EnforcedStyleForEmptyBraces: space
+  # Default values:
+  # EnforcedStyle: space
+  # EnforcedStyleForEmptyBraces: space
+
+Layout/SpaceBeforeBrackets:
+  Enabled: true
+
+Layout/SpaceBeforeComma:
+  Enabled: true
+
+Layout/SpaceBeforeComment:
+  Enabled: true
+
+Layout/SpaceBeforeFirstArg:
+  Enabled: true
+  AllowForAlignment: false
+  # Default values:
+  # AllowForAlignment: true
+
+Layout/SpaceBeforeSemicolon:
+  Enabled: true
+
+Layout/SpaceInLambdaLiteral:
+  Enabled: true
+  EnforcedStyle: require_no_space
+  # Default values:
+  # EnforcedStyle: require_no_space
+
+Layout/SpaceInsideArrayLiteralBrackets:
+  Enabled: true
+  EnforcedStyle: no_space
+  EnforcedStyleForEmptyBrackets: no_space
+  # Default values:
+  # EnforcedStyle: no_space
+  # EnforcedStyleForEmptyBrackets: no_space
+
+Layout/SpaceInsideArrayPercentLiteral:
+  Enabled: true
+
+Layout/SpaceInsideBlockBraces:
+  Enabled: true
+  EnforcedStyle: space
+  EnforcedStyleForEmptyBraces: no_space
+  SpaceBeforeBlockParameters: true
+  # Default values:
+  # EnforcedStyle: space
+  # EnforcedStyleForEmptyBraces: no_space
+  # SpaceBeforeBlockParameters: true
+
+Layout/SpaceInsideHashLiteralBraces:
+  Enabled: true
+  EnforcedStyle: no_space
+  EnforcedStyleForEmptyBraces: no_space
+  # Default values:
+  # EnforcedStyle: space
+  # EnforcedStyleForEmptyBraces: no_space
+
+Layout/SpaceInsideParens:
+  Enabled: true
+  EnforcedStyle: no_space
+  # Default values:
+  # EnforcedStyle: no_space
+
+Layout/SpaceInsidePercentLiteralDelimiters:
+  Enabled: true
+
+Layout/SpaceInsideRangeLiteral:
+  Enabled: true
+
+Layout/SpaceInsideReferenceBrackets:
+  Enabled: true
+  EnforcedStyle: no_space
+  EnforcedStyleForEmptyBrackets: no_space
+  # Default values:
+  # EnforcedStyle: no_space
+  # EnforcedStyleForEmptyBrackets: no_space
+
+Layout/SpaceInsideStringInterpolation:
+  Enabled: true
+  EnforcedStyle: no_space
+  # Default values:
+  # EnforcedStyle: no_space
+
+Layout/TrailingEmptyLines:
+  Enabled: true
+  EnforcedStyle: final_newline
+  # Default values:
+  # EnforcedStyle: final_newline
+
+Layout/TrailingWhitespace:
+  Enabled: true
+  AllowInHeredoc: false
+  # Default values:
+  # AllowInHeredoc: false

@@ -1,0 +1,570 @@
+# Config for RuboCop RSpec v2.22.0.
+#
+# https://github.com/rubocop/rubocop-rspec
+
+require:
+  - rubocop-rspec
+
+RSpec/AlignLeftLetBrace:
+  Enabled: false
+
+RSpec/AlignRightLetBrace:
+  Enabled: false
+
+RSpec/AnyInstance:
+  Enabled: true
+
+RSpec/AroundBlock:
+  Enabled: true
+
+RSpec/Be:
+  Enabled: true
+
+RSpec/BeEmpty:
+  Enabled: true
+
+RSpec/BeEq:
+  Enabled: true
+
+RSpec/BeEql:
+  Enabled: true
+
+RSpec/BeNil:
+  Enabled: true
+  EnforcedStyle: be_nil
+  # Default values:
+  # EnforcedStyle: be_nil
+
+RSpec/BeforeAfterAll:
+  Enabled: true
+
+RSpec/Capybara:
+  Enabled: false
+# We should use capybara.yml instead of these rules.
+
+RSpec/ChangeByZero:
+  Enabled: true
+  NegatedMatcher: not_change
+  # Default values:
+  # NegatedMatcher: ~
+
+RSpec/ClassCheck:
+  Enabled: true
+  EnforcedStyle: be_a
+  # Default values:
+  # EnforcedStyle: be_a
+
+RSpec/ContainExactly:
+  Enabled: true
+
+RSpec/ContextMethod:
+  Enabled: true
+
+RSpec/ContextWording:
+  Enabled: true
+  AllowedPatterns: []
+  Prefixes: [when, with, without]
+  # Default values:
+  # AllowedPatterns: []
+  # Prefixes: [when, with, without]
+
+RSpec/DescribeClass:
+  Enabled: true
+  IgnoredMetadata:
+    type:
+      - aruba
+      - channel
+      - controller
+      - feature
+      - helper
+      - job
+      - mailbox
+      - mailer
+      - model
+      - request
+      - routing
+      - system
+      - task
+      - view
+  # Default values:
+  # IgnoredMetadata:
+  #   type:
+  #     - aruba
+  #     - channel
+  #     - controller
+  #     - feature
+  #     - helper
+  #     - job
+  #     - mailbox
+  #     - mailer
+  #     - model
+  #     - request
+  #     - routing
+  #     - system
+  #     - task
+  #     - view
+
+RSpec/DescribeMethod:
+  Enabled: true
+
+RSpec/DescribeSymbol:
+  Enabled: true
+
+RSpec/DescribedClass:
+  Enabled: true
+  EnforcedStyle: described_class
+  SkipBlocks: false
+  # Default values:
+  # EnforcedStyle: described_class
+  # SkipBlocks: false
+
+RSpec/DescribedClassModuleWrapping:
+  Enabled: true
+
+RSpec/Dialect:
+  Enabled: false
+  PreferredMethods:
+    feature: describe
+    example_group: context
+    xfeature: xdescribe
+    ffeature: fdescribe
+    shared_examples_for: shared_examples
+    specify: it
+    example: it
+    scenario: it
+    its: it
+    fspecify: fit
+    fexample: fit
+    fscenario: fit
+    fits: fit
+    focus: fit
+    xspecify: xit
+    xexample: xit
+    xscenario: xit
+    skip: xit
+    append_before: before
+    prepend_after: after
+    is_expected: expect
+  # Default values:
+  # PreferredMethods: {}
+
+RSpec/DuplicatedMetadata:
+  Enabled: true
+
+RSpec/EmptyExampleGroup:
+  Enabled: true
+
+RSpec/EmptyHook:
+  Enabled: true
+
+RSpec/EmptyLineAfterExample:
+  Enabled: true
+  # Default values:
+  # AllowConsecutiveOneLiners: true
+# One-liners are prohibited in RSpec/ExampleWithoutDescription & RSpec/ImplicitBlockExpectation.
+
+RSpec/EmptyLineAfterExampleGroup:
+  Enabled: true
+
+RSpec/EmptyLineAfterFinalLet:
+  Enabled: true
+
+RSpec/EmptyLineAfterHook:
+  Enabled: true
+  AllowConsecutiveOneLiners: true
+  # Default values:
+  # AllowConsecutiveOneLiners: true
+
+RSpec/EmptyLineAfterSubject:
+  Enabled: true
+
+RSpec/ExampleLength:
+  Enabled: true
+  CountAsOne: []
+  Max: 9
+  # Default values:
+  # CountAsOne: []
+  # Max: 5
+
+RSpec/ExampleWithoutDescription:
+  Enabled: true
+  EnforcedStyle: disallow
+  # Default values:
+  # EnforcedStyle: always_allow
+
+RSpec/ExampleWording:
+  Enabled: true
+  CustomTransform:
+    be: is
+    BE: IS
+    have: has
+    HAVE: HAS
+  DisallowedExamples: [works]
+  IgnoredWords: []
+  # Default values:
+  # CustomTransform:
+  #   be: is
+  #   BE: IS
+  #   have: has
+  #   HAVE: HAS
+  # DisallowedExamples: [works]
+  # IgnoredWords: []
+
+RSpec/ExcessiveDocstringSpacing:
+  Enabled: true
+
+RSpec/ExpectActual:
+  Enabled: true
+
+RSpec/ExpectChange:
+  Enabled: true
+  EnforcedStyle: block
+  # Default values:
+  # EnforcedStyle: method_call
+
+RSpec/ExpectInHook:
+  Enabled: true
+
+RSpec/ExpectOutput:
+  Enabled: true
+
+RSpec/FactoryBot:
+  Enabled: false
+# We should use factory_bot.yml instead of these rules.
+
+RSpec/FilePath:
+  Enabled: true
+  CustomTransform: ~
+  IgnoreMethods: false
+  SpecSuffixOnly: false
+  # Default values:
+  # CustomTransform:
+  #   RuboCop: rubocop
+  #   RSpec: rspec
+  # IgnoreMethods: false
+  # SpecSuffixOnly: false
+
+RSpec/Focus:
+  Enabled: true
+
+RSpec/HookArgument:
+  Enabled: true
+  EnforcedStyle: implicit
+  # Default values:
+  # EnforcedStyle: implicit
+
+RSpec/HooksBeforeExamples:
+  Enabled: true
+
+RSpec/IdenticalEqualityAssertion:
+  Enabled: true
+
+RSpec/ImplicitBlockExpectation:
+  Enabled: true
+
+RSpec/ImplicitExpect:
+  Enabled: false
+  # Default values:
+  # EnforcedStyle: is_expected
+# This rule disabled, because `is_expected` disallowed in RSpec/ImplicitSubject
+# and RSpec/ImplicitBlockExpectation.
+
+RSpec/ImplicitSubject:
+  Enabled: true
+  EnforcedStyle: disallow
+  # Default values:
+  # EnforcedStyle: single_line_only
+
+RSpec/IndexedLet:
+  Enabled: false
+  # Default values:
+  # Max: 1
+
+RSpec/InstanceSpy:
+  Enabled: true
+
+RSpec/InstanceVariable:
+  Enabled: true
+  AssignmentOnly: false
+  # Default values:
+  # AssignmentOnly: false
+
+RSpec/ItBehavesLike:
+  Enabled: true
+  EnforcedStyle: it_behaves_like
+  # Default values:
+  # EnforcedStyle: it_behaves_like
+
+RSpec/IteratedExpectation:
+  Enabled: true
+
+RSpec/LeadingSubject:
+  Enabled: true
+
+RSpec/LeakyConstantDeclaration:
+  Enabled: true
+
+RSpec/LetBeforeExamples:
+  Enabled: true
+
+RSpec/LetSetup:
+  Enabled: true
+
+RSpec/MatchArray:
+  Enabled: true
+
+RSpec/MessageChain:
+  Enabled: true
+  Severity: warning
+
+RSpec/MessageExpectation:
+  Enabled: true
+  EnforcedStyle: allow
+  # Default values:
+  # EnforcedStyle: allow
+
+RSpec/MessageSpies:
+  Enabled: true
+  EnforcedStyle: have_received
+  # Default values:
+  # EnforcedStyle: have_received
+# @see https://everydayrails.com/2020/08/10/rails-log-message-testing-rspec.html
+#
+# # EnforcedStyle: receive
+# it "logs a message" do
+#   expect(Rails.logger).to receive(:info).with("Someone visited the site!")
+#   visit root_path
+#   expect(page).to have_content "Welcome to my site!"
+# end
+#
+# # EnforcedStyle: have_received
+# it "logs a message" do
+#   allow(Rails.logger).to receive(:info)
+#   visit root_path
+#   expect(page).to have_content "Welcome to my site!"
+#   expect(Rails.logger).to have_received(:info).with("Someone visited the site!")
+# end
+#
+# https://github.com/rspec/rspec-mocks
+
+RSpec/MissingExampleGroupArgument:
+  Enabled: true
+
+RSpec/MultipleDescribes:
+  Enabled: true
+
+RSpec/MultipleExpectations:
+  Enabled: true
+  Max: 5
+  # Default values:
+  # Max: 1
+# @see https://rspec.info/features/3-12/rspec-core/expectation-framework-integration/aggregating-failures/
+
+RSpec/MultipleMemoizedHelpers:
+  Enabled: true
+  AllowSubject: true
+  Max: 9
+  # Default values:
+  # AllowSubject: true
+  # Max: 5
+
+RSpec/MultipleSubjects:
+  Enabled: true
+
+RSpec/NamedSubject:
+  Enabled: true
+  EnforcedStyle: always
+  IgnoreSharedExamples: true
+  # Default values:
+  # EnforcedStyle: always
+  # IgnoreSharedExamples: true
+
+RSpec/NestedGroups:
+  Enabled: true
+  AllowedGroups: []
+  Max: 3
+  # Default values:
+  # AllowedGroups: []
+  # Max: 3
+
+RSpec/NoExpectationExample:
+  Enabled: true
+  AllowedPatterns: ["^expect_", "^assert_"]
+  # Default values:
+  # AllowedPatterns: ["^expect_", "^assert_"]
+
+RSpec/NotToNot:
+  Enabled: true
+  EnforcedStyle: not_to
+  # Default values:
+  # EnforcedStyle: not_to
+
+RSpec/OverwritingSetup:
+  Enabled: true
+
+RSpec/Pending:
+  Enabled: true
+
+RSpec/PendingWithoutReason:
+  Enabled: true
+
+RSpec/PredicateMatcher:
+  Enabled: true
+  AllowedExplicitMatchers: []
+  EnforcedStyle: inflected
+  Strict: true
+  # Default values:
+  # AllowedExplicitMatchers: []
+  # EnforcedStyle: inflected
+  # Strict: true
+
+RSpec/Rails/AvoidSetupHook:
+  Enabled: true
+
+RSpec/Rails/HaveHttpStatus:
+  Enabled: true
+
+RSpec/Rails/HttpStatus:
+  Enabled: true
+  EnforcedStyle: symbolic
+  # Default values:
+  # EnforcedStyle: symbolic
+
+RSpec/Rails/InferredSpecType:
+  Enabled: true
+  Inferences:
+    channels: channel
+    controllers: controller
+    features: feature
+    generator: generator
+    helpers: helper
+    jobs: job
+    mailboxes: mailbox
+    mailers: mailer
+    models: model
+    requests: request
+    integration: request
+    api: request
+    routing: routing
+    system: system
+    views: view
+  # Default values:
+  # Inferences:
+  #   channels: channel
+  #   controllers: controller
+  #   features: feature
+  #   generator: generator
+  #   helpers: helper
+  #   jobs: job
+  #   mailboxes: mailbox
+  #   mailers: mailer
+  #   models: model
+  #   requests: request
+  #   integration: request
+  #   api: request
+  #   routing: routing
+  #   system: system
+  #   views: view
+
+RSpec/Rails/MinitestAssertions:
+  Enabled: true
+
+RSpec/Rails/TravelAround:
+  Enabled: true
+
+RSpec/ReceiveCounts:
+  Enabled: true
+
+RSpec/ReceiveNever:
+  Enabled: true
+
+RSpec/RedundantAround:
+  Enabled: true
+
+RSpec/RepeatedDescription:
+  Enabled: true
+
+RSpec/RepeatedExample:
+  Enabled: true
+
+RSpec/RepeatedExampleGroupBody:
+  Enabled: true
+
+RSpec/RepeatedExampleGroupDescription:
+  Enabled: true
+
+RSpec/RepeatedIncludeExample:
+  Enabled: true
+
+RSpec/ReturnFromStub:
+  Enabled: true
+  EnforcedStyle: and_return
+  # Default values:
+  # EnforcedStyle: and_return
+
+RSpec/ScatteredLet:
+  Enabled: true
+
+RSpec/ScatteredSetup:
+  Enabled: true
+
+RSpec/SharedContext:
+  Enabled: true
+
+RSpec/SharedExamples:
+  Enabled: true
+
+RSpec/SingleArgumentMessageChain:
+  Enabled: true
+
+RSpec/SkipBlockInsideExample:
+  Enabled: true
+
+RSpec/SortMetadata:
+  Enabled: true
+
+RSpec/StubbedMock:
+  Enabled: true
+
+RSpec/SubjectDeclaration:
+  Enabled: true
+
+RSpec/SubjectStub:
+  Enabled: true
+
+RSpec/UnspecifiedException:
+  Enabled: true
+
+RSpec/VariableDefinition:
+  Enabled: true
+  EnforcedStyle: symbols
+  # Default values:
+  # EnforcedStyle: symbols
+
+RSpec/VariableName:
+  Enabled: true
+  AllowedPatterns: []
+  EnforcedStyle: snake_case
+  # Default values:
+  # AllowedPatterns: []
+  # EnforcedStyle: snake_case
+
+RSpec/VerifiedDoubleReference:
+  Enabled: true
+  EnforcedStyle: constant
+  # Default values:
+  # EnforcedStyle: constant
+
+RSpec/VerifiedDoubles:
+  Enabled: true
+  IgnoreNameless: true
+  IgnoreSymbolicNames: false
+  # Default values:
+  # IgnoreNameless: true
+  # IgnoreSymbolicNames: false
+
+RSpec/VoidExpect:
+  Enabled: true
+
+RSpec/Yield:
+  Enabled: true

@@ -1,0 +1,7 @@
+# Config for Rubocop, based on Rubocop v1.50.2.
+#
+# https://github.com/rubocop/rubocop/blob/v1.50.2/config/default.yml
+# https://docs.rubocop.org/rubocop/1.50/cops_migration.html
+
+Migration/DepartmentName:
+  Enabled: true
