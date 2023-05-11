@@ -75,6 +75,7 @@ Let's take an example! Suppose you're building typical Rails project, this is yo
       gem "rubocop", "1.50.2", require: false
       gem "rubocop-configs", require: false, git: "https://github.com/crosspath/rubocop-configs.git"
       gem "rubocop-rails", "2.19.1", require: false
+      gem "rubocop-rake", "0.6.0", require: false
     end
   ```
 
@@ -125,15 +126,31 @@ This repository includes config files for these gems and versions:
 
 You may use rake task to compare gems' versions:
 
-1. Add this stroke of code to `Rakefile` in your project or into some rake-task:
+1. Add this stroke of code to `Rakefile` in your project:
 
-    RubocopConfigs.load_tasks
+  ```ruby
+  RubocopConfigs.load_tasks
+  ```
 
-2. Run `rake rubocop_config:versions`
+2. Run `rake rubocop_configs:versions`
 
 It outputs message `Versions match!` if everything is correct. Otherwise you'll see error.
 
 You may use this task in CI. This task exits with status 1 on error and 0 on success.
+
+Or you may write test:
+
+```ruby
+# RSpec syntax
+describe RubocopConfigs do
+  describe ".check_versions" do
+    it "matches versions" do
+      errors = RubocopConfigs.check_versions
+      expect(errors).to be_empty
+    end
+  end
+end
+```
 
 ## Development
 
