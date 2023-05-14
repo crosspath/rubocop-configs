@@ -3,6 +3,10 @@
 # https://github.com/rubocop/rubocop/blob/v1.50.2/config/default.yml
 # https://docs.rubocop.org/rubocop/1.50/cops_naming.html
 
+inherit_mode:
+  merge:
+    - Exclude
+
 Naming/AccessorMethodName:
   Enabled: true
 

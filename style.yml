@@ -3,6 +3,10 @@
 # https://github.com/rubocop/rubocop/blob/v1.50.2/config/default.yml
 # https://docs.rubocop.org/rubocop/1.50/cops_style.html
 
+inherit_mode:
+  merge:
+    - Exclude
+
 Style/AccessModifierDeclarations:
   Enabled: true
   AllowModifiersOnSymbols: true
@@ -109,6 +113,8 @@ Style/CharacterLiteral:
 
 Style/ClassAndModuleChildren:
   Enabled: true
+  Exclude:
+    - './config/application.rb'
   EnforcedStyle: compact
   # Default values:
   # EnforcedStyle: nested
@@ -588,6 +594,8 @@ Style/MapToSet:
 
 Style/MethodCallWithArgsParentheses:
   Enabled: true
+  Exclude:
+    - 'db/**/*.rb'
   AllowedMethods:
     # Rails:
     - redirect_back

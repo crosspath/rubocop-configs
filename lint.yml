@@ -3,6 +3,10 @@
 # https://github.com/rubocop/rubocop/blob/v1.50.2/config/default.yml
 # https://docs.rubocop.org/rubocop/1.50/cops_lint.html
 
+inherit_mode:
+  merge:
+    - Exclude
+
 Lint/AmbiguousAssignment:
   Enabled: true
 
@@ -66,7 +70,7 @@ Lint/ConstantResolution:
 
 Lint/Debugger:
   Enabled: true
-  Exclude: ['lib/tasks/**/*.rb']
+  Exclude: ['db/seeds.rb', 'lib/tasks/**/*.rb']
   DebuggerMethods:
     Kernel: [puts, warn, binding.irb, p, Kernel.binding.irb]
     Byebug: [byebug, remote_byebug, Kernel.byebug, Kernel.remote_byebug]

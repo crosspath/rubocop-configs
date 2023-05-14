@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module RubocopConfigs
-  VERSION = "0.1.1"
+  VERSION = "0.1.2"
 
   # WARN: Version ranges work good if min and max values have the same length.
   # ("1.9.0".."1.99.0").cover?("1.10.1") # => false
