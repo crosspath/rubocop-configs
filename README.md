@@ -152,6 +152,20 @@ describe RubocopConfigs do
 end
 ```
 
+## Versioning policy
+
+Change of major version (`1.*.* -> 2.*.*`) means backwards-incompatible changes in the gem code,
+that requires changes in your (client) code.
+
+Change of minor version (`*.1.* -> *.2.*`) means backwards-compatible changes in the gem code, that
+normally should not require changes in client code.
+
+Change of build/patch version (`*.*.1 -> *.*.2`) means backwards-compatible changes in the gem code,
+that do not require changes in client code.
+
+Minor version may be changed due to updating config files to newer version of Rubocop and its
+extensions, but not limited to this.
+
 ## Development
 
 How to review and update config values?

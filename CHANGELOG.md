@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.3
+
+More precise gem version checks.
+
 ## 0.1.2
 
 1. Added `exclude` entries to `Lint/Debugger`, `Style/ClassAndModuleChildren`,
