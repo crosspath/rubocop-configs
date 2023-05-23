@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.2.0
+
+Update config files to:
+
+* Rubocop v1.51.0
+* RuboCop factory_bot v2.23.1
+* RuboCop::GraphQL v1.2.0
+
+Support without changes:
+
+* RuboCop Performance v1.18.0
+
 ## 0.1.4
 
 Fix previous change.

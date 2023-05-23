@@ -1,6 +1,4 @@
-# Config for Rubocop, based on Rubocop v1.50.2.
-#
-# https://github.com/rubocop/rubocop/blob/v1.50.2/config/default.yml
+# Config for Rubocop.
 
 inherit_from:
   - layout.yml

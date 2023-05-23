@@ -1,6 +1,6 @@
-# Config for RuboCop::GraphQL v1.1.1
+# Config for RuboCop::GraphQL v1.2.0
 #
-# https://github.com/DmitryTsepelev/rubocop-graphql/blob/v1.1.1/config/default.yml
+# https://github.com/DmitryTsepelev/rubocop-graphql/blob/v1.2.0/config/default.yml
 
 require:
   - rubocop-graphql
@@ -75,12 +75,18 @@ GraphQL/ObjectDescription:
 
 GraphQL/OrderedArguments:
   Enabled: true
+  Order: null
+  # Default values:
+  # Order: null
+# @see https://github.com/DmitryTsepelev/rubocop-graphql/blob/master/lib/rubocop/graphql/compare_order.rb
 
 GraphQL/OrderedFields:
   Enabled: true
   Groups: false
+  Order: null
   # Default values:
   # Groups: true
+  # Order: null
 
 GraphQL/ResolverMethodLength:
   Enabled: true

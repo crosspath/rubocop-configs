@@ -1,7 +1,6 @@
-# Config for Rubocop, based on Rubocop v1.50.2.
+# Config for Rubocop.
 #
-# https://github.com/rubocop/rubocop/blob/v1.50.2/config/default.yml
-# https://docs.rubocop.org/rubocop/1.50/cops_style.html
+# https://docs.rubocop.org/rubocop/cops_style.html
 
 inherit_mode:
   merge:
@@ -326,6 +325,9 @@ Style/EvalWithLocation:
   Enabled: true
 
 Style/EvenOdd:
+  Enabled: true
+
+Style/ExactRegexpMatch:
   Enabled: true
 
 Style/ExpandPathArguments:

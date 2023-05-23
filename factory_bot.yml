@@ -1,9 +1,18 @@
-# Config for RuboCop factory_bot v2.22.0
+# Config for RuboCop factory_bot v2.23.1
 #
-# https://github.com/rubocop/rubocop-factory_bot/blob/v2.22.0/config/default.yml
+# https://docs.rubocop.org/rubocop-factory_bot/cops_factorybot.html
+# https://github.com/rubocop/rubocop-factory_bot/blob/v2.23.1/config/default.yml
 
 require:
   - rubocop-factory_bot
+
+FactoryBot/AssociationStyle:
+  Enabled: true
+  EnforcedStyle: explicit
+  NonImplicitAssociationMethodNames: ~
+  # Default values:
+  # EnforcedStyle: implicit
+  # NonImplicitAssociationMethodNames: ~
 
 FactoryBot/AttributeDefinedStatically:
   Enabled: true
@@ -11,14 +20,18 @@ FactoryBot/AttributeDefinedStatically:
 FactoryBot/ConsistentParenthesesStyle:
   Enabled: true
   EnforcedStyle: require_parentheses
+  ExplicitOnly: false
   # Default values:
   # EnforcedStyle: require_parentheses
+  # ExplicitOnly: false
 
 FactoryBot/CreateList:
   Enabled: true
   EnforcedStyle: create_list
+  ExplicitOnly: false
   # Default values:
   # EnforcedStyle: create_list
+  # ExplicitOnly: false
 
 FactoryBot/FactoryClassName:
   Enabled: true
@@ -26,8 +39,13 @@ FactoryBot/FactoryClassName:
 FactoryBot/FactoryNameStyle:
   Enabled: true
   EnforcedStyle: symbol
+  ExplicitOnly: false
   # Default values:
   # EnforcedStyle: symbol
+  # ExplicitOnly: false
+
+FactoryBot/RedundantFactoryOption:
+  Enabled: true
 
 FactoryBot/SyntaxMethods:
   Enabled: true
