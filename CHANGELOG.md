@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.4
+
+Fix previous change.
+
 ## 0.1.3
 
 More precise gem version checks.
