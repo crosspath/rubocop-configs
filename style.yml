@@ -146,6 +146,9 @@ Style/ClassVars:
 
 Style/CollectionCompact:
   Enabled: true
+  AllowedReceivers: []
+  # Default values:
+  # AllowedReceivers: []
 
 Style/CollectionMethods:
   Enabled: true
@@ -327,8 +330,9 @@ Style/EvalWithLocation:
 Style/EvenOdd:
   Enabled: true
 
-Style/ExactRegexpMatch:
-  Enabled: true
+# WARN: no commit!
+# Style/ExactRegexpMatch:
+#   Enabled: true
 
 Style/ExpandPathArguments:
   Enabled: true
@@ -599,6 +603,8 @@ Style/MethodCallWithArgsParentheses:
   Exclude:
     - 'db/**/*.rb'
   AllowedMethods:
+    # FactoryBot:
+    - association
     # Rails:
     - redirect_back
     - redirect_back_or_to
@@ -608,12 +614,15 @@ Style/MethodCallWithArgsParentheses:
     # RSpec:
     - be
     - delete
+    - describe
     - eq
     - get
     - not_to
     - patch
     - post
     - put
+    - shared_context
+    - shared_examples
     - to
     # Ruby core:
     - p
@@ -719,8 +728,10 @@ Style/MultilineWhenThen:
 Style/MultipleComparison:
   Enabled: true
   AllowMethodComparison: false
+  ComparisonsThreshold: 2
   # Default values:
   # AllowMethodComparison: true
+  # ComparisonsThreshold: 2
 
 Style/MutableConstant:
   Enabled: true
@@ -965,6 +976,9 @@ Style/RedundantArgument:
   #   chomp: "\n" # String#chomp
   #   chomp!: "\n" # String#chomp!
 
+Style/RedundantArrayConstructor:
+  Enabled: true
+
 Style/RedundantAssignment:
   Enabled: true
 
@@ -983,6 +997,9 @@ Style/RedundantConditional:
 Style/RedundantConstantBase:
   Enabled: true
 
+Style/RedundantCurrentDirectoryInPath:
+  Enabled: true
+
 Style/RedundantDoubleSplatHashBraces:
   Enabled: true
 
@@ -999,6 +1016,9 @@ Style/RedundantFetchBlock:
   # SafeForConstants: false
 
 Style/RedundantFileExtensionInRequire:
+  Enabled: true
+
+Style/RedundantFilterChain:
   Enabled: true
 
 Style/RedundantFreeze:
@@ -1025,7 +1045,13 @@ Style/RedundantParentheses:
 Style/RedundantPercentQ:
   Enabled: true
 
+Style/RedundantRegexpArgument:
+  Enabled: true
+
 Style/RedundantRegexpCharacterClass:
+  Enabled: true
+
+Style/RedundantRegexpConstructor:
   Enabled: true
 
 Style/RedundantRegexpEscape:
@@ -1092,6 +1118,14 @@ Style/ReturnNil:
   EnforcedStyle: return
   # Default values:
   # EnforcedStyle: return
+
+Style/ReturnNilInPredicateMethodDefinition:
+  Enabled: true
+  AllowedMethods: []
+  AllowedPatterns: []
+  # Default values:
+  # AllowedMethods: []
+  # AllowedPatterns: []
 
 Style/SafeNavigation:
   Enabled: true
@@ -1373,6 +1407,9 @@ Style/WordArray:
   # EnforcedStyle: percent
   # MinSize: 2
   # WordRegex: !ruby/regexp '/\A(?:\p{Word}|\p{Word}-\p{Word}|\n|\t)+\z/'
+
+Style/YAMLFileRead:
+  Enabled: true
 
 Style/YodaCondition:
   Enabled: true

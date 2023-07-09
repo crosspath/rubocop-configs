@@ -145,12 +145,14 @@ Layout/EmptyLineAfterMultilineCondition:
 Layout/EmptyLineBetweenDefs:
   Enabled: true
   AllowAdjacentOneLineDefs: false
+  DefLikeMacros: []
   EmptyLineBetweenClassDefs: true
   EmptyLineBetweenMethodDefs: true
   EmptyLineBetweenModuleDefs: true
   NumberOfEmptyLines: 1
   # Default values:
   # AllowAdjacentOneLineDefs: true
+  # DefLikeMacros: []
   # EmptyLineBetweenClassDefs: true
   # EmptyLineBetweenMethodDefs: true
   # EmptyLineBetweenModuleDefs: true

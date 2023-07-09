@@ -1,0 +1,23 @@
+# Config for RuboCop::ThreadSafety v0.5.1.
+#
+# https://github.com/rubocop/rubocop-thread_safety/blob/v0.5.1/config/default.yml
+
+require:
+  - rubocop-thread_safety
+
+ThreadSafety/ClassAndModuleAttributes:
+  Enabled: true
+# Use these methods from ActiveSupport: thread_cattr_accessor (alias for thread_mattr_accessor).
+# Or RequestStore (included in Draper, Lograge, PaperTrail): https://github.com/steveklabnik/request_store
+
+ThreadSafety/InstanceVariableInClassMethod:
+  Enabled: false
+
+ThreadSafety/MutableClassInstanceVariable:
+  Enabled: true
+  EnforcedStyle: strict
+  # Default values:
+  # EnforcedStyle: literals
+
+ThreadSafety/NewThread:
+  Enabled: true

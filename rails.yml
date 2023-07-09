@@ -1,6 +1,6 @@
-# Config for RuboCop Rails v2.19.1.
+# Config for RuboCop Rails v2.20.2.
 #
-# https://github.com/rubocop/rubocop-rails/blob/v2.19.1/config/default.yml
+# https://github.com/rubocop/rubocop-rails/blob/v2.20.2/config/default.yml
 
 require:
   - rubocop-rails
