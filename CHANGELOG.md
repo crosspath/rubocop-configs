@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.4.0
+
+Update config files to:
+
+* Rubocop v1.56.2
+* RuboCop Performance v1.19.0
+* RuboCop RSpec v2.23.2
+
 ## 0.3.0
 
 Update config files to:

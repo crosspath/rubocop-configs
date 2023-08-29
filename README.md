@@ -72,7 +72,7 @@ Let's take an example! Suppose you're building typical Rails project, this is yo
 
   ```ruby
     group :development, optional: true do
-      gem "rubocop", "1.54.1", require: false
+      gem "rubocop", "1.56.2", require: false
       gem "rubocop-configs", require: false, git: "https://github.com/crosspath/rubocop-configs.git"
       gem "rubocop-rails", "2.20.2", require: false
       gem "rubocop-rake", "0.6.0", require: false
@@ -93,7 +93,7 @@ bundle exec rubocop
 
 This repository includes config files for these gems and versions:
 
-* rubocop, 1.54.1:
+* rubocop, 1.56.2:
   - _all_cops.yml
   - _ruby.yml
   - bundler.yml
@@ -109,15 +109,15 @@ This repository includes config files for these gems and versions:
   - capybara.yml
 * rubocop-factory_bot, 2.23.1:
   - factory_bot.yml
-* rubocop-graphql, 1.3.0:
+* rubocop-graphql, 1.4.0:
   - graphql.yml
-* rubocop-performance, 1.18.0:
+* rubocop-performance, 1.19.0:
   - performance.yml
 * rubocop-rails, 2.20.2:
   - rails.yml
 * rubocop-rake, 0.6.0:
   - rake.yml
-* rubocop-rspec, 2.22.0:
+* rubocop-rspec, 2.23.2:
   - rspec.yml
 * rubocop-sequel, 0.3.4:
   - sequel.yml
@@ -178,6 +178,7 @@ How to review and update config values?
 3. Carefully update config files in this repository.
 4. Use test project to ensure these config files are OK.
 5. Update gem versions in README, config files and rake task.
-6. Push changes to the repository and add git tag.
+6. Add Changelog entry.
+7. Push changes to the repository and add git tag.
 
 License: MIT.

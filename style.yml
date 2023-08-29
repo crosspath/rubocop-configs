@@ -38,6 +38,7 @@ Style/ArgumentsForwarding:
   Enabled: false
   # Default values:
   # AllowOnlyRestArgument: true
+  # UseAnonymousForwarding: true
 
 Style/ArrayCoercion:
   Enabled: false
@@ -965,6 +966,8 @@ Style/RedundantArgument:
   Methods:
     join: ''
     sum: 0
+    exit: true
+    exit!: false
     split: ' '
     chomp: "\n"
     chomp!: "\n"
@@ -972,6 +975,8 @@ Style/RedundantArgument:
   # Methods:
   #   join: '' # Array#join
   #   sum: 0 # Array#sum
+  #   exit: true # Kernel.#exit
+  #   exit!: false # Kernel.#exit!
   #   split: ' ' # String#split
   #   chomp: "\n" # String#chomp
   #   chomp!: "\n" # String#chomp!

@@ -1,11 +1,11 @@
 # Config for RuboCop Rails v2.20.2.
 #
 # https://github.com/rubocop/rubocop-rails/blob/v2.20.2/config/default.yml
+# https://docs.rubocop.org/rubocop-rails/cops_rails.html
 
 require:
   - rubocop-rails
 
-# https://docs.rubocop.org/rubocop-rails/2.19/cops_rails.html
 Rails/ActionControllerFlashBeforeRender:
   Enabled: true
 

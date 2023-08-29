@@ -1,7 +1,7 @@
 # Config for RuboCop factory_bot v2.23.1
 #
-# https://docs.rubocop.org/rubocop-factory_bot/cops_factorybot.html
 # https://github.com/rubocop/rubocop-factory_bot/blob/v2.23.1/config/default.yml
+# https://docs.rubocop.org/rubocop-factory_bot/cops_factorybot.html
 
 require:
   - rubocop-factory_bot

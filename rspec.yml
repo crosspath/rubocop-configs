@@ -1,6 +1,6 @@
-# Config for RuboCop RSpec v2.22.0.
+# Config for RuboCop RSpec v2.23.2.
 #
-# https://github.com/rubocop/rubocop-rspec/blob/v2.22.0/config/default.yml
+# https://github.com/rubocop/rubocop-rspec/blob/v2.23.2/config/default.yml
 
 require:
   - rubocop-rspec
@@ -278,6 +278,8 @@ RSpec/ImplicitSubject:
 RSpec/IndexedLet:
   Enabled: false
   # Default values:
+  # AllowedIdentifiers: []
+  # AllowedPatterns: []
   # Max: 1
 
 RSpec/InstanceSpy:
@@ -469,10 +471,19 @@ RSpec/Rails/InferredSpecType:
 RSpec/Rails/MinitestAssertions:
   Enabled: true
 
+RSpec/Rails/NegationBeValid:
+  Enabled: true
+  EnforcedStyle: not_to
+  # Default values:
+  # EnforcedStyle: not_to
+
 RSpec/Rails/TravelAround:
   Enabled: true
 
 RSpec/ReceiveCounts:
+  Enabled: true
+
+RSpec/ReceiveMessages:
   Enabled: true
 
 RSpec/ReceiveNever:

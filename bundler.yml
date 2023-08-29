@@ -5,6 +5,9 @@
 Bundler/DuplicatedGem:
   Enabled: true
 
+Bundler/DuplicatedGroup:
+  Enabled: true
+
 Bundler/GemComment:
   Enabled: false
   IgnoredGems: []
