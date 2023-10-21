@@ -1,9 +1,16 @@
-# Config for RuboCop Capybara v2.18.0.
+# Config for RuboCop Capybara v2.19.0
 #
-# https://github.com/rubocop/rubocop-capybara/blob/v2.18.0/config/default.yml
+# https://github.com/rubocop/rubocop-capybara/blob/v2.19.0/config/default.yml
+# https://docs.rubocop.org/rubocop-capybara/cops_capybara.html
 
 require:
   - rubocop-capybara
+
+Capybara/ClickLinkOrButtonStyle:
+  Enabled: true
+  EnforcedStyle: link_or_button
+  # Default values:
+  # EnforcedStyle: strict
 
 Capybara/CurrentPathExpectation:
   Enabled: true
@@ -17,6 +24,12 @@ Capybara/NegationMatcher:
   # Default values:
   # EnforcedStyle: not_to
 # See also: RSpec/ReceiveNever.
+
+Capybara/RSpec/HaveSelector:
+  Enabled: true
+  DefaultSelector: css
+  # Default values:
+  # DefaultSelector: css
 
 Capybara/SpecificActions:
   Enabled: true

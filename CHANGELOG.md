@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.5.0
+
+Update config files to:
+
+* Rubocop v1.57.1
+* RuboCop Capybara v2.19.0
+* RuboCop factory_bot v2.24.0
+* RuboCop Rails v2.21.2
+* RuboCop RSpec v2.24.1
+
 ## 0.4.0
 
 Update config files to:

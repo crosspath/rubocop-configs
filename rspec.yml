@@ -1,6 +1,7 @@
-# Config for RuboCop RSpec v2.23.2.
+# Config for RuboCop RSpec v2.24.1
 #
-# https://github.com/rubocop/rubocop-rspec/blob/v2.23.2/config/default.yml
+# https://github.com/rubocop/rubocop-rspec/blob/v2.24.1/config/default.yml
+# https://docs.rubocop.org/rubocop-rspec/cops_rspec.html
 
 require:
   - rubocop-rspec
@@ -178,6 +179,12 @@ RSpec/EmptyLineAfterHook:
 RSpec/EmptyLineAfterSubject:
   Enabled: true
 
+RSpec/EmptyMetadata:
+  Enabled: true
+
+RSpec/Eq:
+  Enabled: true
+
 RSpec/ExampleLength:
   Enabled: true
   CountAsOne: []
@@ -348,6 +355,12 @@ RSpec/MessageSpies:
 # end
 #
 # https://github.com/rspec/rspec-mocks
+
+RSpec/MetadataStyle:
+  Enabled: true
+  EnforcedStyle: symbol
+  # Default values:
+  # EnforcedStyle: symbol
 
 RSpec/MissingExampleGroupArgument:
   Enabled: true
@@ -532,6 +545,25 @@ RSpec/SkipBlockInsideExample:
   Enabled: true
 
 RSpec/SortMetadata:
+  Enabled: true
+
+RSpec/SpecFilePathFormat:
+  Enabled: true
+  CustomTransform:
+    RuboCop: rubocop
+    RSpec: rspec
+  IgnoreMethods: false
+  IgnoreMetadata:
+    type: routing
+  # Default values:
+  # CustomTransform:
+  #   RuboCop: rubocop
+  #   RSpec: rspec
+  # IgnoreMethods: false
+  # IgnoreMetadata:
+  #   type: routing
+
+RSpec/SpecFilePathSuffix:
   Enabled: true
 
 RSpec/StubbedMock:

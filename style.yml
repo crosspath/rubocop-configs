@@ -157,6 +157,7 @@ Style/CollectionMethods:
   PreferredMethods:
     collect: 'map'
     collect!: 'map!'
+    collect_concat: 'flat_map'
     inject: 'reduce'
     detect: 'find'
     find_all: 'select'
@@ -166,6 +167,7 @@ Style/CollectionMethods:
   # PreferredMethods:
   #   collect: 'map'
   #   collect!: 'map!'
+  #   collect_concat: 'flat_map'
   #   inject: 'reduce'
   #   detect: 'find'
   #   find_all: 'select'
@@ -1178,6 +1180,9 @@ Style/SingleLineBlockParams:
   # Methods:
   #   - reduce: [acc, elem]
   #   - inject: [acc, elem]
+
+Style/SingleLineDoEndBlock:
+  Enabled: true
 
 Style/SingleLineMethods:
   Enabled: true

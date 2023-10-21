@@ -5,17 +5,17 @@ module RubocopConfigs
 
   GEMS = {
     rubocop: {
-      version: ["1.56", "1.57"],
+      version: ["1.57", "1.58"],
       title: "Rubocop",
       const: "RuboCop::Version::STRING"
     }.freeze,
     "rubocop-capybara": {
-      version: ["2.17", "2.19"],
+      version: ["2.19", "2.20"],
       title: "Rubocop::Capybara",
       const: "RuboCop::Capybara::Version::STRING"
     }.freeze,
     "rubocop-factory_bot": {
-      version: ["2.23", "2.24"],
+      version: ["2.24", "2.25"],
       title: "Rubocop::FactoryBot",
       const: "RuboCop::FactoryBot::Version::STRING"
     }.freeze,
@@ -30,7 +30,7 @@ module RubocopConfigs
       const: "RuboCop::Performance::Version::STRING"
     }.freeze,
     "rubocop-rails": {
-      version: ["2.19", "2.21"],
+      version: ["2.21", "2.22"],
       title: "Rubocop::Rails",
       const: "RuboCop::Rails::Version::STRING"
     }.freeze,
@@ -40,7 +40,7 @@ module RubocopConfigs
       const: "RuboCop::Rake::VERSION"
     }.freeze,
     "rubocop-rspec": {
-      version: ["2.23", "2.24"],
+      version: ["2.24", "2.25"],
       title: "Rubocop::RSpec",
       const: "RuboCop::RSpec::Version::STRING"
     }.freeze,

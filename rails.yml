@@ -1,6 +1,6 @@
-# Config for RuboCop Rails v2.20.2.
+# Config for RuboCop Rails v2.21.2
 #
-# https://github.com/rubocop/rubocop-rails/blob/v2.20.2/config/default.yml
+# https://github.com/rubocop/rubocop-rails/blob/v2.21.2/config/default.yml
 # https://docs.rubocop.org/rubocop-rails/cops_rails.html
 
 require:
@@ -94,6 +94,9 @@ Rails/ContentTag:
 
 Rails/CreateTableWithTimestamps:
   Enabled: false
+
+Rails/DangerousColumnNames:
+  Enabled: true
 
 Rails/Date:
   Enabled: true
@@ -211,6 +214,8 @@ Rails/HttpStatus:
 
 Rails/I18nLazyLookup:
   Enabled: false
+  # Default values:
+  # EnforcedStyle: lazy
 
 Rails/I18nLocaleAssignment:
   Enabled: true
@@ -308,6 +313,12 @@ Rails/RakeEnvironment:
 Rails/ReadWriteAttribute:
   Enabled: true
 
+Rails/RedundantActiveRecordAllMethod:
+  Enabled: true
+  AllowedReceivers: ['ActionMailer::Preview', 'ActiveSupport::TimeZone']
+  # Default values:
+  # AllowedReceivers: ['ActionMailer::Preview', 'ActiveSupport::TimeZone']
+
 Rails/RedundantAllowNil:
   Enabled: true
 
@@ -394,6 +405,9 @@ Rails/SchemaComment:
 Rails/ScopeArgs:
   Enabled: true
 
+Rails/SelectMap:
+  Enabled: true
+
 Rails/ShortI18n:
   Enabled: true
   EnforcedStyle: aggressive
@@ -459,6 +473,9 @@ Rails/TopLevelHashWithIndifferentAccess:
 
 Rails/TransactionExitStatement:
   Enabled: true
+  TransactionMethods: []
+  # Default values:
+  # TransactionMethods: []
 
 Rails/UniqBeforePluck:
   Enabled: true
@@ -476,6 +493,9 @@ Rails/UnknownEnv:
   # Environments: [development, test, production]
 
 Rails/UnusedIgnoredColumns:
+  Enabled: true
+
+Rails/UnusedRenderContent:
   Enabled: true
 
 Rails/Validation:
