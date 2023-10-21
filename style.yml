@@ -1018,6 +1018,8 @@ Style/RedundantException:
 
 Style/RedundantFetchBlock:
   Enabled: true
+  Exclude:
+    - 'config/puma.rb' # Rails app templates uses `ENV.fetch("PORT") { 3000 }`
   SafeForConstants: false
   # Default values:
   # SafeForConstants: false
