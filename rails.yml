@@ -1,6 +1,6 @@
-# Config for RuboCop Rails v2.21.2
+# Config for RuboCop Rails
 #
-# https://github.com/rubocop/rubocop-rails/blob/v2.21.2/config/default.yml
+# https://github.com/rubocop/rubocop-rails/blob/v2.22.1/config/default.yml
 # https://docs.rubocop.org/rubocop-rails/cops_rails.html
 
 require:
@@ -148,6 +148,9 @@ Rails/EnumHash:
   Enabled: true
 
 Rails/EnumUniqueness:
+  Enabled: true
+
+Rails/EnvLocal:
   Enabled: true
 
 Rails/EnvironmentComparison:

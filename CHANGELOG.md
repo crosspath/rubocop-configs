@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.6.0
+
+Update config files to:
+
+* RuboCop Rails v2.22.1
+
 ## 0.5.0
 
 Update config files to:
