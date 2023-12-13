@@ -497,9 +497,11 @@ Layout/SpaceAroundOperators:
   Enabled: true
   AllowForAlignment: false
   EnforcedStyleForExponentOperator: space
+  EnforcedStyleForRationalLiterals: no_space
   # Default values:
   # AllowForAlignment: true
   # EnforcedStyleForExponentOperator: no_space
+  # EnforcedStyleForRationalLiterals: no_space
 
 Layout/SpaceBeforeBlockBraces:
   Enabled: true

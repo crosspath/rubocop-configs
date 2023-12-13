@@ -306,6 +306,9 @@ Lint/LambdaWithoutLiteralBlock:
 Lint/LiteralAsCondition:
   Enabled: true
 
+Lint/LiteralAssignmentInCondition:
+  Enabled: true
+
 Lint/LiteralInInterpolation:
   Enabled: true
 

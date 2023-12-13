@@ -38,9 +38,15 @@ Style/ArgumentsForwarding:
   Enabled: false
   # Default values:
   # AllowOnlyRestArgument: true
+  # RedundantBlockArgumentNames: [blk, block, proc]
+  # RedundantKeywordRestArgumentNames: [kwargs, options, opts]
+  # RedundantRestArgumentNames: [args, arguments]
   # UseAnonymousForwarding: true
 
 Style/ArrayCoercion:
+  Enabled: false
+
+Style/ArrayFirstLast:
   Enabled: false
 
 Style/ArrayIntersect:
@@ -1261,6 +1267,9 @@ Style/Strip:
   Enabled: true
 
 Style/StructInheritance:
+  Enabled: true
+
+Style/SuperWithArgsParentheses:
   Enabled: true
 
 Style/SwapValues:

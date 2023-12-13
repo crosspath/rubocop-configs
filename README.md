@@ -72,7 +72,7 @@ Let's take an example! Suppose you're building typical Rails project, this is yo
 
   ```ruby
     group :development, optional: true do
-      gem "rubocop", "1.57.1", require: false
+      gem "rubocop", "~> 1.58", require: false
       gem "rubocop-configs", require: false, git: "https://github.com/crosspath/rubocop-configs.git"
       gem "rubocop-rails", "2.22.1", require: false
       gem "rubocop-rake", "0.6.0", require: false
@@ -93,7 +93,7 @@ bundle exec rubocop
 
 This repository includes config files for these gems and versions:
 
-* rubocop, 1.57.2:
+* rubocop, 1.58.0:
   - _all_cops.yml
   - _ruby.yml
   - bundler.yml
@@ -121,6 +121,8 @@ This repository includes config files for these gems and versions:
   - rspec.yml
 * rubocop-sequel, 0.3.4:
   - sequel.yml
+* rubocop-thread_safety, 0.5.1:
+  - thread_safety.yml
 
 ## Ensure versions of config files match to versions of installed gems
 
