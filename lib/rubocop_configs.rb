@@ -5,7 +5,7 @@ module RubocopConfigs
 
   GEMS = {
     rubocop: {
-      version: ["1.58", "1.59"],
+      version: ["1.59", "1.60"],
       title: "Rubocop",
       const: "RuboCop::Version::STRING"
     }.freeze,
@@ -25,12 +25,12 @@ module RubocopConfigs
       const: "RuboCop::GraphQL::VERSION"
     }.freeze,
     "rubocop-performance": {
-      version: ["1.19", "1.20"],
+      version: ["1.19", "1.21"],
       title: "Rubocop::Performance",
       const: "RuboCop::Performance::Version::STRING"
     }.freeze,
     "rubocop-rails": {
-      version: ["2.22", "2.23"],
+      version: ["2.22", "2.24"],
       title: "Rubocop::Rails",
       const: "RuboCop::Rails::Version::STRING"
     }.freeze,

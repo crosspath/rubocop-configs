@@ -1,6 +1,6 @@
-# Config for RuboCop Performance v1.19.0.
+# Config for RuboCop Performance.
 #
-# https://github.com/rubocop/rubocop-performance/blob/v1.19.0/config/default.yml
+# https://github.com/rubocop/rubocop-performance/blob/v1.20.1/config/default.yml
 
 require:
   - rubocop-performance

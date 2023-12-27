@@ -300,6 +300,9 @@ Lint/InheritException:
 Lint/InterpolationCheck:
   Enabled: true
 
+Lint/ItWithoutArgumentsInBlock:
+  Enabled: true
+
 Lint/LambdaWithoutLiteralBlock:
   Enabled: true
 
