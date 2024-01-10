@@ -10,17 +10,17 @@ module RubocopConfigs
       const: "RuboCop::Version::STRING"
     }.freeze,
     "rubocop-capybara": {
-      version: ["2.19", "2.20"],
+      version: ["2.20", "2.21"],
       title: "Rubocop::Capybara",
       const: "RuboCop::Capybara::Version::STRING"
     }.freeze,
     "rubocop-factory_bot": {
-      version: ["2.24", "2.25"],
+      version: ["2.25", "2.26"],
       title: "Rubocop::FactoryBot",
       const: "RuboCop::FactoryBot::Version::STRING"
     }.freeze,
     "rubocop-graphql": {
-      version: ["1.3", "1.5"],
+      version: ["1.3", "1.6"],
       title: "Rubocop::GraphQL",
       const: "RuboCop::GraphQL::VERSION"
     }.freeze,
@@ -40,7 +40,7 @@ module RubocopConfigs
       const: "RuboCop::Rake::VERSION"
     }.freeze,
     "rubocop-rspec": {
-      version: ["2.24", "2.26"],
+      version: ["2.26", "2.27"],
       title: "Rubocop::RSpec",
       const: "RuboCop::RSpec::Version::STRING"
     }.freeze,

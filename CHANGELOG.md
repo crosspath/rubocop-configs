@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.9.0
+
+Update config files to:
+
+* Rubocop Capybara v2.20.0
+* RuboCop factory_bot v2.25.1
+* RuboCop RSpec v2.26.1
+
+Support without changes:
+
+* RuboCop::GraphQL v1.5.0
+
 ## 0.8.0
 
 Update config files to:

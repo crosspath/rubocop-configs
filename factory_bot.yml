@@ -1,6 +1,6 @@
-# Config for RuboCop factory_bot v2.24.0
+# Config for RuboCop factory_bot
 #
-# https://github.com/rubocop/rubocop-factory_bot/blob/v2.24.0/config/default.yml
+# https://github.com/rubocop/rubocop-factory_bot/blob/v2.25.1/config/default.yml
 # https://docs.rubocop.org/rubocop-factory_bot/cops_factorybot.html
 
 require:
@@ -32,6 +32,14 @@ FactoryBot/CreateList:
   # Default values:
   # EnforcedStyle: create_list
   # ExplicitOnly: false
+
+FactoryBot/ExcessiveCreateList:
+  Enabled: false
+  # Default values:
+  # MaxAmount: 10
+
+FactoryBot/FactoryAssociationWithStrategy:
+  Enabled: true
 
 FactoryBot/FactoryClassName:
   Enabled: true
