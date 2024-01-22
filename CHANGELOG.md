@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.10.0
+
+Update config files to:
+
+Support without changes:
+
+* Rubocop v1.60.1
+* RuboCop Performance v1.20.2
+
 ## 0.9.0
 
 Update config files to:
