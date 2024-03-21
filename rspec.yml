@@ -1,6 +1,6 @@
 # Config for RuboCop RSpec
 #
-# https://github.com/rubocop/rubocop-rspec/blob/v2.26.1/config/default.yml
+# https://github.com/rubocop/rubocop-rspec/blob/v2.27.1/config/default.yml
 # https://docs.rubocop.org/rubocop-rspec/cops_rspec.html
 
 require:
@@ -114,9 +114,11 @@ RSpec/DescribeSymbol:
 RSpec/DescribedClass:
   Enabled: true
   EnforcedStyle: described_class
+  OnlyStaticConstants: false
   SkipBlocks: false
   # Default values:
   # EnforcedStyle: described_class
+  # OnlyStaticConstants: true
   # SkipBlocks: false
 
 RSpec/DescribedClassModuleWrapping:
@@ -298,6 +300,9 @@ RSpec/InstanceVariable:
   # Default values:
   # AssignmentOnly: false
 
+RSpec/IsExpectedSpecify:
+  Enabled: false
+
 RSpec/ItBehavesLike:
   Enabled: true
   EnforcedStyle: it_behaves_like
@@ -438,6 +443,9 @@ RSpec/Rails/AvoidSetupHook:
 
 RSpec/Rails/HaveHttpStatus:
   Enabled: true
+  ResponseMethods: [response, last_response]
+  # Default values:
+  # ResponseMethods: [response, last_response]
 
 RSpec/Rails/HttpStatus:
   Enabled: true
@@ -524,6 +532,9 @@ RSpec/RepeatedExampleGroupDescription:
   Enabled: true
 
 RSpec/RepeatedIncludeExample:
+  Enabled: true
+
+RSpec/RepeatedSubjectCall:
   Enabled: true
 
 RSpec/ReturnFromStub:

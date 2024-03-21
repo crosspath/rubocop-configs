@@ -1,16 +1,33 @@
 # Config for Rubocop.
 #
-# https://github.com/rubocop/rubocop/blob/v1.60.1/config/default.yml
+# https://github.com/rubocop/rubocop/blob/v1.62.1/config/default.yml
 
 AllCops:
   ActiveSupportExtensionsEnabled: true
   EnabledByDefault: false
   ExtraDetails: true
   NewCops: disable
+  ParserEngine: parser_prism
   SuggestExtensions: false
   # Default values:
+  # Exclude: [... 4 entries ...]
+  # Include: [... 53 entries ...]
   # ActiveSupportExtensionsEnabled: false
+  # AllowSymlinksInCacheRootDirectory: false
+  # CacheRootDirectory: ~
+  # DefaultFormatter: progress
+  # DisabledByDefault: false
+  # DisplayCopNames: true
+  # DisplayStyleGuide: false
+  # DocumentationBaseURL: https://docs.rubocop.org/rubocop
   # EnabledByDefault: false
   # ExtraDetails: false
+  # MaxFilesInCache: 20000
   # NewCops: pending
+  # ParserEngine: parser_whitequark
+  # RubyInterpreters: [ruby, macruby, rake, jruby, rbx]
   # SuggestExtensions: {...}
+  # StyleGuideBaseURL: https://rubystyle.guide
+  # StyleGuideCopsOnly: false
+  # TargetRubyVersion: ~
+  # UseCache: true
