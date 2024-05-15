@@ -39,6 +39,7 @@ inherit_gem:
     - rails.yml
     - rake.yml
     - rspec.yml
+    - rspec_rails.yml
     - sequel.yml
 ```
 
@@ -72,7 +73,7 @@ Let's take an example! Suppose you're building typical Rails project, this is yo
 
   ```ruby
     group :development, optional: true do
-      gem "rubocop", "~> 1.62", require: false
+      gem "rubocop", "~> 1.63", require: false
       gem "rubocop-configs", require: false, git: "https://github.com/crosspath/rubocop-configs.git"
       gem "rubocop-rails", "~> 2.24", require: false
       gem "rubocop-rake", "0.6.0", require: false
@@ -93,7 +94,7 @@ bundle exec rubocop
 
 This repository includes config files for these gems and versions:
 
-* rubocop, 1.62:
+* rubocop, 1.63:
   - _all_cops.yml
   - _ruby.yml
   - bundler.yml
@@ -117,8 +118,10 @@ This repository includes config files for these gems and versions:
   - rails.yml
 * rubocop-rake, 0.6.0:
   - rake.yml
-* rubocop-rspec, 2.27:
+* rubocop-rspec, 2.29:
   - rspec.yml
+* rubocop-rspec_rails, 2.28:
+  - rspec_rails.yml
 * rubocop-sequel, 0.3.4:
   - sequel.yml
 * rubocop-thread_safety, 0.5.1:

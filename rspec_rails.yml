@@ -1,0 +1,70 @@
+# Config for RuboCop RSpecRails
+#
+# https://github.com/rubocop/rubocop-rspec_rails/blob/v2.28.3/config/default.yml
+# https://docs.rubocop.org/rubocop-rspec_rails/cops_rspecrails.html
+
+require:
+  - rubocop-rspec_rails
+
+RSpecRails/AvoidSetupHook:
+  Enabled: true
+
+RSpecRails/HaveHttpStatus:
+  Enabled: true
+  ResponseMethods: [response, last_response]
+  # Default values:
+  # ResponseMethods: [response, last_response]
+
+RSpecRails/HttpStatus:
+  Enabled: true
+  EnforcedStyle: symbolic
+  # Default values:
+  # EnforcedStyle: symbolic
+
+RSpecRails/InferredSpecType:
+  Enabled: true
+  Inferences:
+    channels: channel
+    controllers: controller
+    features: feature
+    generator: generator
+    helpers: helper
+    jobs: job
+    mailboxes: mailbox
+    mailers: mailer
+    models: model
+    requests: request
+    integration: request
+    api: request
+    routing: routing
+    system: system
+    views: view
+  # Default values:
+  # Inferences:
+  #   channels: channel
+  #   controllers: controller
+  #   features: feature
+  #   generator: generator
+  #   helpers: helper
+  #   jobs: job
+  #   mailboxes: mailbox
+  #   mailers: mailer
+  #   models: model
+  #   requests: request
+  #   integration: request
+  #   api: request
+  #   routing: routing
+  #   system: system
+  #   views: view
+
+RSpecRails/MinitestAssertions:
+  Enabled: true
+
+RSpecRails/NegationBeValid:
+  Enabled: true
+  EnforcedStyle: not_to
+  # Default values:
+  # EnforcedStyle: not_to
+
+RSpecRails/TravelAround:
+  Enabled: true

@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
 module RubocopConfigs
-  VERSION = "0.11.0"
+  VERSION = "0.12.0"
 
   GEMS = {
     rubocop: {
-      version: ["1.59", "1.63"],
+      version: ["1.63", "1.64"],
       title: "Rubocop",
       const: "RuboCop::Version::STRING"
     }.freeze,
@@ -40,9 +40,14 @@ module RubocopConfigs
       const: "RuboCop::Rake::VERSION"
     }.freeze,
     "rubocop-rspec": {
-      version: ["2.27", "2.28"],
+      version: ["2.29", "2.30"],
       title: "Rubocop::RSpec",
       const: "RuboCop::RSpec::Version::STRING"
+    }.freeze,
+    "rubocop-rspec_rails": {
+      version: ["2.28", "2.29"],
+      title: "Rubocop::RSpecRails",
+      const: "RuboCop::RSpecRails::Version::STRING"
     }.freeze,
     "rubocop-sequel": {
       version: ["0.3", "0.4"],

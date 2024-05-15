@@ -1,6 +1,6 @@
 # Config for RuboCop RSpec
 #
-# https://github.com/rubocop/rubocop-rspec/blob/v2.27.1/config/default.yml
+# https://github.com/rubocop/rubocop-rspec/blob/v2.29.2/config/default.yml
 # https://docs.rubocop.org/rubocop-rspec/cops_rspec.html
 
 require:
@@ -182,6 +182,9 @@ RSpec/EmptyLineAfterSubject:
   Enabled: true
 
 RSpec/EmptyMetadata:
+  Enabled: true
+
+RSpec/EmptyOutput:
   Enabled: true
 
 RSpec/Eq:
@@ -438,69 +441,6 @@ RSpec/PredicateMatcher:
   # EnforcedStyle: inflected
   # Strict: true
 
-RSpec/Rails/AvoidSetupHook:
-  Enabled: true
-
-RSpec/Rails/HaveHttpStatus:
-  Enabled: true
-  ResponseMethods: [response, last_response]
-  # Default values:
-  # ResponseMethods: [response, last_response]
-
-RSpec/Rails/HttpStatus:
-  Enabled: true
-  EnforcedStyle: symbolic
-  # Default values:
-  # EnforcedStyle: symbolic
-
-RSpec/Rails/InferredSpecType:
-  Enabled: true
-  Inferences:
-    channels: channel
-    controllers: controller
-    features: feature
-    generator: generator
-    helpers: helper
-    jobs: job
-    mailboxes: mailbox
-    mailers: mailer
-    models: model
-    requests: request
-    integration: request
-    api: request
-    routing: routing
-    system: system
-    views: view
-  # Default values:
-  # Inferences:
-  #   channels: channel
-  #   controllers: controller
-  #   features: feature
-  #   generator: generator
-  #   helpers: helper
-  #   jobs: job
-  #   mailboxes: mailbox
-  #   mailers: mailer
-  #   models: model
-  #   requests: request
-  #   integration: request
-  #   api: request
-  #   routing: routing
-  #   system: system
-  #   views: view
-
-RSpec/Rails/MinitestAssertions:
-  Enabled: true
-
-RSpec/Rails/NegationBeValid:
-  Enabled: true
-  EnforcedStyle: not_to
-  # Default values:
-  # EnforcedStyle: not_to
-
-RSpec/Rails/TravelAround:
-  Enabled: true
-
 RSpec/ReceiveCounts:
   Enabled: true
 
@@ -593,6 +533,9 @@ RSpec/SubjectDeclaration:
   Enabled: true
 
 RSpec/SubjectStub:
+  Enabled: true
+
+RSpec/UndescriptiveLiteralsDescription:
   Enabled: true
 
 RSpec/UnspecifiedException:

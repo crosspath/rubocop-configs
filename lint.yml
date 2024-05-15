@@ -73,7 +73,15 @@ Lint/Debugger:
   DebuggerMethods:
     Kernel: [puts, warn, binding.irb, p, Kernel.binding.irb]
     Byebug: [byebug, remote_byebug, Kernel.byebug, Kernel.remote_byebug]
-    Capybara: [save_and_open_page, save_and_open_screenshot]
+    Capybara:
+      - page.save_and_open_page
+      - page.save_and_open_screenshot
+      - page.save_page
+      - page.save_screenshot
+      - save_and_open_page
+      - save_and_open_screenshot
+      - save_page
+      - save_screenshot
     PP: [PP.pp, pp]
     debug.rb: [binding.b, binding.break, Kernel.binding.b, Kernel.binding.break]
     Pry:
@@ -88,11 +96,21 @@ Lint/Debugger:
     Rails: [debugger, Kernel.debugger]
     RubyJard: [jard]
     WebConsole: [binding.console]
+  DebuggerRequires:
+    debug.rb: [debug/open, debug/start]
   # Default values:
   # DebuggerMethods:
   #   Kernel: [binding.irb, Kernel.binding.irb]
   #   Byebug: [byebug, remote_byebug, Kernel.byebug, Kernel.remote_byebug]
-  #   Capybara: [save_and_open_page, save_and_open_screenshot]
+  #   Capybara:
+  #     - page.save_and_open_page
+  #     - page.save_and_open_screenshot
+  #     - page.save_page
+  #     - page.save_screenshot
+  #     - save_and_open_page
+  #     - save_and_open_screenshot
+  #     - save_page
+  #     - save_screenshot
   #   debug.rb: [binding.b, binding.break, Kernel.binding.b, Kernel.binding.break]
   #   Pry:
   #     - binding.pry
@@ -106,6 +124,8 @@ Lint/Debugger:
   #   Rails: [debugger, Kernel.debugger]
   #   RubyJard: [jard]
   #   WebConsole: [binding.console]
+  # DebuggerRequires:
+  #   debug.rb: [debug/open, debug/start]
 
 Lint/DeprecatedClassMethods:
   Enabled: true
