@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.12.1
+
+Add TargetRubyVersion = 3.3 (it's required for parser_prism).
+
 ## 0.12.0
 
 Update config files to:

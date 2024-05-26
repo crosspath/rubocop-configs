@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module RubocopConfigs
-  VERSION = "0.12.0"
+  VERSION = "0.12.1"
 
   GEMS = {
     rubocop: {

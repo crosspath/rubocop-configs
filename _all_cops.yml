@@ -9,6 +9,7 @@ AllCops:
   NewCops: disable
   ParserEngine: parser_prism
   SuggestExtensions: false
+  TargetRubyVersion: 3.3
   # Default values:
   # Exclude: [... 4 entries ...]
   # Include: [... 53 entries ...]

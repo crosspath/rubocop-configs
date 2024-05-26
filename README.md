@@ -55,7 +55,7 @@ gem "rubocop-configs", require: false, git: "https://github.com/crosspath/ruboco
 
 ## Usage
 
-Let's take an example! Suppose you're building typical Rails project, this is your steps:
+Let's take an example! Suppose you're building typical Rails project, you have to do:
 
 1. Prepend this code to `.rubocop.yml`:
 
