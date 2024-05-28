@@ -1,5 +1,28 @@
 # Changelog
 
+## 0.13.0
+
+Update README: suggest to use `gem "prism"` for option `parser_prism` in Rubocop.
+
+Ruleset changes:
+
+* Layout/SpaceAroundEqualsInParameterDefault: change EnforcedStyle from `no_space` to `space`
+  (default value in Rubocop).
+* Style/MethodCallWithArgsParentheses: add `require` and `require_relative` to AllowedMethods
+  (allow to call them without parentheses)
+* Style/RequireOrder: add `bin/*` to Exclude (order of `require` lines in bin-scripts are
+  significant for running operations)
+
+Update config files to:
+
+* RuboCop v1.64.0
+* RuboCop::GraphQL v1.5.1
+* RuboCop Rails v2.25.0
+
+Support without changes:
+
+* RuboCop Performance v1.21.0
+
 ## 0.12.1
 
 Add TargetRubyVersion = 3.3 (it's required for parser_prism).

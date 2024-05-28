@@ -1,6 +1,6 @@
 # Config for RuboCop Rails
 #
-# https://github.com/rubocop/rubocop-rails/blob/v2.23.1/config/default.yml
+# https://github.com/rubocop/rubocop-rails/blob/v2.25.0/config/default.yml
 # https://docs.rubocop.org/rubocop-rails/cops_rails.html
 
 require:
@@ -523,4 +523,7 @@ Rails/WhereNot:
   Enabled: true
 
 Rails/WhereNotWithMultipleConditions:
+  Enabled: true
+
+Rails/WhereRange:
   Enabled: true

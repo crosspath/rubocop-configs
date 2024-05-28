@@ -1,6 +1,6 @@
 # Config for RuboCop::GraphQL
 #
-# https://github.com/DmitryTsepelev/rubocop-graphql/blob/v1.5.0/config/default.yml
+# https://github.com/DmitryTsepelev/rubocop-graphql/blob/v1.5.1/config/default.yml
 
 require:
   - rubocop-graphql
@@ -90,10 +90,12 @@ GraphQL/OrderedFields:
 
 GraphQL/ResolverMethodLength:
   Enabled: true
+  CountAsOne: []
   CountComments: false
   ExcludedMethods: []
   Max: 10
   # Default values:
+  # CountAsOne: []
   # CountComments: false
   # ExcludedMethods: []
   # Max: 10

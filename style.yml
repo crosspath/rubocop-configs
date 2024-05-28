@@ -8,9 +8,11 @@ inherit_mode:
 
 Style/AccessModifierDeclarations:
   Enabled: true
+  AllowModifiersOnAttrs: true
   AllowModifiersOnSymbols: true
   EnforcedStyle: group
   # Default values:
+  # AllowModifiersOnAttrs: true
   # AllowModifiersOnSymbols: true
   # EnforcedStyle: group
 
@@ -270,8 +272,10 @@ Style/Documentation:
 Style/DocumentationMethod:
   Enabled: true
   Severity: warning
+  AllowedMethods: []
   RequireForNonPublicMethods: true
   # Default values:
+  # AllowedMethods: []
   # RequireForNonPublicMethods: false
 
 Style/DoubleCopDisableDirective:
@@ -642,6 +646,8 @@ Style/MethodCallWithArgsParentheses:
     - print
     - puts
     - raise
+    - require
+    - require_relative
     - sleep
     - warn
     - yield
@@ -1120,6 +1126,7 @@ Style/RegexpLiteral:
 Style/RequireOrder:
   Enabled: true
   Exclude:
+    - 'bin/*'
     - 'config/*.rb'
 
 Style/RescueModifier:
@@ -1172,6 +1179,11 @@ Style/Semicolon:
 
 Style/Send:
   Enabled: true
+
+Style/SendWithLiteralMethodName:
+  Enabled: true
+  AllowSend: true
+  # AllowSend: true
 
 Style/SignalException:
   Enabled: true
@@ -1270,6 +1282,9 @@ Style/Strip:
   Enabled: true
 
 Style/StructInheritance:
+  Enabled: true
+
+Style/SuperArguments:
   Enabled: true
 
 Style/SuperWithArgsParentheses:
