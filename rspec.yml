@@ -237,6 +237,9 @@ RSpec/ExpectChange:
 RSpec/ExpectInHook:
   Enabled: true
 
+RSpec/ExpectInLet:
+  Enabled: true
+
 RSpec/ExpectOutput:
   Enabled: true
 

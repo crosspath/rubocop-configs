@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.14.0
+
+Update config files to:
+
+* RuboCop RSpec v2.31.0
+
 ## 0.13.0
 
 Update README: suggest to use `gem "prism"` for option `parser_prism` in Rubocop.

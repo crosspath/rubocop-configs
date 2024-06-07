@@ -81,7 +81,9 @@ Let's take an example! Suppose you're building typical Rails project, you have t
     end
   ```
 
-If you use `optional` flag in Gemfile, you should enable it in `bundle config`. See more [here](https://bundler.io/v2.4/man/bundle-config.1.html). In short: run in console `bundle config set --global with development:test` to enable it everywhere in your user profile.
+If you use `optional` flag in Gemfile, you should enable it in `bundle config`. See more
+[here](https://bundler.io/v2.4/man/bundle-config.1.html). In short: run in console
+`bundle config set --global with development:test` to enable it everywhere in your user profile.
 
 3. Run `bundle install`
 
@@ -119,7 +121,7 @@ This repository includes config files for these gems and versions:
   - rails.yml
 * rubocop-rake, 0.6.0:
   - rake.yml
-* rubocop-rspec, 2.29:
+* rubocop-rspec, 2.31:
   - rspec.yml
 * rubocop-rspec_rails, 2.28:
   - rspec_rails.yml
