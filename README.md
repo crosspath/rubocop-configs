@@ -107,9 +107,9 @@ This repository includes config files for these gems and versions:
   - naming.yml
   - security.yml
   - style.yml
-* rubocop-capybara, 2.20:
+* rubocop-capybara, 2.21:
   - capybara.yml
-* rubocop-factory_bot, 2.25:
+* rubocop-factory_bot, 2.26:
   - factory_bot.yml
 * rubocop-graphql, 1.5:
   - graphql.yml
@@ -121,7 +121,7 @@ This repository includes config files for these gems and versions:
   - rake.yml
 * rubocop-rspec, 2.29:
   - rspec.yml
-* rubocop-rspec_rails, 2.28:
+* rubocop-rspec_rails, 2.30:
   - rspec_rails.yml
 * rubocop-sequel, 0.3.4:
   - sequel.yml

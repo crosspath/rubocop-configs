@@ -1,6 +1,6 @@
 # Config for RuboCop Capybara
 #
-# https://github.com/rubocop/rubocop-capybara/blob/v2.20.0/config/default.yml
+# https://github.com/rubocop/rubocop-capybara/blob/v2.21.0/config/default.yml
 # https://docs.rubocop.org/rubocop-capybara/cops_capybara.html
 
 require:

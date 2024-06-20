@@ -1,6 +1,6 @@
 # Config for RuboCop RSpecRails
 #
-# https://github.com/rubocop/rubocop-rspec_rails/blob/v2.28.3/config/default.yml
+# https://github.com/rubocop/rubocop-rspec_rails/blob/v2.30.0/config/default.yml
 # https://docs.rubocop.org/rubocop-rspec_rails/cops_rspecrails.html
 
 require:
