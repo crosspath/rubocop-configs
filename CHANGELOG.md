@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.14.0
+## 0.15.0
 
 Set `required_ruby_version` in the gem to 3.3+, same as `TargetRubyVersion` in Rubocop.
 
@@ -9,6 +9,12 @@ Support without changes:
 * Rubocop Capybara v2.21.0
 * RuboCop factory_bot v2.26.1
 * RuboCop RSpec Rails v2.30.0
+
+## 0.14.0
+
+Update config files to:
+
+* RuboCop RSpec v2.31.0
 
 ## 0.13.0
 
