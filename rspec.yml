@@ -1,6 +1,6 @@
 # Config for RuboCop RSpec
 #
-# https://github.com/rubocop/rubocop-rspec/blob/v2.29.2/config/default.yml
+# https://github.com/rubocop/rubocop-rspec/blob/v3.0.3/config/default.yml
 # https://docs.rubocop.org/rubocop-rspec/cops_rspec.html
 
 require:
@@ -38,10 +38,6 @@ RSpec/BeNil:
 
 RSpec/BeforeAfterAll:
   Enabled: true
-
-RSpec/Capybara:
-  Enabled: false
-# We should use capybara.yml instead of these rules.
 
 RSpec/ChangeByZero:
   Enabled: true
@@ -243,22 +239,6 @@ RSpec/ExpectInLet:
 RSpec/ExpectOutput:
   Enabled: true
 
-RSpec/FactoryBot:
-  Enabled: false
-# We should use factory_bot.yml instead of these rules.
-
-RSpec/FilePath:
-  Enabled: true
-  CustomTransform: ~
-  IgnoreMethods: false
-  SpecSuffixOnly: false
-  # Default values:
-  # CustomTransform:
-  #   RuboCop: rubocop
-  #   RSpec: rspec
-  # IgnoreMethods: false
-  # SpecSuffixOnly: false
-
 RSpec/Focus:
   Enabled: true
 
@@ -374,6 +354,9 @@ RSpec/MetadataStyle:
   # EnforcedStyle: symbol
 
 RSpec/MissingExampleGroupArgument:
+  Enabled: true
+
+RSpec/MissingExpectationTargetMethod:
   Enabled: true
 
 RSpec/MultipleDescribes:

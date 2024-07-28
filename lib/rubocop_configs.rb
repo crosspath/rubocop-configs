@@ -5,7 +5,7 @@ module RubocopConfigs
 
   GEMS = {
     rubocop: {
-      version: ["1.64", "1.65"],
+      version: ["1.65", "1.66"],
       title: "Rubocop",
       const: "RuboCop::Version::STRING"
     }.freeze,
@@ -40,7 +40,7 @@ module RubocopConfigs
       const: "RuboCop::Rake::VERSION"
     }.freeze,
     "rubocop-rspec": {
-      version: ["2.31", "2.32"],
+      version: ["3.0", "3.1"],
       title: "Rubocop::RSpec",
       const: "RuboCop::RSpec::Version::STRING"
     }.freeze,

@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.16.0
+
+Update config files to:
+
+* RuboCop v1.65.0
+* RuboCop RSpec v3.0.3
+
 ## 0.15.0
 
 Set `required_ruby_version` in the gem to 3.3+, same as `TargetRubyVersion` in Rubocop.

@@ -2,6 +2,9 @@
 #
 # https://docs.rubocop.org/rubocop/cops_gemspec.html
 
+Gemspec/AddRuntimeDependency:
+  Enabled: true
+
 Gemspec/DependencyVersion:
   Enabled: true
   EnforcedStyle: required
