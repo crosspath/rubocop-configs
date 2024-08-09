@@ -40,6 +40,7 @@ inherit_gem:
     - rake.yml
     - rspec.yml
     - rspec_rails.yml
+    - rswag.yml
     - sequel.yml
 ```
 
@@ -129,6 +130,8 @@ This repository includes config files for these gems and versions:
   - sequel.yml
 * rubocop-thread_safety, 0.5.1:
   - thread_safety.yml
+* rswag-specs, 2.13:
+  - rswag.yml
 
 ## Ensure versions of config files match to versions of installed gems
 
@@ -159,6 +162,8 @@ describe RubocopConfigs do
   end
 end
 ```
+
+Code above does not check version of gem `rswag-specs`.
 
 ## Versioning policy
 

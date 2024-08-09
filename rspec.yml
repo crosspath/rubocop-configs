@@ -391,7 +391,7 @@ RSpec/NamedSubject:
 RSpec/NestedGroups:
   Enabled: true
   AllowedGroups: []
-  Max: 3
+  Max: 4
   # Default values:
   # AllowedGroups: []
   # Max: 3

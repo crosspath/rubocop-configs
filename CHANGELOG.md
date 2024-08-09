@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.16.1
+
+Changes for developer convenience:
+
+1. Disable rules `Rails/Output` & `Style/TopLevelMethodDefinition` in `db/seeds.rb` file.
+2. Set `Max = 4` instead of 3 in `RSpec/NestedGroups` rule. It matches with Swagger tests:
+  `path - get - response - run_test!`, 4 levels deep.
+3. Disable rule `RSpec/RepeatedExampleGroupBody` in `spec/requests` directory. This change relates
+  to Swagger tests.
+4. Disable rules `Style/Documentation` & `Style/DocumentationMethod` in directories:
+  - config
+  - db/migrate
+
+Copy configuration from gem `rswag`.
+
 ## 0.16.0
 
 Update config files to:

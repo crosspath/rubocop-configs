@@ -273,6 +273,8 @@ Rails/OrderById:
 
 Rails/Output:
   Enabled: true
+  Exclude:
+    - db/seeds.rb
 
 Rails/OutputSafety:
   Enabled: true

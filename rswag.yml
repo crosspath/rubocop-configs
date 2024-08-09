@@ -1,0 +1,24 @@
+# Config for gem `rswag`.
+# Lines taken from rswag-specs, .rubocop_rspec_alias_config.yml
+
+RSpec:
+  Language:
+    ExampleGroups:
+      Regular:
+        - path
+        - response
+        - get
+        - post
+        - patch
+        - put
+        - delete
+        - head
+        - options
+        - trace
+    Examples:
+      Regular:
+        - run_test!
+
+RSpec/RepeatedExampleGroupBody:
+  Exclude:
+    - 'spec/requests/**/*.rb'

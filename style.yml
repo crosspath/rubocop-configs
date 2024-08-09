@@ -264,6 +264,9 @@ Style/DocumentDynamicEvalDefinition:
 
 Style/Documentation:
   Enabled: true
+  Exclude:
+    - 'config/**/*.rb'
+    - 'db/migrate/*.rb'
   Severity: warning
   AllowedConstants: [ClassMethods]
   # Default values:
@@ -271,6 +274,9 @@ Style/Documentation:
 
 Style/DocumentationMethod:
   Enabled: true
+  Exclude:
+    - 'config/**/*.rb'
+    - 'db/migrate/*.rb'
   Severity: warning
   AllowedMethods: []
   RequireForNonPublicMethods: true
@@ -1326,6 +1332,8 @@ Style/TernaryParentheses:
 
 Style/TopLevelMethodDefinition:
   Enabled: true
+  Exclude:
+    - db/seeds.rb
 
 Style/TrailingBodyOnClass:
   Enabled: true
