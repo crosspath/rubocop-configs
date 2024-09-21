@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.17.0
+
+Update config files to:
+
+* RuboCop v1.66.1
+* RuboCop Rails v2.26.2
+
+Disable rule `Performance/BlockGivenWithExplicitBlock` because its suggestion does not improve
+perfomance (see [discussion](https://github.com/rubocop/rubocop-performance/issues/385)).
+
 ## 0.16.1
 
 Changes for developer convenience:

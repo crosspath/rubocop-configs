@@ -1,6 +1,6 @@
 # Config for RuboCop Performance.
 #
-# https://github.com/rubocop/rubocop-performance/blob/v1.21.1/config/default.yml
+# https://github.com/rubocop/rubocop-performance/blob/v1.22.1/config/default.yml
 
 require:
   - rubocop-performance
@@ -18,7 +18,7 @@ Performance/BindCall:
   Enabled: true
 
 Performance/BlockGivenWithExplicitBlock:
-  Enabled: true
+  Enabled: false
 
 Performance/Caller:
   Enabled: false

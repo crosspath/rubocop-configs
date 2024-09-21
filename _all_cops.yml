@@ -21,12 +21,14 @@ AllCops:
   # DisplayCopNames: true
   # DisplayStyleGuide: false
   # DocumentationBaseURL: https://docs.rubocop.org/rubocop
+  # DocumentationExtension: .html
   # EnabledByDefault: false
   # ExtraDetails: false
   # MaxFilesInCache: 20000
   # NewCops: pending
   # ParserEngine: parser_whitequark
   # RubyInterpreters: [ruby, macruby, rake, jruby, rbx]
+  # StringLiteralsFrozenByDefault: ~
   # SuggestExtensions: {...}
   # StyleGuideBaseURL: https://rubystyle.guide
   # StyleGuideCopsOnly: false

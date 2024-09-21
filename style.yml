@@ -1066,6 +1066,9 @@ Style/RedundantInitialize:
 Style/RedundantInterpolation:
   Enabled: true
 
+Style/RedundantInterpolationUnfreeze:
+  Enabled: true
+
 Style/RedundantLineContinuation:
   Enabled: true
 

@@ -644,6 +644,9 @@ Lint/UselessElseWithoutRescue:
 Lint/UselessMethodDefinition:
   Enabled: true
 
+Lint/UselessNumericOperation:
+  Enabled: true
+
 Lint/UselessRescue:
   Enabled: true
 

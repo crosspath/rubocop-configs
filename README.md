@@ -75,7 +75,7 @@ Let's take an example! Suppose you're building typical Rails project, you have t
   ```ruby
     group :development, optional: true do
       gem "prism" # For parser_prism in Rubocop.
-      gem "rubocop", "~> 1.65", require: false
+      gem "rubocop", "~> 1.66", require: false
       gem "rubocop-configs", require: false, git: "https://github.com/crosspath/rubocop-configs.git"
       gem "rubocop-rails", "~> 2.25", require: false
       gem "rubocop-rake", "0.6.0", require: false
@@ -84,7 +84,7 @@ Let's take an example! Suppose you're building typical Rails project, you have t
 
 If you use `optional` flag in Gemfile, you should enable it in `bundle config`. See more
 [here](https://bundler.io/v2.4/man/bundle-config.1.html). In short: run in console
-`bundle config set --global with development:test` to enable it everywhere in your user profile.
+`bundle config set --global with development test` to enable it everywhere in your user profile.
 
 3. Run `bundle install`
 
@@ -98,7 +98,7 @@ bundle exec rubocop
 
 This repository includes config files for these gems and versions:
 
-* rubocop, 1.65:
+* rubocop, 1.66:
   - _all_cops.yml
   - _ruby.yml
   - bundler.yml
@@ -118,7 +118,7 @@ This repository includes config files for these gems and versions:
   - graphql.yml
 * rubocop-performance, 1.21:
   - performance.yml
-* rubocop-rails, 2.25:
+* rubocop-rails, 2.26:
   - rails.yml
 * rubocop-rake, 0.6.0:
   - rake.yml

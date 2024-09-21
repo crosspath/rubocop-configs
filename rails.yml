@@ -1,6 +1,6 @@
 # Config for RuboCop Rails
 #
-# https://github.com/rubocop/rubocop-rails/blob/v2.25.1/config/default.yml
+# https://github.com/rubocop/rubocop-rails/blob/v2.26.2/config/default.yml
 # https://docs.rubocop.org/rubocop-rails/cops_rails.html
 
 require:
@@ -145,6 +145,9 @@ Rails/EagerEvaluationLogMessage:
   Enabled: true
 
 Rails/EnumHash:
+  Enabled: true
+
+Rails/EnumSyntax:
   Enabled: true
 
 Rails/EnumUniqueness:

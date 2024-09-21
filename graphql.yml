@@ -1,6 +1,6 @@
 # Config for RuboCop::GraphQL
 #
-# https://github.com/DmitryTsepelev/rubocop-graphql/blob/v1.5.3/config/default.yml
+# https://github.com/DmitryTsepelev/rubocop-graphql/blob/v1.5.4/config/default.yml
 
 require:
   - rubocop-graphql

@@ -1,6 +1,6 @@
 # Config for RuboCop RSpec
 #
-# https://github.com/rubocop/rubocop-rspec/blob/v3.0.3/config/default.yml
+# https://github.com/rubocop/rubocop-rspec/blob/v3.0.5/config/default.yml
 # https://docs.rubocop.org/rubocop-rspec/cops_rspec.html
 
 require:
