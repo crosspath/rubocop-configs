@@ -473,7 +473,7 @@ Style/HashSyntax:
   PreferHashRocketsForNonAlnumEndingSymbols: false
   UseHashRocketsWithSymbolValues: false
   # Default values:
-  # EnforcedShorthandSyntax: always
+  # EnforcedShorthandSyntax: either
   # EnforcedStyle: ruby19
   # PreferHashRocketsForNonAlnumEndingSymbols: false
   # UseHashRocketsWithSymbolValues: false

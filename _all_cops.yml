@@ -1,6 +1,6 @@
 # Config for Rubocop.
 #
-# https://github.com/rubocop/rubocop/blob/v1.62.1/config/default.yml
+# https://github.com/rubocop/rubocop/blob/v1.67.0/config/default.yml
 
 AllCops:
   ActiveSupportExtensionsEnabled: true
@@ -29,8 +29,8 @@ AllCops:
   # ParserEngine: parser_whitequark
   # RubyInterpreters: [ruby, macruby, rake, jruby, rbx]
   # StringLiteralsFrozenByDefault: ~
-  # SuggestExtensions: {...}
   # StyleGuideBaseURL: https://rubystyle.guide
   # StyleGuideCopsOnly: false
+  # SuggestExtensions: {...}
   # TargetRubyVersion: ~
   # UseCache: true

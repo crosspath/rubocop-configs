@@ -1,6 +1,6 @@
 # Config for RuboCop RSpec
 #
-# https://github.com/rubocop/rubocop-rspec/blob/v3.0.5/config/default.yml
+# https://github.com/rubocop/rubocop-rspec/blob/v3.1.0/config/default.yml
 # https://docs.rubocop.org/rubocop-rspec/cops_rspec.html
 
 require:
@@ -511,6 +511,10 @@ RSpec/SpecFilePathFormat:
 
 RSpec/SpecFilePathSuffix:
   Enabled: true
+
+# Partially duplicates RSpec/VerifiedDoubleReference.
+RSpec/StringAsInstanceDoubleConstant:
+  Enabled: false
 
 RSpec/StubbedMock:
   Enabled: true

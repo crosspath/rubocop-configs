@@ -261,8 +261,10 @@ Layout/FirstHashElementLineBreak:
 
 Layout/FirstMethodArgumentLineBreak:
   Enabled: true
+  AllowedMethods: []
   AllowMultilineFinalElement: false
   # Default values:
+  # AllowedMethods: []
   # AllowMultilineFinalElement: false
 
 Layout/FirstMethodParameterLineBreak:
@@ -322,9 +324,11 @@ Layout/LeadingCommentSpace:
   Enabled: true
   AllowDoxygenCommentStyle: false
   AllowGemfileRubyComment: false
+  AllowRBSInlineAnnotation: true
   # Default values:
   # AllowDoxygenCommentStyle: false
   # AllowGemfileRubyComment: false
+  # AllowRBSInlineAnnotation: false
 
 Layout/LeadingEmptyLines:
   Enabled: true
