@@ -75,9 +75,9 @@ Let's take an example! Suppose you're building typical Rails project, you have t
   ```ruby
     group :development, optional: true do
       gem "prism" # For parser_prism in Rubocop.
-      gem "rubocop", "~> 1.67", require: false
+      gem "rubocop", "~> 1.68", require: false
       gem "rubocop-configs", require: false, git: "https://github.com/crosspath/rubocop-configs.git"
-      gem "rubocop-rails", "~> 2.25", require: false
+      gem "rubocop-rails", "~> 2.27", require: false
       gem "rubocop-rake", "0.6.0", require: false
     end
   ```
@@ -98,7 +98,7 @@ bundle exec rubocop
 
 This repository includes config files for these gems and versions:
 
-* rubocop, 1.67:
+* rubocop, 1.68:
   - _all_cops.yml
   - _ruby.yml
   - bundler.yml
@@ -118,19 +118,19 @@ This repository includes config files for these gems and versions:
   - graphql.yml
 * rubocop-performance, 1.21:
   - performance.yml
-* rubocop-rails, 2.26:
+* rubocop-rails, 2.27:
   - rails.yml
 * rubocop-rake, 0.6.0:
   - rake.yml
-* rubocop-rspec, 3.1:
+* rubocop-rspec, 3.2:
   - rspec.yml
 * rubocop-rspec_rails, 2.30:
   - rspec_rails.yml
-* rubocop-sequel, 0.3.4:
+* rubocop-sequel, 0.3.6:
   - sequel.yml
 * rubocop-thread_safety, 0.5.1:
   - thread_safety.yml
-* rswag-specs, 2.13:
+* rswag-specs, 2.15:
   - rswag.yml
 
 ## Ensure versions of config files match to versions of installed gems

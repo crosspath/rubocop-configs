@@ -1,14 +1,18 @@
-# Config for RuboCop Sequel v0.3.4.
+# Config for RuboCop Sequel v0.3.6.
 #
-# https://github.com/rubocop/rubocop-sequel
+# https://github.com/rubocop/rubocop-sequel/blob/0.3.6/config/default.yml
 
 require:
   - rubocop-sequel
 
+# Marked as obsolete in RuboCop Sequel.
 Sequel/ColumnDefault:
-  Enabled: true
+  Enabled: false
 
 Sequel/ConcurrentIndex:
+  Enabled: true
+
+Sequel/IrreversibleMigration:
   Enabled: true
 
 Sequel/JSONColumn:
@@ -17,6 +21,9 @@ Sequel/JSONColumn:
 
 Sequel/MigrationName:
   Enabled: true
+  DefaultName: new_migration
+  # Default values:
+  # DefaultName: new_migration
 
 Sequel/PartialConstraint:
   Enabled: true

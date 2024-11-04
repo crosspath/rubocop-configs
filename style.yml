@@ -28,6 +28,9 @@ Style/Alias:
   # Default values:
   # EnforcedStyle: prefer_alias
 
+Style/AmbiguousEndlessMethodDefinition:
+  Enabled: true
+
 Style/AndOr:
   Enabled: true
   EnforcedStyle: always
@@ -79,6 +82,9 @@ Style/BeginBlock:
   Enabled: true
 
 Style/BisectedAttrAccessor:
+  Enabled: true
+
+Style/BitwisePredicate:
   Enabled: true
 
 Style/BlockComments:
@@ -185,6 +191,9 @@ Style/ColonMethodCall:
   Enabled: true
 
 Style/ColonMethodDefinition:
+  Enabled: true
+
+Style/CombinableDefined:
   Enabled: true
 
 Style/CombinableLoops:
@@ -579,6 +588,9 @@ Style/IpAddresses:
   AllowedAddresses: ["::"]
   # Default values:
   # AllowedAddresses: ["::"]
+
+Style/KeywordArgumentsMerging:
+  Enabled: true
 
 Style/KeywordParametersOrder:
   Enabled: true
@@ -1170,6 +1182,12 @@ Style/SafeNavigation:
   # AllowedMethods: ['present?', 'blank?', presence, try, try!]
   # ConvertCodeThatCanStartToReturnNil: false
   # MaxChainLength: 2
+
+Style/SafeNavigationChainLength:
+  Enabled: true
+  Max: 2
+  # Default values:
+  # Max: 2
 
 Style/Sample:
   Enabled: true

@@ -187,9 +187,11 @@ Lint/DisjunctiveAssignmentInConstructor:
 Lint/DuplicateBranch:
   Enabled: true
   IgnoreConstantBranches: false
+  IgnoreDuplicateElseBranch: false
   IgnoreLiteralBranches: false
   # Default values:
   # IgnoreConstantBranches: false
+  # IgnoreDuplicateElseBranch: false
   # IgnoreLiteralBranches: false
 
 Lint/DuplicateCaseCondition:
@@ -562,6 +564,9 @@ Lint/UnderscorePrefixedVariableName:
   AllowKeywordBlockArguments: false
   # Default values:
   # AllowKeywordBlockArguments: false
+
+Lint/UnescapedBracketInRegexp:
+  Enabled: true
 
 Lint/UnexpectedBlockArity:
   Enabled: true

@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.19.0
+
+Update config files to:
+
+* RuboCop v1.68.0
+* RuboCop Sequel v0.3.6
+
+Support without changes:
+
+* RuboCop Rails v2.27.0
+* RuboCop RSpec v3.2.0
+* rswag-specs v2.15
+
 ## 0.18.0
 
 Update config files to:

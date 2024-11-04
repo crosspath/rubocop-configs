@@ -1,6 +1,6 @@
 # Config for Rubocop.
 #
-# https://github.com/rubocop/rubocop/blob/v1.67.0/config/default.yml
+# https://github.com/rubocop/rubocop/blob/v1.68.0/config/default.yml
 
 AllCops:
   ActiveSupportExtensionsEnabled: true

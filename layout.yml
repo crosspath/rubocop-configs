@@ -325,10 +325,12 @@ Layout/LeadingCommentSpace:
   AllowDoxygenCommentStyle: false
   AllowGemfileRubyComment: false
   AllowRBSInlineAnnotation: true
+  AllowSteepAnnotation: true
   # Default values:
   # AllowDoxygenCommentStyle: false
   # AllowGemfileRubyComment: false
   # AllowRBSInlineAnnotation: false
+  # AllowSteepAnnotation: false
 
 Layout/LeadingEmptyLines:
   Enabled: true
