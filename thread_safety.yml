@@ -1,17 +1,23 @@
 # Config for RuboCop::ThreadSafety
 #
-# https://github.com/rubocop/rubocop-thread_safety/blob/v0.5.1/config/default.yml
+# https://github.com/rubocop/rubocop-thread_safety/blob/v0.6.0/config/default.yml
 
 require:
   - rubocop-thread_safety
 
 ThreadSafety/ClassAndModuleAttributes:
   Enabled: true
+  ActiveSupportClassAttributeAllowed: false
+  # Default values:
+  # ActiveSupportClassAttributeAllowed: false
 # Use these methods from ActiveSupport: thread_cattr_accessor (alias for thread_mattr_accessor).
 # Or RequestStore (included in Draper, Lograge, PaperTrail): https://github.com/steveklabnik/request_store
 
-ThreadSafety/InstanceVariableInClassMethod:
+ThreadSafety/ClassInstanceVariable:
   Enabled: false
+
+ThreadSafety/DirChdir:
+  Enabled: true
 
 ThreadSafety/MutableClassInstanceVariable:
   Enabled: true
@@ -21,3 +27,9 @@ ThreadSafety/MutableClassInstanceVariable:
 
 ThreadSafety/NewThread:
   Enabled: true
+
+ThreadSafety/RackMiddlewareInstanceVariable:
+  Enabled: true
+  AllowedIdentifiers: []
+  # Default values:
+  # AllowedIdentifiers: []

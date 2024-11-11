@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.20.0
+
+Update config files to:
+
+* RuboCop::ThreadSafety v0.6.0
+
+Support without changes:
+
+* RuboCop Sequel v0.3.7
+
 ## 0.19.0
 
 Update config files to:

@@ -126,9 +126,9 @@ This repository includes config files for these gems and versions:
   - rspec.yml
 * rubocop-rspec_rails, 2.30:
   - rspec_rails.yml
-* rubocop-sequel, 0.3.6:
+* rubocop-sequel, 0.3.7:
   - sequel.yml
-* rubocop-thread_safety, 0.5.1:
+* rubocop-thread_safety, 0.6.0:
   - thread_safety.yml
 * rswag-specs, 2.15:
   - rswag.yml
