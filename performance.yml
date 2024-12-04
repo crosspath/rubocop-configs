@@ -1,6 +1,6 @@
 # Config for RuboCop Performance.
 #
-# https://github.com/rubocop/rubocop-performance/blob/v1.22.1/config/default.yml
+# https://github.com/rubocop/rubocop-performance/blob/v1.23.0/config/default.yml
 
 require:
   - rubocop-performance
@@ -162,6 +162,9 @@ Performance/StartWith:
   SafeMultiline: false
   # Default values:
   # SafeMultiline: true
+
+Performance/StringBytesize:
+  Enabled: true
 
 Performance/StringIdentifierArgument:
   Enabled: true

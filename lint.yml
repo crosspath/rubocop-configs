@@ -301,6 +301,9 @@ Lint/FormatParameterMismatch:
 Lint/HashCompareByIdentity:
   Enabled: true
 
+Lint/HashNewWithKeywordArgumentsAsDefault:
+  Enabled: true
+
 Lint/HeredocMethodCallPosition:
   Enabled: true
 
@@ -395,6 +398,10 @@ Lint/NumberConversion:
   # Default values:
   # AllowedMethods: []
   # AllowedPatterns: []
+
+# This rule is disabled, because "x % 1" should be valid expression to calculate fraction.
+Lint/NumericOperationWithConstantResult:
+  Enabled: false
 
 Lint/NumberedParameterAssignment:
   Enabled: true
@@ -624,10 +631,12 @@ Lint/UnusedMethodArgument:
   AllowUnusedKeywordArguments: false
   IgnoreEmptyMethods: false
   IgnoreNotImplementedMethods: true
+  NotImplementedExceptions: [NotImplementedError]
   # Default values:
   # AllowUnusedKeywordArguments: false
   # IgnoreEmptyMethods: true
   # IgnoreNotImplementedMethods: true
+  # NotImplementedExceptions: [NotImplementedError]
 
 Lint/UriEscapeUnescape:
   Enabled: true
@@ -644,6 +653,9 @@ Lint/UselessAccessModifier:
   # MethodCreatingMethods: []
 
 Lint/UselessAssignment:
+  Enabled: true
+
+Lint/UselessDefined:
   Enabled: true
 
 Lint/UselessElseWithoutRescue:

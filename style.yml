@@ -257,6 +257,9 @@ Style/DateTime:
 Style/DefWithParentheses:
   Enabled: true
 
+Style/DigChain:
+  Enabled: true
+
 Style/Dir:
   Enabled: true
 
@@ -383,8 +386,15 @@ Style/FetchEnvVar:
 Style/FileEmpty:
   Enabled: true
 
+Style/FileNull:
+  Enabled: true
+
 Style/FileRead:
   Enabled: true
+
+Style/FileTouch:
+  Enabled: true
+  Severity: warning
 
 Style/FileWrite:
   Enabled: true
