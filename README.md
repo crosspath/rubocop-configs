@@ -122,11 +122,11 @@ This repository includes config files for these gems and versions:
   - rails.yml
 * rubocop-rake, 0.6.0:
   - rake.yml
-* rubocop-rspec, 3.2:
+* rubocop-rspec, 3.3:
   - rspec.yml
 * rubocop-rspec_rails, 2.30:
   - rspec_rails.yml
-* rubocop-sequel, 0.3.7:
+* rubocop-sequel, 0.3.8:
   - sequel.yml
 * rubocop-thread_safety, 0.6.0:
   - thread_safety.yml

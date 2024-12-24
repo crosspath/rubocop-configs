@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.21.1
+
+Support without changes:
+
+* RuboCop RSpec v3.3.0
+* RuboCop Sequel v0.3.8
+
 ## 0.21.0
 
 Update config files to:

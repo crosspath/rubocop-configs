@@ -1,6 +1,6 @@
-# Config for RuboCop Sequel v0.3.6.
+# Config for RuboCop Sequel.
 #
-# https://github.com/rubocop/rubocop-sequel/blob/0.3.7/config/default.yml
+# https://github.com/rubocop/rubocop-sequel/blob/0.3.8/config/default.yml
 
 require:
   - rubocop-sequel
