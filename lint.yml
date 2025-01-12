@@ -59,6 +59,9 @@ Lint/ConstantDefinitionInBlock:
 Lint/ConstantOverwrittenInRescue:
   Enabled: true
 
+Lint/ConstantReassignment:
+  Enabled: true
+
 Lint/ConstantResolution:
   Enabled: false
   Ignore: []
@@ -529,6 +532,9 @@ Lint/ShadowedException:
   Enabled: true
 
 Lint/ShadowingOuterLocalVariable:
+  Enabled: true
+
+Lint/SharedMutableDefault:
   Enabled: true
 
 Lint/StructNewOverride:

@@ -8,10 +8,12 @@ inherit_mode:
 
 Style/AccessModifierDeclarations:
   Enabled: true
+  AllowModifiersOnAliasMethod: true
   AllowModifiersOnAttrs: true
   AllowModifiersOnSymbols: true
   EnforcedStyle: group
   # Default values:
+  # AllowModifiersOnAliasMethod: true
   # AllowModifiersOnAttrs: true
   # AllowModifiersOnSymbols: true
   # EnforcedStyle: group
@@ -598,6 +600,9 @@ Style/IpAddresses:
   AllowedAddresses: ["::"]
   # Default values:
   # AllowedAddresses: ["::"]
+
+Style/ItAssignment:
+  Enabled: false
 
 Style/KeywordArgumentsMerging:
   Enabled: true

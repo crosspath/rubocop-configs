@@ -23,6 +23,7 @@ AllCops:
   # EnabledByDefault: false
   # ExtraDetails: false
   # MaxFilesInCache: 20000
+  # MigratedSchemaVersion: ~ # From rubocop-rails
   # NewCops: pending
   # ParserEngine: parser_whitequark
   # RubyInterpreters: [ruby, macruby, rake, jruby, rbx]
