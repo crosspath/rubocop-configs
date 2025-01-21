@@ -77,7 +77,7 @@ Let's take an example! Suppose you're building typical Rails project, you have t
       gem "prism" # For parser_prism in Rubocop.
       gem "rubocop", "~> 1.70", require: false
       gem "rubocop-configs", require: false, git: "https://github.com/crosspath/rubocop-configs.git"
-      gem "rubocop-rails", "~> 2.28", require: false
+      gem "rubocop-rails", "~> 2.29", require: false
       gem "rubocop-rake", "0.6.0", require: false
     end
   ```
@@ -118,11 +118,11 @@ This repository includes config files for these gems and versions:
   - graphql.yml
 * rubocop-performance, 1.23:
   - performance.yml
-* rubocop-rails, 2.28:
+* rubocop-rails, 2.29:
   - rails.yml
 * rubocop-rake, 0.6.0:
   - rake.yml
-* rubocop-rspec, 3.3:
+* rubocop-rspec, 3.4:
   - rspec.yml
 * rubocop-rspec_rails, 2.30:
   - rspec_rails.yml

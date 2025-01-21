@@ -1,6 +1,6 @@
 # Config for RuboCop Rails
 #
-# https://github.com/rubocop/rubocop-rails/blob/v2.27.0/config/default.yml
+# https://github.com/rubocop/rubocop-rails/blob/v2.29.0/config/default.yml
 # https://docs.rubocop.org/rubocop-rails/cops_rails.html
 
 require:
@@ -265,6 +265,9 @@ Rails/MatchRoute:
 Rails/MigrationClassName:
   Enabled: true
 
+Rails/MultipleRoutePaths:
+  Enabled: true
+
 Rails/NegateInclude:
   Enabled: true
 
@@ -451,6 +454,9 @@ Rails/SquishedSQLHeredocs:
 
 Rails/StripHeredoc:
   Enabled: true
+
+Rails/StrongParametersExpect:
+  Enabled: false
 
 Rails/TableNameAssignment:
   Enabled: true
