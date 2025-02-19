@@ -24,7 +24,18 @@ Metrics/AbcSize:
 
 Metrics/BlockLength:
   Enabled: true
-  AllowedMethods: [refine]
+  Exclude:
+    - config/routes.rb
+    - "db/migrate/*.rb"
+  AllowedMethods:
+    - refine
+    # RSpec methods:
+    - context
+    - define
+    - describe
+    - fdescribe
+    - shared_examples
+    - xdescribe
   CountAsOne: [array, hash, heredoc, method_call]
   CountComments: false
   Max: 25

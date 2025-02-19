@@ -212,11 +212,13 @@ Naming/PredicateName:
   ForbiddenPrefixes: [is_, has_, have_]
   MethodDefinitionMacros: [define_method, define_singleton_method]
   NamePrefix: [is_, has_, have_]
+  UseSorbetSigs: false
   # Default values:
   # AllowedMethods: ['is_a?']
   # ForbiddenPrefixes: [is_, has_, have_]
   # MethodDefinitionMacros: [define_method, define_singleton_method]
   # NamePrefix: [is_, has_, have_]
+  # UseSorbetSigs: false
 
 Naming/RescuedExceptionsVariableName:
   Enabled: true

@@ -1,6 +1,6 @@
 # Config for RuboCop Performance.
 #
-# https://github.com/rubocop/rubocop-performance/blob/v1.23.0/config/default.yml
+# https://github.com/rubocop/rubocop-performance/blob/v1.24.0/config/default.yml
 
 require:
   - rubocop-performance
@@ -188,4 +188,7 @@ Performance/UnfreezeString:
   Enabled: false
 
 Performance/UriDefaultParser:
+  Enabled: true
+
+Performance/ZipWithoutBlock:
   Enabled: true

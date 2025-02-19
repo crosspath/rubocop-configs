@@ -32,6 +32,9 @@ Lint/AmbiguousRange:
 Lint/AmbiguousRegexpLiteral:
   Enabled: true
 
+Lint/ArrayLiteralInRegexp:
+  Enabled: true
+
 Lint/AssignmentInCondition:
   Enabled: true
   AllowSafeAssignment: false
@@ -69,6 +72,9 @@ Lint/ConstantResolution:
   # Default values:
   # Ignore: []
   # Only: []
+
+Lint/CopDirectiveSyntax:
+  Enabled: true
 
 Lint/Debugger:
   Enabled: true
@@ -468,6 +474,9 @@ Lint/RedundantSplatExpansion:
 Lint/RedundantStringCoercion:
   Enabled: true
 
+Lint/RedundantTypeConversion:
+  Enabled: true
+
 Lint/RedundantWithIndex:
   Enabled: true
 
@@ -547,6 +556,9 @@ Lint/SuppressedException:
   # Default values:
   # AllowComments: true
   # AllowNil: true
+
+SuppressedExceptionInNumberConversion:
+  Enabled: true
 
 Lint/SymbolConversion:
   Enabled: true
@@ -659,6 +671,9 @@ Lint/UselessAccessModifier:
   # MethodCreatingMethods: []
 
 Lint/UselessAssignment:
+  Enabled: true
+
+Lint/UselessConstantScoping:
   Enabled: true
 
 Lint/UselessDefined:

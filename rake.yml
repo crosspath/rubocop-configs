@@ -1,6 +1,6 @@
-# Config for RuboCop Rake v0.6.0
+# Config for RuboCop Rake
 #
-# https://github.com/rubocop/rubocop-rake/blob/v0.6.0/config/default.yml
+# https://github.com/rubocop/rubocop-rake/blob/v0.7.1/config/default.yml
 
 require:
   - rubocop-rake

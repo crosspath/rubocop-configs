@@ -487,6 +487,9 @@ Style/HashLikeCase:
   # Default values:
   # MinBranchesCount: 3
 
+Style/HashSlice:
+  Enabled: true
+
 Style/HashSyntax:
   Enabled: true
   EnforcedShorthandSyntax: always
@@ -1076,6 +1079,9 @@ Style/RedundantFileExtensionInRequire:
   Enabled: true
 
 Style/RedundantFilterChain:
+  Enabled: true
+
+Style/RedundantFormat:
   Enabled: true
 
 Style/RedundantFreeze:
