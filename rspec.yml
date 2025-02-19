@@ -3,7 +3,7 @@
 # https://github.com/rubocop/rubocop-rspec/blob/v3.5.0/config/default.yml
 # https://docs.rubocop.org/rubocop-rspec/cops_rspec.html
 
-require:
+plugins:
   - rubocop-rspec
 
 RSpec/AlignLeftLetBrace:

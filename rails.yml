@@ -3,7 +3,7 @@
 # https://github.com/rubocop/rubocop-rails/blob/v2.30.1/config/default.yml
 # https://docs.rubocop.org/rubocop-rails/cops_rails.html
 
-require:
+plugins:
   - rubocop-rails
 
 Rails/ActionControllerFlashBeforeRender:

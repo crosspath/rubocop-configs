@@ -2,7 +2,7 @@
 #
 # https://github.com/rubocop/rubocop-performance/blob/v1.24.0/config/default.yml
 
-require:
+plugins:
   - rubocop-performance
 
 Performance/AncestorsInclude:

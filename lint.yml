@@ -557,7 +557,7 @@ Lint/SuppressedException:
   # AllowComments: true
   # AllowNil: true
 
-SuppressedExceptionInNumberConversion:
+Lint/SuppressedExceptionInNumberConversion:
   Enabled: true
 
 Lint/SymbolConversion:

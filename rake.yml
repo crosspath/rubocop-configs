@@ -2,7 +2,7 @@
 #
 # https://github.com/rubocop/rubocop-rake/blob/v0.7.1/config/default.yml
 
-require:
+plugins:
   - rubocop-rake
 
 Rake/ClassDefinitionInTask:

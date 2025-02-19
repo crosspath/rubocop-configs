@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.24.1
+
+Replace configuration key "require" to "plugins" in configuration files for extensions that support
+plugin architecture (RuboCop v1.72.0 and above).
+See [migration guide](https://docs.rubocop.org/rubocop/plugin_migration_guide.html)
+for configuration files.
+
 ## 0.24.0
 
 Update config files to:
@@ -12,6 +19,8 @@ Support without changes:
 * RuboCop Rails v2.30.1
 * RuboCop Rake v0.7.1
 * RuboCop RSpec v3.5.0
+
+Exclude RSpec methods, `config/routes.rb` file and `db/migrate` files from `Metrics/BlockLength` rule.
 
 ## 0.23.0
 
