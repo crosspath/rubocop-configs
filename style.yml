@@ -1397,6 +1397,8 @@ Style/TrailingCommaInArrayLiteral:
   EnforcedStyleForMultiline: consistent_comma
   # Default values:
   # EnforcedStyleForMultiline: no_comma
+# Style "consistent_comma" is the same as "diff_comma" when brackets & array items are on different
+# lines.
 
 Style/TrailingCommaInBlockArgs:
   Enabled: false

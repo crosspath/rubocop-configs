@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.25.0
+
+Update config files to:
+
+* RuboCop v1.73.1
+* RuboCop::ThreadSafety v0.7.0
+
 ## 0.24.1
 
 Replace configuration key "require" to "plugins" in configuration files for extensions that support

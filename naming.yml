@@ -231,10 +231,14 @@ Naming/VariableName:
   AllowedIdentifiers: []
   AllowedPatterns: []
   EnforcedStyle: snake_case
+  ForbiddenIdentifiers: []
+  ForbiddenPatterns: []
   # Default values:
   # AllowedIdentifiers: []
   # AllowedPatterns: []
   # EnforcedStyle: snake_case
+  # ForbiddenIdentifiers: []
+  # ForbiddenPatterns: []
 
 Naming/VariableNumber:
   Enabled: true
