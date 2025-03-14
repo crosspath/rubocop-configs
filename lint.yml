@@ -669,6 +669,16 @@ Lint/UselessAccessModifier:
   # Default values:
   # ContextCreatingMethods: []
   # MethodCreatingMethods: []
+  # From rubocop-rails:
+  # inherit_mode:
+  #   merge:
+  #     - ContextCreatingMethods
+  # ContextCreatingMethods:
+  #   - class_methods
+  #   - included
+  #   - prepended
+  #   - concern
+  #   - concerning
 
 Lint/UselessAssignment:
   Enabled: true

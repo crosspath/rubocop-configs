@@ -1,21 +1,21 @@
 # frozen_string_literal: true
 
 module RubocopConfigs
-  VERSION = "0.25.0"
+  VERSION = "0.26.0"
 
   GEMS = {
     rubocop: {
-      version: ["1.73", "1.74"],
+      version: ["1.74", "1.75"],
       title: "Rubocop",
       const: "RuboCop::Version::STRING"
     }.freeze,
     "rubocop-capybara": {
-      version: ["2.20", "2.22"],
+      version: ["2.22", "2.23"],
       title: "Rubocop::Capybara",
       const: "RuboCop::Capybara::Version::STRING"
     }.freeze,
     "rubocop-factory_bot": {
-      version: ["2.25", "2.27"],
+      version: ["2.27", "2.28"],
       title: "Rubocop::FactoryBot",
       const: "RuboCop::FactoryBot::Version::STRING"
     }.freeze,
@@ -45,17 +45,17 @@ module RubocopConfigs
       const: "RuboCop::RSpec::Version::STRING"
     }.freeze,
     "rubocop-rspec_rails": {
-      version: ["2.28", "2.31"],
+      version: ["2.31", "2.32"],
       title: "Rubocop::RSpecRails",
       const: "RuboCop::RSpecRails::Version::STRING"
     }.freeze,
     "rubocop-sequel": {
-      version: ["0.3.6", "0.4"],
+      version: ["0.4", "0.5"],
       title: "Rubocop::Sequel",
       const: "RuboCop::Sequel::Version::STRING"
     }.freeze,
     "rubocop-thread_safety": {
-      version: ["0.7.0", "1.0"],
+      version: ["0.7", "1.0"],
       title: "Rubocop::ThreadSafety",
       const: "RuboCop::ThreadSafety::VERSION"
     }.freeze,

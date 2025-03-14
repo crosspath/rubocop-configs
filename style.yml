@@ -132,8 +132,12 @@ Style/ClassAndModuleChildren:
   Exclude:
     - './config/application.rb'
   EnforcedStyle: compact
+  EnforcedStyleForClasses: ~
+  EnforcedStyleForModules: ~
   # Default values:
   # EnforcedStyle: nested
+  # EnforcedStyleForClasses: ~
+  # EnforcedStyleForModules: ~
 
 Style/ClassCheck:
   Enabled: true
@@ -219,6 +223,11 @@ Style/CommentAnnotation:
 
 Style/CommentedKeyword:
   Enabled: true
+
+Style/ComparableBetween:
+  Enabled: false
+# Logical comparisons are faster than `Range#cover?` and `Integer#between?`,
+# though the difference is not big.
 
 Style/ComparableClamp:
   Enabled: true
@@ -427,11 +436,13 @@ Style/FormatStringToken:
   AllowedPatterns: []
   EnforcedStyle: annotated
   MaxUnannotatedPlaceholdersAllowed: 1
+  Mode: aggressive
   # Default values:
   # AllowedMethods: []
   # AllowedPatterns: []
   # EnforcedStyle: annotated
   # MaxUnannotatedPlaceholdersAllowed: 1
+  # Mode: aggressive
 # @see https://apidock.com/ruby/Kernel/sprintf
 # Annotated:
 #  string: %<name>s
@@ -1048,6 +1059,9 @@ Style/RedundantCapitalW:
 
 Style/RedundantCondition:
   Enabled: true
+  AllowedMethods: []
+  # Default values:
+  # AllowedMethods: ['nonzero?']
 
 Style/RedundantConditional:
   Enabled: true

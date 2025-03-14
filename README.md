@@ -75,7 +75,7 @@ Let's take an example! Suppose you're building typical Rails project, you have t
   ```ruby
     group :development, optional: true do
       gem "prism" # For parser_prism in Rubocop.
-      gem "rubocop", "~> 1.73", require: false
+      gem "rubocop", "~> 1.74", require: false
       gem "rubocop-configs", require: false, git: "https://github.com/crosspath/rubocop-configs.git"
       gem "rubocop-rails", "~> 2.30", require: false
       gem "rubocop-rake", "0.7.1", require: false
@@ -98,7 +98,7 @@ bundle exec rubocop
 
 This repository includes config files for these gems and versions:
 
-* rubocop, 1.73:
+* rubocop, 1.74:
   - _all_cops.yml
   - _ruby.yml
   - bundler.yml
@@ -110,9 +110,9 @@ This repository includes config files for these gems and versions:
   - naming.yml
   - security.yml
   - style.yml
-* rubocop-capybara, 2.21:
+* rubocop-capybara, 2.22:
   - capybara.yml
-* rubocop-factory_bot, 2.26:
+* rubocop-factory_bot, 2.27:
   - factory_bot.yml
 * rubocop-graphql, 1.5:
   - graphql.yml
@@ -124,13 +124,13 @@ This repository includes config files for these gems and versions:
   - rake.yml
 * rubocop-rspec, 3.5:
   - rspec.yml
-* rubocop-rspec_rails, 2.30:
+* rubocop-rspec_rails, 2.31:
   - rspec_rails.yml
-* rubocop-sequel, 0.3.8:
+* rubocop-sequel, 0.4:
   - sequel.yml
-* rubocop-thread_safety, 0.7.0:
+* rubocop-thread_safety, 0.7:
   - thread_safety.yml
-* rswag-specs, 2.15:
+* rswag-specs, 2.16:
   - rswag.yml
 
 ## Ensure versions of config files match to versions of installed gems

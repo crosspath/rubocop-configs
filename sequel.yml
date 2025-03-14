@@ -1,8 +1,8 @@
 # Config for RuboCop Sequel.
 #
-# https://github.com/rubocop/rubocop-sequel/blob/0.3.8/config/default.yml
+# https://github.com/rubocop/rubocop-sequel/blob/0.4.1/config/default.yml
 
-require:
+plugins:
   - rubocop-sequel
 
 # Marked as obsolete in RuboCop Sequel.
