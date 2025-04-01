@@ -1,8 +1,8 @@
 # Config for RuboCop::GraphQL
 #
-# https://github.com/DmitryTsepelev/rubocop-graphql/blob/v1.5.4/config/default.yml
+# https://github.com/DmitryTsepelev/rubocop-graphql/blob/v1.5.5/config/default.yml
 
-require:
+plugins:
   - rubocop-graphql
 
 GraphQL/ArgumentDescription:

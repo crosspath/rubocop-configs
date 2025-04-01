@@ -1,6 +1,6 @@
 # Config for RuboCop Performance.
 #
-# https://github.com/rubocop/rubocop-performance/blob/v1.24.0/config/default.yml
+# https://github.com/rubocop/rubocop-performance/blob/v1.25.0/config/default.yml
 
 plugins:
   - rubocop-performance

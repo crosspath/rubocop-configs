@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.27.0
+
+Update config files to:
+
+* RuboCop v1.75.1
+
+Support without changes:
+
+* RuboCop Performance v1.25.0
+* RuboCop Rails v2.31.0
+
 ## 0.26.0
 
 Update config files to:

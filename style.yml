@@ -492,6 +492,9 @@ Style/HashEachMethods:
 Style/HashExcept:
   Enabled: true
 
+Style/HashFetchChain:
+  Enabled: true
+
 Style/HashLikeCase:
   Enabled: true
   MinBranchesCount: 2
@@ -617,6 +620,12 @@ Style/IpAddresses:
 
 Style/ItAssignment:
   Enabled: false
+
+Style/ItBlockParameter:
+  Enabled: true
+  EnforcedStyle: only_numbered_parameters
+  # Default values:
+  # EnforcedStyle: only_numbered_parameters
 
 Style/KeywordArgumentsMerging:
   Enabled: true
@@ -859,9 +868,11 @@ Style/NestedTernaryOperator:
 
 Style/Next:
   Enabled: true
+  AllowConsecutiveConditionals: false
   EnforcedStyle: skip_modifier_ifs
   MinBodyLength: 3
   # Default values:
+  # AllowConsecutiveConditionals: false
   # EnforcedStyle: skip_modifier_ifs
   # MinBodyLength: 3
 
