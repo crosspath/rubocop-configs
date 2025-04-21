@@ -1,6 +1,6 @@
 # Config for RuboCop RSpec
 #
-# https://github.com/rubocop/rubocop-rspec/blob/v3.5.0/config/default.yml
+# https://github.com/rubocop/rubocop-rspec/blob/v3.6.0/config/default.yml
 # https://docs.rubocop.org/rubocop-rspec/cops_rspec.html
 
 plugins:
@@ -269,6 +269,9 @@ RSpec/ImplicitSubject:
   EnforcedStyle: disallow
   # Default values:
   # EnforcedStyle: single_line_only
+
+RSpec/IncludeExamples:
+  Enabled: true
 
 RSpec/IndexedLet:
   Enabled: false

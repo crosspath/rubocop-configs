@@ -122,7 +122,7 @@ This repository includes config files for these gems and versions:
   - rails.yml
 * rubocop-rake, 0.7.1:
   - rake.yml
-* rubocop-rspec, 3.5:
+* rubocop-rspec, 3.6:
   - rspec.yml
 * rubocop-rspec_rails, 2.31:
   - rspec_rails.yml
