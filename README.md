@@ -77,7 +77,7 @@ Let's take an example! Suppose you're building typical Rails project, you have t
       gem "prism" # For parser_prism in Rubocop.
       gem "rubocop", "~> 1.75", require: false
       gem "rubocop-configs", require: false, git: "https://github.com/crosspath/rubocop-configs.git"
-      gem "rubocop-rails", "~> 2.31", require: false
+      gem "rubocop-rails", "~> 2.32", require: false
       gem "rubocop-rake", "0.7.1", require: false
     end
   ```
@@ -118,7 +118,7 @@ This repository includes config files for these gems and versions:
   - graphql.yml
 * rubocop-performance, 1.25:
   - performance.yml
-* rubocop-rails, 2.31:
+* rubocop-rails, 2.32:
   - rails.yml
 * rubocop-rake, 0.7.1:
   - rake.yml
@@ -185,7 +185,7 @@ How to review and update config values?
 
 1. Compare changes in default config files for Rubocop and its extensions. Example link:
 
-    https://github.com/rubocop/rubocop/compare/v1.50.2...master
+    https://github.com/rubocop/rubocop/compare/v1.75.8...master
 
 2. Review changes in file `config/default.yml`
 3. Carefully update config files in this repository.
