@@ -686,6 +686,12 @@ Lint/UselessAssignment:
 Lint/UselessConstantScoping:
   Enabled: true
 
+Lint/UselessDefaultValueArgument:
+  Enabled: true
+  AllowedReceivers: ['Rails.cache']
+  # Default values:
+  # AllowedReceivers: []
+
 Lint/UselessDefined:
   Enabled: true
 
@@ -696,6 +702,9 @@ Lint/UselessMethodDefinition:
   Enabled: true
 
 Lint/UselessNumericOperation:
+  Enabled: true
+
+Lint/UselessOr:
   Enabled: true
 
 Lint/UselessRescue:

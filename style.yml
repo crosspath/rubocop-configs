@@ -351,6 +351,11 @@ Style/EmptyMethod:
   # Default values:
   # EnforcedStyle: compact
 
+Style/EmptyStringInsideInterpolation:
+  Enabled: false
+  # Default values:
+  # EnforcedStyle: trailing_conditional
+
 Style/Encoding:
   Enabled: true
 
@@ -625,7 +630,7 @@ Style/ItBlockParameter:
   Enabled: true
   EnforcedStyle: only_numbered_parameters
   # Default values:
-  # EnforcedStyle: only_numbered_parameters
+  # EnforcedStyle: allow_single_line
 
 Style/KeywordArgumentsMerging:
   Enabled: true
@@ -1057,6 +1062,9 @@ Style/RedundantArgument:
   #   chomp!: "\n" # String#chomp!
 
 Style/RedundantArrayConstructor:
+  Enabled: true
+
+Style/RedundantArrayFlatten:
   Enabled: true
 
 Style/RedundantAssignment:

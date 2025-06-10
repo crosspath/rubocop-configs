@@ -210,7 +210,15 @@ Naming/MethodParameterName:
   # ForbiddenNames: []
   # MinNameLength: 3
 
-Naming/PredicateName:
+Naming/PredicateMethod:
+  Enabled: true
+  AllowedMethods: [call]
+  Mode: aggressive
+  # Default values:
+  # AllowedMethods: [call]
+  # Mode: conservative
+
+Naming/PredicatePrefix:
   Enabled: true
   AllowedMethods: ['is_a?']
   ForbiddenPrefixes: [does_, is_, has_, have_]
