@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.29.1
+
+Remove deprecated rule from `sequel.yml`.
+
 ## 0.29.0
 
 Update config files to:

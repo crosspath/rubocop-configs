@@ -5,10 +5,6 @@
 plugins:
   - rubocop-sequel
 
-# Marked as obsolete in RuboCop Sequel.
-Sequel/ColumnDefault:
-  Enabled: false
-
 Sequel/ConcurrentIndex:
   Enabled: true
 
