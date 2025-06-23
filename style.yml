@@ -193,6 +193,11 @@ Style/CollectionMethods:
   #   find_all: 'select'
   #   member?: 'include?'
 
+Style/CollectionQuerying:
+  Enabled: true
+  Severity: warning
+# This check may conflict with method `count` from ActiveRecord.
+
 Style/ColonMethodCall:
   Enabled: true
 
@@ -396,8 +401,10 @@ Style/ExponentialNotation:
 Style/FetchEnvVar:
   Enabled: true
   AllowedVars: []
+  DefaultToNil: false
   # Default values:
   # AllowedVars: []
+  # DefaultToNil: true
 
 Style/FileEmpty:
   Enabled: true

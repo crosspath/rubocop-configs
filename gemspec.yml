@@ -5,6 +5,9 @@
 Gemspec/AddRuntimeDependency:
   Enabled: true
 
+Gemspec/AttributeAssignment:
+  Enabled: true
+
 Gemspec/DependencyVersion:
   Enabled: true
   EnforcedStyle: required

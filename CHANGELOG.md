@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.30.0
+
+Update config files to:
+
+* RuboCop v1.77.0
+
 ## 0.29.1
 
 Remove deprecated rule from `sequel.yml`.

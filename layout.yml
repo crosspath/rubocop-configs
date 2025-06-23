@@ -360,6 +360,7 @@ Layout/LineLength:
   Severity: warning
   AllowedPatterns: []
   AllowHeredoc: true
+  AllowQualifiedName: true
   AllowURI: true
   IgnoreCopDirectives: false
   Max: 100
@@ -368,6 +369,7 @@ Layout/LineLength:
   # Default values:
   # AllowedPatterns: []
   # AllowHeredoc: true
+  # AllowQualifiedName: true
   # AllowURI: true
   # IgnoreCopDirectives: true
   # Max: 120

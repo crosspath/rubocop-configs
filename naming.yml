@@ -213,9 +213,13 @@ Naming/MethodParameterName:
 Naming/PredicateMethod:
   Enabled: true
   AllowedMethods: [call]
+  AllowedPatterns: []
+  AllowBangMethods: false
   Mode: aggressive
   # Default values:
   # AllowedMethods: [call]
+  # AllowedPatterns: []
+  # AllowBangMethods: false
   # Mode: conservative
 
 Naming/PredicatePrefix:

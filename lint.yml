@@ -527,6 +527,9 @@ Lint/ScriptPermission:
 
 Lint/SelfAssignment:
   Enabled: true
+  AllowRBSInlineAnnotation: false
+  # Default values:
+  # AllowRBSInlineAnnotation: false
 
 Lint/SendWithMixinArgument:
   Enabled: true
