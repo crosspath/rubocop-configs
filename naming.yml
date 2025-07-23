@@ -216,11 +216,13 @@ Naming/PredicateMethod:
   AllowedPatterns: []
   AllowBangMethods: false
   Mode: aggressive
+  WaywardPredicates: []
   # Default values:
   # AllowedMethods: [call]
   # AllowedPatterns: []
   # AllowBangMethods: false
   # Mode: conservative
+  # WaywardPredicates: [nonzero?]
 
 Naming/PredicatePrefix:
   Enabled: true

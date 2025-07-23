@@ -75,7 +75,7 @@ Let's take an example! Suppose you're building typical Rails project, you have t
   ```ruby
     group :development, optional: true do
       gem "prism" # For parser_prism in Rubocop.
-      gem "rubocop", "~> 1.77", require: false
+      gem "rubocop", "~> 1.78", require: false
       gem "rubocop-configs", require: false, git: "https://github.com/crosspath/rubocop-configs.git"
       gem "rubocop-rails", "~> 2.32", require: false
       gem "rubocop-rake", "0.7.1", require: false
@@ -98,7 +98,7 @@ bundle exec rubocop
 
 This repository includes config files for these gems and versions:
 
-* rubocop, 1.77:
+* rubocop, 1.78:
   - _all_cops.yml
   - _ruby.yml
   - bundler.yml

@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.31.0
+
+Update config files to:
+
+* RuboCop v1.78.0
+
 ## 0.30.0
 
 Update config files to:
