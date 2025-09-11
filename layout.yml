@@ -161,6 +161,9 @@ Layout/EmptyLineBetweenDefs:
 Layout/EmptyLines:
   Enabled: true
 
+Layout/EmptyLinesAfterModuleInclusion:
+  Enabled: true
+
 Layout/EmptyLinesAroundAccessModifier:
   Enabled: true
   EnforcedStyle: around

@@ -1,6 +1,6 @@
 # Config for RuboCop Rails
 #
-# https://github.com/rubocop/rubocop-rails/blob/v2.32.0/config/default.yml
+# https://github.com/rubocop/rubocop-rails/blob/v2.33.3/config/default.yml
 # https://docs.rubocop.org/rubocop-rails/cops_rails.html
 
 plugins:
@@ -189,6 +189,9 @@ Rails/FindBy:
 Rails/FindById:
   Enabled: true
 
+Rails/FindByOrAssignmentMemoization:
+  Enabled: true
+
 Rails/FindEach:
   Enabled: true
   AllowedMethods: [order, limit, select, lock]
@@ -272,6 +275,9 @@ Rails/NegateInclude:
   Enabled: true
 
 Rails/NotNullColumn:
+  Enabled: true
+
+Rails/OrderArguments:
   Enabled: true
 
 Rails/OrderById:

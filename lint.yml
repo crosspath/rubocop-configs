@@ -461,9 +461,13 @@ Lint/RedundantRequireStatement:
 
 Lint/RedundantSafeNavigation:
   Enabled: true
+  AdditionalNilMethods: ['present?', 'blank?']
   AllowedMethods: ['instance_of?', 'kind_of?', 'is_a?', 'eql?', 'respond_to?', 'equal?', 'presence', 'present?']
+  InferNonNilReceiver: true
   # Default values:
+  # AdditionalNilMethods: ['present?', 'blank?', 'try', 'try!']
   # AllowedMethods: ['instance_of?', 'kind_of?', 'is_a?', 'eql?', 'respond_to?', 'equal?']
+  # InferNonNilReceiver: false
 
 Lint/RedundantSplatExpansion:
   Enabled: true
