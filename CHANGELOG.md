@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.33.0
+
+Update config files to:
+
+* RuboCop v1.81.6
+
+Added standard controller methods to list of `AllowedMethods` in `Style/DocumentationMethod`.
+Now RuboCop should not require comments for signature of these methods.
+
+Disabled `Performance/BigDecimalWithNumericArgument` following recommendation from authors of gem `rubocop-performance`.
+
 ## 0.32.0
 
 Update config files to:

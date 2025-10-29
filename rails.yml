@@ -1,6 +1,6 @@
 # Config for RuboCop Rails
 #
-# https://github.com/rubocop/rubocop-rails/blob/v2.33.3/config/default.yml
+# https://github.com/rubocop/rubocop-rails/blob/v2.33.4/config/default.yml
 # https://docs.rubocop.org/rubocop-rails/cops_rails.html
 
 plugins:

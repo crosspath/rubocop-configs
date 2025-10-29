@@ -1,6 +1,6 @@
 # Config for RuboCop Performance.
 #
-# https://github.com/rubocop/rubocop-performance/blob/v1.26.0/config/default.yml
+# https://github.com/rubocop/rubocop-performance/blob/v1.26.1/config/default.yml
 
 plugins:
   - rubocop-performance
@@ -12,7 +12,7 @@ Performance/ArraySemiInfiniteRangeSlice:
   Enabled: false
 
 Performance/BigDecimalWithNumericArgument:
-  Enabled: true
+  Enabled: false
 
 Performance/BindCall:
   Enabled: true

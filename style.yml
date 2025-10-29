@@ -60,6 +60,9 @@ Style/ArrayIntersect:
   Enabled: true
   # WARN: AllCops:ActiveSupportExtensionsEnabled: true
 
+Style/ArrayIntersectWithSingleElement:
+  Enabled: true
+
 Style/ArrayJoin:
   Enabled: true
 
@@ -306,7 +309,7 @@ Style/DocumentationMethod:
     - 'config/**/*.rb'
     - 'db/migrate/*.rb'
   Severity: warning
-  AllowedMethods: []
+  AllowedMethods: [create, destroy, edit, index, new, show, update]
   RequireForNonPublicMethods: true
   # Default values:
   # AllowedMethods: []
