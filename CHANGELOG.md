@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.34.1
+
+Remove typo in rule option value.
+
 ## 0.34.0
 
 Update config files to:

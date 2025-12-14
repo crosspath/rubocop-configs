@@ -308,7 +308,7 @@ RSpec/LeakyConstantDeclaration:
   Enabled: true
 
 RSpec/LeakyLocalVariable:
-  Enabled: truefv
+  Enabled: true
 
 RSpec/LetBeforeExamples:
   Enabled: true
