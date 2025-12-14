@@ -1,6 +1,6 @@
 # Config for RuboCop Rails
 #
-# https://github.com/rubocop/rubocop-rails/blob/v2.33.4/config/default.yml
+# https://github.com/rubocop/rubocop-rails/blob/v2.34.2/config/default.yml
 # https://docs.rubocop.org/rubocop-rails/cops_rails.html
 
 plugins:
@@ -153,6 +153,9 @@ Rails/EnumSyntax:
 Rails/EnumUniqueness:
   Enabled: true
 
+Rails/Env:
+  Enabled: false
+
 Rails/EnvLocal:
   Enabled: true
 
@@ -220,6 +223,9 @@ Rails/HttpStatus:
   EnforcedStyle: symbolic
   # Default values:
   # EnforcedStyle: symbolic
+
+Rails/HttpStatusNameConsistency:
+  Enabled: true
 
 Rails/I18nLazyLookup:
   Enabled: false
@@ -328,6 +334,9 @@ Rails/RakeEnvironment:
   Enabled: false
 
 Rails/ReadWriteAttribute:
+  Enabled: true
+
+Rails/RedirectBackOrTo:
   Enabled: true
 
 Rails/RedundantActiveRecordAllMethod:

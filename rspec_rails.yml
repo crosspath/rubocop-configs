@@ -1,10 +1,15 @@
 # Config for RuboCop RSpecRails
 #
-# https://github.com/rubocop/rubocop-rspec_rails/blob/v2.31.0/config/default.yml
+# https://github.com/rubocop/rubocop-rspec_rails/blob/v2.32.0/config/default.yml
 # https://docs.rubocop.org/rubocop-rspec_rails/cops_rspecrails.html
 
 plugins:
   - rubocop-rspec_rails
+
+# This rule relates to Rubocop plugin "rubocop-rspec", but these options stand upon ActiveSupport.
+RSpec/SpecFilePathFormat:
+  EnforcedInflector: active_support
+  InflectorPath: "./config/initializers/inflections.rb"
 
 RSpecRails/AvoidSetupHook:
   Enabled: true
@@ -20,6 +25,9 @@ RSpecRails/HttpStatus:
   EnforcedStyle: symbolic
   # Default values:
   # EnforcedStyle: symbolic
+
+RSpecRails/HttpStatusNameConsistency:
+  Enabled: true
 
 RSpecRails/InferredSpecType:
   Enabled: true

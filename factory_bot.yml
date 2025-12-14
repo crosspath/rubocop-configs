@@ -1,6 +1,6 @@
 # Config for RuboCop factory_bot
 #
-# https://github.com/rubocop/rubocop-factory_bot/blob/v2.27.1/config/default.yml
+# https://github.com/rubocop/rubocop-factory_bot/blob/v2.28.0/config/default.yml
 # https://docs.rubocop.org/rubocop-factory_bot/cops_factorybot.html
 
 plugins:

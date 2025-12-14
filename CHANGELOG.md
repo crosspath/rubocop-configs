@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.34.0
+
+Update config files to:
+
+* RuboCop factory_bot v2.28.0
+* RuboCop Rails v2.34.2
+* RuboCop RSpec v3.8.0
+* RuboCop RSpec Rails v2.32.0
+
 ## 0.33.0
 
 Update config files to:

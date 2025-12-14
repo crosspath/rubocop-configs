@@ -1,6 +1,6 @@
 # Config for RuboCop RSpec
 #
-# https://github.com/rubocop/rubocop-rspec/blob/v3.7.0/config/default.yml
+# https://github.com/rubocop/rubocop-rspec/blob/v3.8.0/config/default.yml
 # https://docs.rubocop.org/rubocop-rspec/cops_rspec.html
 
 plugins:
@@ -307,6 +307,9 @@ RSpec/LeadingSubject:
 RSpec/LeakyConstantDeclaration:
   Enabled: true
 
+RSpec/LeakyLocalVariable:
+  Enabled: truefv
+
 RSpec/LetBeforeExamples:
   Enabled: true
 
@@ -508,9 +511,11 @@ RSpec/SpecFilePathFormat:
   # CustomTransform:
   #   RuboCop: rubocop
   #   RSpec: rspec
+  # EnforcedInflector: default
   # IgnoreMethods: false
   # IgnoreMetadata:
   #   type: routing
+  # InflectorPath: "./config/initializers/inflections.rb"
 
 RSpec/SpecFilePathSuffix:
   Enabled: true
