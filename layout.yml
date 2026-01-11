@@ -362,19 +362,21 @@ Layout/LineLength:
   Enabled: true
   Severity: warning
   AllowedPatterns: []
+  AllowCopDirectives: true
   AllowHeredoc: true
   AllowQualifiedName: true
+  AllowRBSInlineAnnotation: false
   AllowURI: true
-  IgnoreCopDirectives: false
   Max: 100
   SplitStrings: false
   URISchemes: [http, https]
   # Default values:
   # AllowedPatterns: []
+  # AllowCopDirectives: true
   # AllowHeredoc: true
   # AllowQualifiedName: true
+  # AllowRBSInlineAnnotation: false
   # AllowURI: true
-  # IgnoreCopDirectives: true
   # Max: 120
   # SplitStrings: false
   # URISchemes: [http, https]

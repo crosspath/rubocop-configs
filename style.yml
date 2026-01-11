@@ -726,6 +726,7 @@ Style/MethodCallWithArgsParentheses:
   EnforcedStyle: require_parentheses
   IgnoreMacros: true
   IncludedMacros: []
+  IncludedMacroPatterns: []
   # Default values:
   # AllowedMethods: []
   # AllowedPatterns: []
@@ -736,6 +737,7 @@ Style/MethodCallWithArgsParentheses:
   # EnforcedStyle: require_parentheses
   # IgnoreMacros: true
   # IncludedMacros: []
+  # IncludedMacroPatterns: []
 
 Style/MethodCallWithoutArgsParentheses:
   Enabled: true
@@ -786,6 +788,9 @@ Style/ModuleFunction:
 # `extend self` is preferred way to define module-scoped methods, because it allows
 # to use public and private scopes, and the class extending/including this module
 # has these methods within the same scopes as in the module.
+
+Style/ModuleMemberExistenceCheck:
+  Enabled: true
 
 Style/MultilineBlockChain:
   Enabled: true
@@ -1058,6 +1063,7 @@ Style/RedundantArgument:
     sum: 0
     exit: true
     exit!: false
+    to_i: 10
     split: ' '
     chomp: "\n"
     chomp!: "\n"
@@ -1067,6 +1073,7 @@ Style/RedundantArgument:
   #   sum: 0 # Array#sum
   #   exit: true # Kernel.#exit
   #   exit!: false # Kernel.#exit!
+  #   to_i: 10 # String#to_i
   #   split: ' ' # String#split
   #   chomp: "\n" # String#chomp
   #   chomp!: "\n" # String#chomp!

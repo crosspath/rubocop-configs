@@ -1,6 +1,6 @@
 # Config for RuboCop RSpec
 #
-# https://github.com/rubocop/rubocop-rspec/blob/v3.8.0/config/default.yml
+# https://github.com/rubocop/rubocop-rspec/blob/v3.9.0/config/default.yml
 # https://docs.rubocop.org/rubocop-rspec/cops_rspec.html
 
 plugins:
@@ -413,6 +413,9 @@ RSpec/NotToNot:
   EnforcedStyle: not_to
   # Default values:
   # EnforcedStyle: not_to
+
+RSpec/Output:
+  Enabled: true
 
 RSpec/OverwritingSetup:
   Enabled: true

@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.35.0
+
+Update config files to:
+
+* RuboCop v1.82.1
+* RuboCop RSpec v3.9.0
+
 ## 0.34.1
 
 Remove typo in rule option value.
