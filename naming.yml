@@ -222,7 +222,7 @@ Naming/PredicateMethod:
   # AllowedPatterns: []
   # AllowBangMethods: false
   # Mode: conservative
-  # WaywardPredicates: [nonzero?]
+  # WaywardPredicates: [infinite?, nonzero?]
 
 Naming/PredicatePrefix:
   Enabled: true

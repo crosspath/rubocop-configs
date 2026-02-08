@@ -336,6 +336,12 @@ Style/EmptyBlockParameter:
 Style/EmptyCaseCondition:
   Enabled: true
 
+Style/EmptyClassDefinition:
+  Enabled: true
+  EnforcedStyle: class_new
+  # Default values:
+  # EnforcedStyle: class_definition
+
 Style/EmptyElse:
   Enabled: true
   AllowComments: false
@@ -516,6 +522,11 @@ Style/HashLikeCase:
   # Default values:
   # MinBranchesCount: 3
 
+Style/HashLookupMethod:
+  Enabled: false
+  # Default values:
+  # EnforcedStyle: brackets
+
 Style/HashSlice:
   Enabled: true
 
@@ -556,7 +567,7 @@ Style/IfWithBooleanLiteralBranches:
   Enabled: true
   AllowedMethods: []
   # Default values:
-  # AllowedMethods: ['nonzero?']
+  # AllowedMethods: [infinite?, nonzero?]
 
 Style/IfWithSemicolon:
   Enabled: true
@@ -791,6 +802,9 @@ Style/ModuleFunction:
 
 Style/ModuleMemberExistenceCheck:
   Enabled: true
+  AllowedMethods: []
+  # Default values:
+  # AllowedMethods: []
 
 Style/MultilineBlockChain:
   Enabled: true
@@ -853,6 +867,9 @@ Style/NegatedUnless:
 
 Style/NegatedWhile:
   Enabled: false
+
+Style/NegativeArrayIndex:
+  Enabled: true
 
 Style/NestedFileDirname:
   Enabled: true
@@ -1097,7 +1114,7 @@ Style/RedundantCondition:
   Enabled: true
   AllowedMethods: []
   # Default values:
-  # AllowedMethods: ['nonzero?']
+  # AllowedMethods: [infinite?, nonzero?]
 
 Style/RedundantConditional:
   Enabled: true
@@ -1243,6 +1260,9 @@ Style/ReturnNilInPredicateMethodDefinition:
   # Default values:
   # AllowedMethods: []
   # AllowedPatterns: []
+
+Style/ReverseFind:
+  Enabled: true
 
 Style/SafeNavigation:
   Enabled: true

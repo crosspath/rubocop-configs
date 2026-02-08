@@ -245,8 +245,10 @@ Layout/FirstArrayElementIndentation:
 
 Layout/FirstArrayElementLineBreak:
   Enabled: true
+  AllowImplicitArrayLiterals: false
   AllowMultilineFinalElement: false
   # Default values:
+  # AllowImplicitArrayLiterals: false
   # AllowMultilineFinalElement: false
 
 Layout/FirstHashElementIndentation:
@@ -315,9 +317,11 @@ Layout/IndentationStyle:
 Layout/IndentationWidth:
   Enabled: true
   AllowedPatterns: []
+  EnforcedStyleAlignWith: start_of_line
   Width: 2
   # Default values:
   # AllowedPatterns: []
+  # EnforcedStyleAlignWith: start_of_line
   # Width: 2
 
 Layout/InitialIndentation:
