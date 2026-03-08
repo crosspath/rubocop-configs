@@ -340,7 +340,7 @@ Style/EmptyClassDefinition:
   Enabled: true
   EnforcedStyle: class_new
   # Default values:
-  # EnforcedStyle: class_definition
+  # EnforcedStyle: class_keyword
 
 Style/EmptyElse:
   Enabled: true
@@ -420,6 +420,9 @@ Style/FileEmpty:
 
 Style/FileNull:
   Enabled: true
+
+Style/FileOpen:
+  Enabled: false
 
 Style/FileRead:
   Enabled: true
@@ -688,6 +691,9 @@ Style/MapCompactWithConditionalBlock:
   Enabled: true
 
 Style/MapIntoArray:
+  Enabled: true
+
+Style/MapJoin:
   Enabled: true
 
 Style/MapToHash:
@@ -977,6 +983,10 @@ Style/ObjectThen:
   # Default values:
   # EnforcedStyle: then
 
+Style/OneClassPerFile:
+  Enabled: true
+  Severity: warning
+
 Style/OneLineConditional:
   Enabled: true
   AlwaysCorrectToMultiline: true
@@ -1020,6 +1030,9 @@ Style/ParenthesesAroundCondition:
   # AllowInMultilineConditions: false
   # AllowSafeAssignment: true
 
+Style/PartitionInsteadOfDoubleSelect:
+  Enabled: true
+
 Style/PercentLiteralDelimiters:
   Enabled: true
   PreferredDelimiters:
@@ -1047,6 +1060,9 @@ Style/PercentQLiterals:
 Style/PerlBackrefs:
   Enabled: true
 
+Style/PredicateWithKind:
+  Enabled: true
+
 Style/PreferredHashMethods:
   Enabled: true
   EnforcedStyle: short
@@ -1071,6 +1087,9 @@ Style/RaiseArgs:
   # EnforcedStyle: exploded
 
 Style/RandomWithOffset:
+  Enabled: true
+
+Style/ReduceToHash:
   Enabled: true
 
 Style/RedundantArgument:
@@ -1172,6 +1191,9 @@ Style/RedundantInterpolationUnfreeze:
 Style/RedundantLineContinuation:
   Enabled: true
 
+Style/RedundantMinMaxBy:
+  Enabled: true
+
 Style/RedundantParentheses:
   Enabled: true
 
@@ -1222,6 +1244,9 @@ Style/RedundantSortBy:
   Enabled: true
 
 Style/RedundantStringEscape:
+  Enabled: true
+
+Style/RedundantStructKeywordInit:
   Enabled: true
 
 Style/RegexpLiteral:
@@ -1281,6 +1306,12 @@ Style/SafeNavigationChainLength:
   # Max: 2
 
 Style/Sample:
+  Enabled: true
+
+Style/SelectByKind:
+  Enabled: true
+
+Style/SelectByRange:
   Enabled: true
 
 Style/SelectByRegexp:
@@ -1433,6 +1464,9 @@ Style/SymbolProc:
   # AllowedMethods: [define_method]
   # AllowedPatterns: []
   # AllowMethodsWithArguments: false
+
+Style/TallyMethod:
+  Enabled: true
 
 Style/TernaryParentheses:
   Enabled: true

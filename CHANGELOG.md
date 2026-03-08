@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.37.0
+
+Update config files to:
+
+* RuboCop v1.85.1
+* RuboCop::GraphQL v1.6.0
+
 ## 0.36.0
 
 Update config files to:

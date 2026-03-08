@@ -76,6 +76,9 @@ Lint/ConstantResolution:
 Lint/CopDirectiveSyntax:
   Enabled: true
 
+Lint/DataDefineOverride:
+  Enabled: true
+
 Lint/Debugger:
   Enabled: true
   Exclude: ['db/seeds.rb', 'lib/tasks/**/*.rb']
@@ -642,6 +645,9 @@ Lint/UnreachableLoop:
   # Default values:
   # AllowedPatterns:
   #   - !ruby/regexp /(exactly|at_least|at_most)\(\d+\)\.times/
+
+Lint/UnreachablePatternBranch:
+  Enabled: true
 
 Lint/UnusedBlockArgument:
   Enabled: true
