@@ -338,8 +338,10 @@ Style/EmptyCaseCondition:
 
 Style/EmptyClassDefinition:
   Enabled: true
+  AllowedParentClasses: []
   EnforcedStyle: class_new
   # Default values:
+  # AllowedParentClasses: []
   # EnforcedStyle: class_keyword
 
 Style/EmptyElse:
@@ -512,6 +514,8 @@ Style/HashConversion:
 Style/HashEachMethods:
   Enabled: true
   AllowedReceivers: [Thread.current]
+  # Default values:
+  # AllowedReceivers: [Thread.current]
 
 Style/HashExcept:
   Enabled: true
@@ -528,6 +532,7 @@ Style/HashLikeCase:
 Style/HashLookupMethod:
   Enabled: false
   # Default values:
+  # AllowedReceivers: []
   # EnforcedStyle: brackets
 
 Style/HashSlice:
@@ -808,9 +813,6 @@ Style/ModuleFunction:
 
 Style/ModuleMemberExistenceCheck:
   Enabled: true
-  AllowedMethods: []
-  # Default values:
-  # AllowedMethods: []
 
 Style/MultilineBlockChain:
   Enabled: true
